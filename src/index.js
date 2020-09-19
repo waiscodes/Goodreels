@@ -7,6 +7,7 @@ import { Provider } from 'react-redux';
 import { combineReducers, createStore } from 'redux';
 import rReviews from './reducers/rReviews';
 import rProfile from './reducers/rProfile';
+import rMovies from './reducers/rMovies';
 
 // Style
 import './css/index.css';
@@ -24,7 +25,8 @@ import Recommended from './components/Recommended';
 // Redux Store
 const rootReducer = combineReducers({
     user: rProfile,
-    reviews: rReviews
+    reviews: rReviews,
+    movies: rMovies
 });
 
 const store = createStore(
