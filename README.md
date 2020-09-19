@@ -22,6 +22,14 @@ Demonstrates the use of Redux to manage global states
 
 
 
+# Standards
+- All Reducers begin with R
+- All Actions begin with A
+- Components start with capital letter
+- All folders are lower case
+
+
+
 
 
 # Resources

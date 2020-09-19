@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const ListReviews = () => {
+const UserProfile = () => {
 
 
     return (
@@ -12,4 +12,4 @@ const ListReviews = () => {
     );
     
 }
-export default ListReviews;
+export default UserProfile;
