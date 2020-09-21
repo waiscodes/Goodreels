@@ -3,7 +3,7 @@ import "../css/SignIn.css";
 
 const SignIn = () => {
   const SumbitEvent = (e) => {
-    // e.preventDefault();
+    e.preventDefault();
   };
 
   return (
@@ -11,10 +11,10 @@ const SignIn = () => {
       <h2>Signup</h2>
       <form onSubmit={SumbitEvent}>
         <label htmlFor="email">Email: </label>
-        <input type="email" name="email" id="email" />
+        <input type="email" name="email" id="email" required />
 
         <label htmlFor="username">Username: </label>
-        <input type="text" name="username" id="username" />
+        <input type="text" name="username" id="username" required />
 
         <input type="submit" value="Sumbit" />
       </form>
