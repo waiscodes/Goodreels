@@ -8,8 +8,8 @@ const SignIn = () => {
 
   return (
     <>
-      <h2>Signup</h2>
       <form onSubmit={SumbitEvent}>
+        <h2>Signup</h2>
         <label htmlFor="email">Email: </label>
         <input type="email" name="email" id="email" required />
 
