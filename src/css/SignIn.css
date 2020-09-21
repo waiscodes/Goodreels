@@ -10,3 +10,12 @@
   width: 1px;
   word-wrap: normal !important;
 }
+
+form {
+  border: solid;
+}
+form > * {
+  display: block;
+  text-align: center;
+  margin: auto;
+}

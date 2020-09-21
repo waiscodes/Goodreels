@@ -10,10 +10,14 @@ const SignIn = () => {
     <>
       <form onSubmit={SumbitEvent}>
         <h2>Signup</h2>
-        <label htmlFor="email">Email: </label>
+        <label htmlFor="email" className="screen-reader-text">
+          Email
+        </label>
         <input type="email" name="email" id="email" required />
 
-        <label htmlFor="username">Username: </label>
+        <label htmlFor="username" className="screen-reader-text">
+          Username
+        </label>
         <input type="text" name="username" id="username" required />
 
         <input type="submit" value="Sumbit" />
