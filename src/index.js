@@ -20,6 +20,7 @@ import AddReview from './components/AddReview';
 import ListReviews from './components/ListReviews';
 import UserProfile from './components/UserProfile';
 import Recommended from './components/Recommended';
+import Browse from './components/Browse';
 
 
 // Redux Store
@@ -48,8 +49,7 @@ ReactDOM.render(
               <Router>
 
                   <Route path="/" exact> <SignIn /> </Route>
-                  <Route path="/AddReview"> <AddReview /> </Route>
-                  <Route path="/ListReviews"> <ListReviews /> </Route>
+                  <Route path="/Browse"> <Browse /> </Route>
                   <Route path="/Recommended"> <Recommended /> </Route>
                   <Route path="/UserProfile"> <UserProfile /> </Route>
 
