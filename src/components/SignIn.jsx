@@ -13,12 +13,24 @@ const SignIn = () => {
         <label htmlFor="email" className="screen-reader-text">
           Email
         </label>
-        <input type="email" name="email" id="email" required />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+          required
+        />
 
         <label htmlFor="username" className="screen-reader-text">
           Username
         </label>
-        <input type="text" name="username" id="username" required />
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Username"
+          required
+        />
 
         <input type="submit" value="Sumbit" />
       </form>
