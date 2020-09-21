@@ -7,6 +7,9 @@ const SignIn = () => {
 
     const usrEmail = document.querySelector("#email").value;
     console.log(usrEmail);
+
+    const usrUsername = document.querySelector("#username").value;
+    console.log(usrUsername);
   };
 
   return (
@@ -20,7 +23,6 @@ const SignIn = () => {
           type="email"
           name="email"
           id="email"
-          className="email"
           placeholder="Email"
           required
         />
