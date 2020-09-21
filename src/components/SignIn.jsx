@@ -4,6 +4,9 @@ import "../css/SignIn.css";
 const SignIn = () => {
   const SumbitEvent = (e) => {
     e.preventDefault();
+
+    const usrEmail = document.querySelector("#email").value;
+    console.log(usrEmail);
   };
 
   return (
@@ -17,6 +20,7 @@ const SignIn = () => {
           type="email"
           name="email"
           id="email"
+          className="email"
           placeholder="Email"
           required
         />
