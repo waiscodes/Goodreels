@@ -45,7 +45,7 @@ ReactDOM.render(
 
           <Header />
 
-          <main>
+          <main> 
               <Router>
 
                   <Route path="/" exact> <SignIn /> </Route>

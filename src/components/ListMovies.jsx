@@ -1,17 +1,17 @@
 import React from 'react';
 import MovieCard from './MovieCard';
-import './css/Recommended.css';
 
 
-const Recommend = () => {
+const ListMovies = () => {
 
 
     return (
 
         <>
+        
         </>
 
     );
     
 }
-export default Recommend;
+export default ListMovies;
