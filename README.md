@@ -33,6 +33,8 @@ Demonstrates the use of Redux to manage global states
 
 
 # Resources
+https://stackoverflow.com/questions/39999367/how-do-i-reference-a-local-image-in-react
+
 
 
 

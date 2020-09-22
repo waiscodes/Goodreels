@@ -24,6 +24,7 @@ import ListReviews from './components/ListReviews';
 import UserProfile from './components/UserProfile';
 import Recommended from './components/Recommended';
 import Browse from './components/Browse';
+import Movie from './components/Movie'; // for testing, delete after
 
 // Default Store population until we incorporate Back End.
 const DefaultStore = () => {
@@ -47,6 +48,7 @@ const DefaultStore = () => {
   store.dispatch(addReview( defaultMovieIds[0] , "Ummer", "10", "Guys, this is absolutely a 10, my favorite movie."));
   store.dispatch(addReview( defaultMovieIds[2] , "Ummer", "8", "Nice."));
   store.dispatch(addReview( defaultMovieIds[4] , "Ummer", "1", "Dead poets? No thanks."));
+  store.dispatch(addReview( defaultMovieIds[4] , "Ummer", "4", "Dead poets? No thanks.")); // Testing
   
   store.dispatch(createProfile("Adolf", "adolf@adolf.com", "123"));
   store.dispatch(createProfile("Eboka", "eboka@eboka.com", "12334"));
@@ -93,6 +95,13 @@ ReactDOM.render(
                   <Route path="/UserProfile"> <UserProfile /> </Route>
 
               </Router>
+
+
+
+
+              <Movie /> 
+
+
           </main>
 
           <Footer />
