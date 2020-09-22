@@ -48,7 +48,7 @@ const SignIn = () => {
           type="password"
           name="password"
           id="password"
-          placeholder="placeholder"
+          placeholder="Password"
           required
         />
 
