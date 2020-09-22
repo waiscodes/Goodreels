@@ -27,14 +27,29 @@ import Browse from './components/Browse';
 
 // Default Store population until we incorporate Back End.
 const DefaultStore = () => {
-  store.dispatch(addMovie("FakeMovie", "1988", "horror", "img/Fakemovie.jpg", "Nothing really happens in this movie"));
-  store.dispatch(addMovie("Predator", "1988", "action", "img/predator.jpg", "Cool alien teaches people some lessons on how to be a warrior"));
-  store.dispatch(addReview("store.movies[0].id", "fakeuser", "8", "It was very good, I swear."));
+  store.dispatch(addMovie("Catch Me If You Can", "2002", "Crime", "catchmeifyoucan.jpg", "Guy prints fake money, on the run the whole time."));
+  store.dispatch(addMovie("Shawshank Redemption", "1994", "Crime", "shawshankredemption.jpg", "Are you gonna stay in prison if you're innocent? Or are you?"));
+  store.dispatch(addMovie("Iron Man", "2008", "Action", "ironman.jpg", "Rich guy builds himself an expensive toy."));
+  store.dispatch(addMovie("Dead Poets Society", "1989", "Comedy", "deadpoetssociety.jpg", "Something about poetry."));
+  store.dispatch(addMovie("Eboka's Movie", "Hopefully 2020", "Unknown", "shawshankredemption.jpg", "We don't know yet"));
+  
+  let defaultMovieIds = [];
+  store.getState().movies.map( movie => {
+
+      defaultMovieIds.push(movie.id);
+  
+  });
+  store.dispatch(addReview( defaultMovieIds[0] , "Adolf", "8", "It was very good, I swear."));
+  store.dispatch(addReview( defaultMovieIds[0] , "Eboka", "7", "I agree with Adolf, it was pretty awesome"));
+  store.dispatch(addReview( defaultMovieIds[1] , "Eboka", "7", "Overrated, depressing"));
+  store.dispatch(addReview( defaultMovieIds[3] , "Hitesh", "10", "My favorite Movie"));
+  store.dispatch(addReview( defaultMovieIds[0] , "Ummer", "10", "Guys, this is absolutely a 10, my favorite movie."));
+  store.dispatch(addReview( defaultMovieIds[2] , "Ummer", "8", "Nice."));
+  store.dispatch(addReview( defaultMovieIds[4] , "Ummer", "1", "Dead poets? No thanks."));
+  
   store.dispatch(createProfile("Adolf", "adolf@adolf.com", "123"));
   store.dispatch(createProfile("Eboka", "eboka@eboka.com", "12334"));
 
-  store.dispatch(updateProfile("Adolf", "GoodBoyAdolf","adolf@adolf.com", "123456", "I was born in Eastern Europe, which sparked my interest in post apocalyptic depressing movies.", "img/picture.jpg"));
-  store.dispatch(updateProfile("Adolfaaa", "GoodBoyAdolf","adolf@adolf.com", "123456", "I was born in Eastern Europe, which sparked my interest in post apocalyptic depressing movies.", "img/picture.jpg"));
 }
 
 // Redux Store
