@@ -39,6 +39,7 @@ const DefaultStore = () => {
       defaultMovieIds.push(movie.id);
   
   });
+  
   store.dispatch(addReview( defaultMovieIds[0] , "Adolf", "8", "It was very good, I swear."));
   store.dispatch(addReview( defaultMovieIds[0] , "Eboka", "7", "I agree with Adolf, it was pretty awesome"));
   store.dispatch(addReview( defaultMovieIds[1] , "Eboka", "7", "Overrated, depressing"));
@@ -49,6 +50,8 @@ const DefaultStore = () => {
   
   store.dispatch(createProfile("Adolf", "adolf@adolf.com", "123"));
   store.dispatch(createProfile("Eboka", "eboka@eboka.com", "12334"));
+
+  store.dispatch(updateProfile("Adolf", "GoodBoyAdolf", "nomail@mail.com", "sadasd", "aa", "asda"));
 
 }
 
