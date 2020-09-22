@@ -58,7 +58,8 @@ ReactDOM.render(
 
           <Footer />
 
-        </Provider>        
+      </Provider> 
+      <UserProfile/>
     </>
   </React.StrictMode>,
   document.getElementById('root')

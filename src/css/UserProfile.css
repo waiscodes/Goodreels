@@ -1,0 +1,23 @@
+*{
+    text-align: center;
+    
+}
+
+.avatar{
+  border-radius: 80px;
+  width: 150px;
+}
+label{
+  
+}
+.profile-head{
+    background-color: lightgreen;
+    margin: 0;
+    padding:0;
+    height: 5rem;
+    
+}
+.container{
+    background-color: lightsalmon;
+    border-style: solid;
+}
