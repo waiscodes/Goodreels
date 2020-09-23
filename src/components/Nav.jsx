@@ -7,51 +7,31 @@ const Nav = () => {
 
     return (
         <>
-            <nav className="sign-in">
-                <h2>Sign In</h2>
+            <nav>
                 <ul>
                     <li>
-                    <Link to="/">
-                        Sign In
-                    </Link>
+                        <Link to="/">
+                            Sign In
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/Browse">
+                            Browse
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/Recommended">
+                            Recommended
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/UserProfile">
+                            User Profile
+                        </Link>
                     </li>
                 </ul>
             </nav>
-            <nav className="browse">
-                <h2>Browse</h2>
-                <ul>
-                    <li>
-                    <Link to="/Browse">
-                        Browse
-                    </Link>
-                    </li>
-                </ul>
-            </nav>
-            <nav className="recommended">
-                <h2>Recommended</h2>
-                <ul>
-                    <li>
-                    <Link to="/Recommended">
-                        Recommended
-                    </Link>
-                    </li>
-                </ul>
-            </nav>
-            <nav className="user-profile">
-                <h2>User Profile</h2>
-                <ul>
-                    <li>
-                    <Link to="/UserProfile">
-                        User Profile
-                    </Link>
-                    </li>
-                </ul>
-            </nav>
-
-
         </>
-
     );
-
 }
 export default Nav;
