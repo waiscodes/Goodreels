@@ -11,6 +11,7 @@ const rMovies = (state = [], action) => {
         case "ADD_MOVIE":{
             
             const newMovie = {
+                
                 id: uuidv4(),
                 title: action.title,
                 year: action.year,
