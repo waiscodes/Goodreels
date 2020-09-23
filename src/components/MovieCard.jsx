@@ -15,9 +15,9 @@ const MovieCard = (props) => {
   return (
     <>
       <div>
-        <h2>{props.title}</h2>
-        <p>{props.year}</p>
-        <img src={props.image} alt="" />
+        <h2>{thisMovie.title}</h2>
+        <p>{thisMovie.year}</p>
+        <img src={`../img/${thisMovie.image}`} alt="" />
       </div>
     </>
   );
