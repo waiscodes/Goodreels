@@ -11,6 +11,7 @@ import rMovies from './reducers/rMovies';
 import {addMovie} from './actions/aMovies';
 import {addReview} from './actions/aReviews';
 import {createProfile, updateProfile} from './actions/aProfile';
+import rActiveUser from './reducers/rActiveUser';
 
 // Style
 import './css/index.css';
@@ -24,6 +25,7 @@ import ListReviews from './components/ListReviews';
 import UserProfile from './components/UserProfile';
 import Recommended from './components/Recommended';
 import Browse from './components/Browse';
+import Movie from './components/Movie';
 
 // Default Store population until we incorporate Back End.
 const DefaultStore = () => {
@@ -58,9 +60,10 @@ const DefaultStore = () => {
 
 // Redux Store
 const rootReducer = combineReducers({
-    user: rProfile,
+    users: rProfile,
     reviews: rReviews,
-    movies: rMovies
+    movies: rMovies,
+    activeUser: rActiveUser
 });
 
 const store = createStore(
@@ -92,6 +95,7 @@ ReactDOM.render(
                   <Route path="/Browse"> <Browse /> </Route>
                   <Route path="/Recommended"> <Recommended /> </Route>
                   <Route path="/UserProfile"> <UserProfile /> </Route>
+                  <Route path="/Movie"> <Movie movieId="placeholder" /> </Route>
 
               </Router>
           </main>

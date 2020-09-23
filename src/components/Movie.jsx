@@ -6,7 +6,9 @@ import '../css/Movie.css';
 
 
 
-const Movie = (props, movieId) => {
+const Movie = (props) => {
+
+    // receives props.movieId as prop
 
     let thisMovie;
     let thisMovieRating = 0;
@@ -15,7 +17,7 @@ const Movie = (props, movieId) => {
     // Find the movie with matching ID to pull out info from store into my variable
     for (const movie of props.movies){
 
-        if (movie.id === movieId) {
+        if (movie.id === props.movieId) {
             thisMovie = {...movie};
         }
 
