@@ -12,19 +12,23 @@ const MovieCard = (props) => {
     }
   }
 
+  const passInId = (e) => {
+    props.state.dispatch();
+  };
+
   return (
     <>
-      <div>
-        <h2>{thisMovie.title}</h2>
-        <p>{thisMovie.year}</p>
-        <img src={`../img/${thisMovie.image}`} alt="" />
-      </div>
+      <Link to="/Movies" onClick={passInId()}>
+        <div>
+          <h2>{thisMovie.title}</h2>
+          <p>{thisMovie.year}</p>
+          <img src={require(`../img/${thisMovie.image}`)} alt="" />
+        </div>
+      </Link>
     </>
   );
 };
 export default connect((state) => ({
-  id: state.id,
-  title: state.title,
-  year: state.year,
-  image: state.image,
+  movies: state.movies,
+  state: state,
 }))(MovieCard);
