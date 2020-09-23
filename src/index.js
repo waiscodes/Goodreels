@@ -24,7 +24,6 @@ import ListReviews from './components/ListReviews';
 import UserProfile from './components/UserProfile';
 import Recommended from './components/Recommended';
 import Browse from './components/Browse';
-import Movie from './components/Movie'; // for testing, delete after
 
 // Default Store population until we incorporate Back End.
 const DefaultStore = () => {
