@@ -3,7 +3,7 @@ import MovieCard from './MovieCard';
 import '../css/Recommended.css';
 
 
-const Recommend = () => {
+const Recommended = () => {
 
 
     return (
@@ -14,4 +14,4 @@ const Recommend = () => {
     );
     
 }
-export default Recommend;
+export default Recommended;

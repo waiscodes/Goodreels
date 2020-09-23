@@ -1,3 +1,4 @@
+import { v4 as uuidv4 } from 'uuid';
 
 
 
@@ -5,15 +6,33 @@
 
 const rReviews = (state = [], action) => {
 
+    const newReview = {
+        id: uuidv4(),
+        movieId: action.movieId,
+        username: action.username,
+        rating: action.rating,
+        review: action.review 
+    };
+
     switch (action.type){
 
         case "ADD_REVIEW":
-            return state;
+
+            return [...state, newReview];
         
 
-        case "REMOVE_REVIEW":
+        case "REMOVE_REVIEW":{
 
-            return state;
+            let alteredArray = [...state];
+
+            for (let review of alteredArray){
+                if (review.id === action.id) alteredArray.splice(alteredArray.indexOf(review),1);
+            }
+
+            return alteredArray;
+        }
+            
+            
         
         default:
             return state;
