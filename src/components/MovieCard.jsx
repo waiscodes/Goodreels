@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 
 // Props Required: movieId
 
@@ -13,7 +14,8 @@ const MovieCard = (props) => {
   }
 
   const passInId = (e) => {
-    props.state.dispatch();
+    // props.state.dispatch();
+    // Clicked movie as an object
   };
 
   return (
