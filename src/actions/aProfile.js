@@ -1,19 +1,28 @@
 
 
 
-const createProfile = () => {
+const createProfile = (username, email, password) => {
 
 
     return {
-        type: "CREATE_PROFILE"
+        type: "CREATE_PROFILE",
+        username,
+        email,
+        password
 
     };
 }
 
-const updateProfile = () => {
+const updateProfile = (oldUsername, username, email, password, bio, image) => {
 
     return {
-        type: "UPDATE_PROFILE"
+        type: "UPDATE_PROFILE",
+        oldUsername,
+        username,
+        email,
+        password,
+        bio,
+        image
     };
 }
 
