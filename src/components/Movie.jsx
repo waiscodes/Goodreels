@@ -13,27 +13,31 @@ const Movie = (props, movieId) => {
     let numberOfRatings = 0;
 
     // Find the movie with matching ID to pull out info from store into my variable
-    props.movies.map( movie => {
+    for (const movie of props.movies){
+
         if (movie.id === movieId) {
             thisMovie = {...movie};
         }
 
         // testing only
         if (!thisMovie) thisMovie = props.movies[props.movies.length-1];
-    });
+
+    }
     
 
-    
+
     // Find all matching reviews to get ratings, adds total movie rating and totals number of ratings
-    props.reviews.map ( review => {
+    for (const review of props.reviews){
+
         if (review.movieId === thisMovie.id) {
             thisMovieRating += parseFloat(review.rating);
             numberOfRatings++;
         }
-    });
+
+    }
 
     // Calculates rating average
-    thisMovieRating =  thisMovieRating / numberOfRatings;
+    thisMovieRating =  (thisMovieRating / numberOfRatings).toFixed(1);
 
 
     // Return HTML element with movie's info
@@ -46,6 +50,9 @@ const Movie = (props, movieId) => {
             <img src={require('../img/'+thisMovie.image)}alt="Movie Poster" />
             <p>{thisMovie.genre}</p>
             <p>{thisMovie.synopsis}</p>
+            {
+                
+            }
 
             <ul>
                 <ListReviews movieId={thisMovie.id} />
