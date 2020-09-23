@@ -1,6 +1,5 @@
 import { render } from '@testing-library/react';
 import React from 'react';
-<<<<<<< HEAD
 import { reduxForm } from 'redux-form';
 import '../css/UserProfile.css';
 import Logo from '../images/avatar2.png';
@@ -12,9 +11,6 @@ import { connect } from 'react-redux';
 
 
 
-=======
-import '../css/UserProfile.css';
->>>>>>> 512ec6ae345216e53355288ec63e037bcd2fe2be
 
 
 const UserProfile = () => {
@@ -29,7 +25,7 @@ const UserProfile = () => {
 const handleSubmit = (e) => {
     e.preventDefault();
 
-   props.state.dispatch(addReview())
+    props.state.dispatch(addReview());
 }
 
      
