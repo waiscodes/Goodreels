@@ -1,13 +1,13 @@
 
 
 
-const addReview = (movieId, userId, rating, review) => {
+const addReview = (movieId, username, rating, review) => {
 
 
     return {
         type: "ADD_REVIEW",
         movieId,
-        userId,
+        username,
         rating,
         review        
     };

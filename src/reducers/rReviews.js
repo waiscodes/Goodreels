@@ -9,7 +9,7 @@ const rReviews = (state = [], action) => {
     const newReview = {
         id: uuidv4(),
         movieId: action.movieId,
-        userId: action.userId,
+        username: action.username,
         rating: action.rating,
         review: action.review 
     };

@@ -34,11 +34,11 @@ const DefaultStore = () => {
   store.dispatch(addMovie("Eboka's Movie", "Hopefully 2020", "Unknown", "shawshankredemption.jpg", "We don't know yet"));
   
   let defaultMovieIds = [];
-  store.getState().movies.map( movie => {
+  for (const movie of store.getState().movies) {
 
       defaultMovieIds.push(movie.id);
   
-  });
+  }
   
   store.dispatch(addReview( defaultMovieIds[0] , "Adolf", "8", "It was very good, I swear."));
   store.dispatch(addReview( defaultMovieIds[0] , "Eboka", "7", "I agree with Adolf, it was pretty awesome"));
@@ -46,7 +46,8 @@ const DefaultStore = () => {
   store.dispatch(addReview( defaultMovieIds[3] , "Hitesh", "10", "My favorite Movie"));
   store.dispatch(addReview( defaultMovieIds[0] , "Ummer", "10", "Guys, this is absolutely a 10, my favorite movie."));
   store.dispatch(addReview( defaultMovieIds[2] , "Ummer", "8", "Nice."));
-  store.dispatch(addReview( defaultMovieIds[4] , "Ummer", "1", "Dead poets? No thanks."));
+  store.dispatch(addReview( defaultMovieIds[4] , "Ummer", "1", "How can this movie be good? No one has seen it yet"));
+  store.dispatch(addReview( defaultMovieIds[4] , "Ummer", "4", "Maybe I was wrong, maybe it will be great."));
   
   store.dispatch(createProfile("Adolf", "adolf@adolf.com", "123"));
   store.dispatch(createProfile("Eboka", "eboka@eboka.com", "12334"));
