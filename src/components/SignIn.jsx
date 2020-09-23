@@ -1,7 +1,8 @@
 import React from "react";
+import { connect } from "react-redux";
 import "../css/SignIn.css";
 
-const SignIn = () => {
+const SignIn = (store) => {
   const SumbitEvent = (e) => {
     e.preventDefault();
 
@@ -57,4 +58,4 @@ const SignIn = () => {
     </>
   );
 };
-export default SignIn;
+export default connect((state) => ({ store: state }))(SignIn);
