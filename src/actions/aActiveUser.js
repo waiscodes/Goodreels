@@ -15,4 +15,15 @@ const logInUser = (username) => {
     };
 }
 
-export { logInUser };
+const updateClickedMovie = (movieId) => {
+
+
+    return {
+        
+        type: "UPDATE_CLICKED_MOVIE",
+        movieId
+
+    };
+}
+
+export { logInUser, updateClickedMovie };
