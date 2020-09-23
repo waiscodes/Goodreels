@@ -2,18 +2,18 @@ import React from "react";
 import { connect } from "react-redux";
 import "../css/SignIn.css";
 import { createProfile } from "../actions/aProfile";
+import { logInUser } from "../actions/aActiveUser";
 
 const SignIn = (store) => {
   const SumbitEvent = (e) => {
     e.preventDefault();
 
     const usrEmail = document.querySelector("#email").value;
-
     const usrUsername = document.querySelector("#username").value;
-
     const usrPassword = document.querySelector("#password").value;
 
     store.dispatch(createProfile(usrUsername, usrEmail, usrPassword));
+    store.dispatch(logInUser(usrUsername));
   };
 
   return (
