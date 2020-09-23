@@ -11,6 +11,7 @@ import rMovies from './reducers/rMovies';
 import {addMovie} from './actions/aMovies';
 import {addReview} from './actions/aReviews';
 import {createProfile, updateProfile} from './actions/aProfile';
+import rActiveUser from './reducers/rActiveUser';
 
 // Style
 import './css/index.css';
@@ -58,9 +59,10 @@ const DefaultStore = () => {
 
 // Redux Store
 const rootReducer = combineReducers({
-    user: rProfile,
+    users: rProfile,
     reviews: rReviews,
-    movies: rMovies
+    movies: rMovies,
+    activeUser: rActiveUser
 });
 
 const store = createStore(
