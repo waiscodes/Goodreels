@@ -13,7 +13,6 @@ const Movie = (props) => {
 
     let thisMovie;
     let reviewsCopy = [...props.reviews];
-    console.log (props.activeUser.clickedMovie);
 
     // Find the movie with matching ID to pull out info from store into my variable
     for (const movie of props.movies){
@@ -26,7 +25,6 @@ const Movie = (props) => {
         if (!thisMovie) thisMovie = props.movies[props.movies.length-1];
 
     }
-    console.log(thisMovie);
 
     // Return HTML element with movie's info
     return (
