@@ -13,11 +13,6 @@ const Nav = (props) => {
                 <nav>
                     <ul>
                         <li>
-                            <Link to="/">
-                                Sign In
-                            </Link>
-                        </li>
-                        <li>
                             <Link to="/Browse">
                                 Browse
                             </Link>
