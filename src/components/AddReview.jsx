@@ -6,6 +6,7 @@ import { connect } from 'react-redux';
 
 const AddReview =  (props) =>
 {
+    let alreadyReviewed = false;
     
     const [review, setnewReview] = useState( '' );
     const [rating, setnewRating] = useState( '' );
@@ -15,16 +16,22 @@ const AddReview =  (props) =>
         props.dispatch( addReview(props.activeUser.clickedMovie, props.activeUser.username, rating, review)  );
     }
 
-    return (
+    for (const review of props.reviews)
+    {
+        if (review.username === props.activeUser.username && review.movieId === props.activeUser.clickedMovie)
+            alreadyReviewed = true;
+    }
+    if (alreadyReviewed) return "";
+    else return (
 
         <>
         <form onSubmit={newAddition}>
             <label htmlFor="mreview">Your Review:</label>
-                <input type="textarea" id="mreview" placeholder="Start typing your review..." required
+                <textarea id="mreview" placeholder="Start typing your review..." required
                     onChange={e => { setnewReview( e.target.value ) } }
                     value={review}/>
 
-            <label htmlFor="rating">Pick a rating number*:</label>
+            <label htmlFor="rating">Your rating:</label>
                 <select id="rating" required
                     onChange={e => { setnewRating( e.target.value ) } }
                     value={rating}>
@@ -43,10 +50,9 @@ const AddReview =  (props) =>
                        
             </form>
 
-            <p>* 1 = waste of time, 10 = absolutely fantastic.</p>
         </>
 
     );
     
 }
-export default connect (state => ({activeUser: state.activeUser}) )(AddReview);
+export default connect (state => ({activeUser: state.activeUser, reviews: state.reviews}) )(AddReview);

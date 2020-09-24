@@ -40,9 +40,9 @@ const Movie = (props) => {
                 
             }
 
-            <ul>
-                <ListReviews movieId={thisMovie.id} />
-            </ul>
+            <AddReview />
+            <ListReviews movieId={thisMovie.id} />
+            
         </>
     );
 }
