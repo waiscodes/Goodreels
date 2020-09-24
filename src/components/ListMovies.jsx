@@ -17,4 +17,4 @@ const ListMovies = ( props ) => {
     );
     
 }
-export default connect( state => ( { listMovies:state.movie } ) ) ( ListMovies );
+export default connect( state => ( { listMovies: state.movies } ) ) ( ListMovies );
