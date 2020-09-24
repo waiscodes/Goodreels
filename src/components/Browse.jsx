@@ -18,9 +18,9 @@ const Browse = () => {
                     type="search"
                 />
             </form>
-            <ul>
-                <ListMovies />
-            </ul>
+            
+            <ListMovies />
+            
 
 
         </>
