@@ -9,11 +9,15 @@ const Recommended = (props) => {
     <>
       <ul>
         {props.movies.map((movie) => {
-          return (
-            <li key={movie.id}>
-              <MovieCard movieId={movie.id} />
-            </li>
-          );
+          if (props.movies.indexOf(movie) < 5){
+            return (
+              <li key={movie.id}>
+                <MovieCard movieId={movie.id} />
+              </li>
+            );
+          }
+          else return "";
+          
         })}
       </ul>
     </>
