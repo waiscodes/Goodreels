@@ -7,12 +7,13 @@ import { createProfile, updateProfile } from "../actions/aProfile";
 
 const DefaultStore = (props) => {
 
-    let defaultMovieIds = [];
+    
 
     //////////////////////////////////
     // Movies
     //////////////////////////////////
     const fillStore = (e) => {
+      let defaultMovieIds = [];
       props.dispatch(
         addMovie(
           "Catch Me If You Can",
@@ -70,6 +71,7 @@ const DefaultStore = (props) => {
       //////////////////////////////////
       // Reviews
       //////////////////////////////////
+      console.log(props);
       props.dispatch(
         addReview(
             defaultMovieIds[0], 
@@ -179,4 +181,4 @@ const DefaultStore = (props) => {
     );
   };
 
-  export default connect(state => ({store: state, movies: state.movies}))(DefaultStore);
+  export default connect(state => ({movies: state.movies}))(DefaultStore);

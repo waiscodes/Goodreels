@@ -4,7 +4,7 @@ import "../css/Recommended.css";
 import { connect } from "react-redux";
 
 const Recommended = (props) => {
-  console.log(props);
+
   return (
     <>
       <ul>

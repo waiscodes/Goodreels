@@ -60,7 +60,7 @@ ReactDOM.render(
                     <Route path="/Browse"> <Browse /> </Route>
                     <Route path="/Recommended"> <Recommended /> </Route>
                     <Route path="/UserProfile"> <UserProfile /> </Route>
-                    <Route path="/Movie"> <Movie movieId="placeholder" /> </Route>
+                    <Route path="/Movie"> <Movie /> </Route>
                   </main>
 
               </Router>

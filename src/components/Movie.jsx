@@ -13,11 +13,12 @@ const Movie = (props) => {
 
     let thisMovie;
     let reviewsCopy = [...props.reviews];
+    console.log (props.activeUser.clickedMovie);
 
     // Find the movie with matching ID to pull out info from store into my variable
     for (const movie of props.movies){
 
-        if (movie.id === props.movieId) {
+        if (movie.id === props.activeUser.clickedMovie) {
             thisMovie = {...movie};
         }
 
@@ -25,6 +26,7 @@ const Movie = (props) => {
         if (!thisMovie) thisMovie = props.movies[props.movies.length-1];
 
     }
+    console.log(thisMovie);
 
     // Return HTML element with movie's info
     return (
@@ -46,4 +48,4 @@ const Movie = (props) => {
         </>
     );
 }
-export default connect( state => ({movies: state.movies, reviews: state.reviews}) )(Movie);
+export default connect( state => ({movies: state.movies, reviews: state.reviews, activeUser: state.activeUser}) )(Movie);
