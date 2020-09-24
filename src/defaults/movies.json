@@ -33,11 +33,11 @@
             "synopsis": "Something about poetry."
         },
         {
-            "id": "ebokas",
-            "title": "Eboka's Movie",
-            "year": "Hopefully 2020",
-            "genre": "Unknown",
-            "image": "shawshankredemption.jpg",
-            "synopsis": "We don't know yet"
+            "id": "coriolanus",
+            "title": "Coriolanus",
+            "year": "2011",
+            "genre": "Thriller",
+            "image": "coriolanus.jpg",
+            "synopsis": "People are hungry, protagonist says no more, gets pretty bloody."
         }
     ]       
