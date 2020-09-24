@@ -8,7 +8,7 @@ const MovieCard = (props) => {
   let thisMovie = {};
 
   for (let movie of props.movies) {
-    if (movie.id == props.movieId) {
+    if (movie.id === props.movieId) {
       thisMovie = { ...movie };
     }
   }
