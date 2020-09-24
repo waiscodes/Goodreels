@@ -28,6 +28,7 @@ import Browse from "./components/Browse";
 import Movie from "./components/Movie";
 
 // Default Store population until we incorporate Back End.
+
 const DefaultStore = () => {
   store.dispatch(
     addMovie(
@@ -76,6 +77,7 @@ const DefaultStore = () => {
   );
 
   let defaultMovieIds = [];
+
   for (const movie of store.getState().movies) {
     defaultMovieIds.push(movie.id);
   }
@@ -158,38 +160,28 @@ DefaultStore();
 
 ReactDOM.render(
   <React.StrictMode>
-    <>
-      <Provider store={store}>
-        <Header />
+    <> 
+        <Provider store={store}>
 
-        <main>
-          <Router>
-            <Route path="/" exact>
-              {" "}
-              <SignIn />{" "}
-            </Route>
-            <Route path="/Browse">
-              {" "}
-              <Browse />{" "}
-            </Route>
-            <Route path="/Recommended">
-              {" "}
-              <Recommended />{" "}
-            </Route>
-            <Route path="/UserProfile">
-              {" "}
-              <UserProfile />{" "}
-            </Route>
-            <Route path="/Movie">
-              {" "}
-              <Movie movieId="placeholder" />{" "}
-            </Route>
-            <Recommended />
-          </Router>
-        </main>
+          
 
-        <Footer />
-      </Provider>
+           
+              <Router>
+                  <Header />
+                  <main>
+                    <Route path="/" exact> <SignIn /> </Route>
+                    <Route path="/Browse"> <Browse /> </Route>
+                    <Route path="/Recommended"> <Recommended /> </Route>
+                    <Route path="/UserProfile"> <UserProfile /> </Route>
+                    <Route path="/Movie"> <Movie movieId="placeholder" /> </Route>
+                  </main>
+
+              </Router>
+  
+
+          <Footer />
+
+        </Provider>        
     </>
   </React.StrictMode>,
   document.getElementById("root")
