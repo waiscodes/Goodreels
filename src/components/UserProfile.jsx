@@ -6,6 +6,7 @@ import Logo from '../images/avatar2.png';
 import { updateProfile } from '../actions/aProfile';
 import ListReviews  from './ListReviews';
 import { connect } from 'react-redux';
+import { logInUser } from '../actions/aActiveUser';
 
 
 
@@ -13,30 +14,42 @@ import { connect } from 'react-redux';
 
 
 function UserProfile(props) {
-    //const [username, setUserName] = useState('');
-    // const [email, setEmail] = useState('');
-    //const [bio, setBio] = useState('');
-    let thisUser = useState('');
-
+    let thisUser;
     for (const element of props.users) {
-        if (element.username === props.activeUser.username)
-            thisUser = { ...element };
+        if (element.username === props.activeUser.username)  
+              thisUser = { ...element }; 
+            }  
+        
+    const [username, setUserName] = useState(thisUser.username);
+    const [email, setEmail] = useState(thisUser.email);
+    const [password, setPassword] = useState(thisUser.password);
+    //const [bio, setBio] = useState('');
+        const activeUser = props.activeUser.username;
+    //this below state needs to be fixed
     
-    }
+
     const handleSubmit = event => {
         event.preventDefault();
         
         const usrPEmail = document.querySelector("#user-email").value;
         const usrPUsername = document.querySelector("#username-input").value;
+        const usrPPassword = document.querySelector("#user-Password").value;
         const usrPBio = document.querySelector("#userBio").value;
-        alert(`${ usrPBio }  ${ usrPUsername }  ${ usrPEmail }`);
+        //alert(`${ usrPBio }  ${ usrPUsername }  ${ usrPEmail }`);
+
         
+        // type: "UPDATE_PROFILE",
+       // oldUsername,
+       // username,
+       // email,
+       // password,
+       // bio,
+        //image
         
 
-        // props.state.dispatch(updateProfile(username = setUserName(event.target.value),
-        //email = setEmail(event.target.value),
-        //bio= setBio(event.target.value)));
-    
+        props.dispatch(updateProfile(activeUser, usrPUsername, usrPEmail, usrPPassword, usrPBio));
+       // props.dispatch(logInUser(usrPUsername, usrPUsername, usrPEmail, usrPPassword, usrPBio));
+        
 
     }
         
@@ -46,41 +59,52 @@ function UserProfile(props) {
             image.src = URL.createObjectURL(event.target.files[0]);
     
         }
-    
+     
         return (
 
             <div>
                 <h1 className="profile-head">User Profile</h1>
          
                 <form onSubmit={handleSubmit} >
-                    <div >
+                    <div >   
                         <img src={Logo} alt="Avatar" className="avatar" /> <br />
                         <input type="file" accept="image/*" name="image" id="file" onChange={loadFile} className="upload-img" />
-                        <p><label for="file" className="img-label">Upload Image</label></p>
+                        <p><label htmlFor="file" className="img-label">Upload Image</label></p>
                         <p><img id="output" width="200" /></p>
                         
                     </div>
                     <div className="container">
                         <div className="">
-                            <label htmlFor="username-input"
+                            <label htmlFor="username-input"    
                                 className="labels"
                                 type="text">Username</label> <br />
                             <input id="username-input"
                                 htmlFor="username-input"
                                 className="inputs"
-                                placeholder="Your Username"
+                                value={username}
+                             placeholder="Your Username"
                                 type="text"
                                 
-                            //onchange={event => { setUserName(event.target.value); }}
+                            onChange={event => { setUserName(event.target.value); }}
                             />
                         </div>
                         <div >
                             <label htmlFor="user-email" className="labels" type="text">Email</label><br />
                             <input id="user-email" className="inputs"
                                 placeholder="Your email...." type="text"
-                            //onchange={event => { setEmail(event.target.value); }}
+                                value={email}
+                             onChange={event => { setEmail(event.target.value); }}
                             />
                         </div>
+                        <div >
+                            <label htmlFor="user-password" className="labels" type="text">Change Password</label><br />
+                            <input id="user-Password" className="inputs"
+                                placeholder="" type="password"
+                                value={password}
+                             onChange={event => { setPassword(event.target.value); }}
+                            />
+                        </div>
+                        
                         <div className="">
                             <label value="Name" type="text">Bio</label><br />
                             <textarea htmlFor="userBio"
