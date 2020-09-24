@@ -105,7 +105,7 @@ ReactDOM.render(
           <Footer />
 
       </Provider> 
-      <UserProfile/>
+      
     </>
   </React.StrictMode>,
   document.getElementById('root')
