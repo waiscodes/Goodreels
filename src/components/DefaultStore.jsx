@@ -12,7 +12,7 @@ const DefaultStore = (props) => {
     //////////////////////////////////
     // Movies
     //////////////////////////////////
-    const fillStore = () => {
+    const fillStore = (e) => {
       props.dispatch(
         addMovie(
           "Catch Me If You Can",
@@ -171,10 +171,11 @@ const DefaultStore = (props) => {
           "asda"
         )
       );
+      e.disabled = true;
     }
 
     return(
-      <button onClick={fillStore}>Fill Store</button>
+      <button onClick={e => fillStore(e.target)}>Fill Store</button>
     );
   };
 
