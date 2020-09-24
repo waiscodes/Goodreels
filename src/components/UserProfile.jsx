@@ -119,7 +119,7 @@ function UserProfile(props) {
                     </div>
                 </form>
                 <ul>
-                {/* <ListReviews username={props.activeUser.username} /> */}
+                { <ListReviewgit s username={props.activeUser.username} />}
                 </ul>
             </div>
              

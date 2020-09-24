@@ -4,16 +4,20 @@ import "../css/Recommended.css";
 import { connect } from "react-redux";
 
 const Recommended = (props) => {
-  console.log(props);
+
   return (
     <>
       <ul>
         {props.movies.map((movie) => {
-          return (
-            <li key={movie.id}>
-              <MovieCard movieId={movie.id} />
-            </li>
-          );
+          if (props.movies.indexOf(movie) < 5){
+            return (
+              <li key={movie.id}>
+                <MovieCard movieId={movie.id} />
+              </li>
+            );
+          }
+          else return "";
+          
         })}
       </ul>
     </>

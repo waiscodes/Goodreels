@@ -1,7 +1,6 @@
+const initialState = require("../defaults/users.json");
 
-
-
-const rProfile = (state = [], action) => {
+const rProfile = (state = initialState, action) => {
 
     
 

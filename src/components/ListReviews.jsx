@@ -4,26 +4,43 @@ import { connect } from 'react-redux';
 
 const ListReviews = (props) => {
 
+    
+
     // If Movie id is passed, list reviews for given movie
     if (props.movieId !== undefined){
         
+        let sortedReviews = [];
+
+        for (const review of props.reviews){
+            if (review.movieId === props.movieId)
+            {
+                
+                if (review.username === props.activeUser.username){
+                    sortedReviews.splice(0,0,review)
+                }
+                else sortedReviews.push(review);
+            }
+        }
+
+        
+
+
+
+
         return (
 
             <>
                 <h2>Reviews</h2>
                 <ul id="review-list">
-                    {props.reviews.map( review => {
+                    {sortedReviews.map( review => {
 
                         // If the Movie ID passed from props matches in review, it will Pull the info
-                        if (review.movieId === props.movieId){
+                        
                             return(
                                 <li key={review.id}> <strong>{review.username} ({review.rating}/10) : </strong>
                                     {review.review}
                                 </li>
                             );
-                        }
-                        else
-                        return "";
 
                     })}
                 </ul>
@@ -65,4 +82,4 @@ const ListReviews = (props) => {
     
     
 }
-export default connect (state => ({reviews: state.reviews}) )(ListReviews);
+export default connect (state => ({reviews: state.reviews, activeUser: state.activeUser}) )(ListReviews);

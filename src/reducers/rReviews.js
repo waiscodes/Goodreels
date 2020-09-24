@@ -1,10 +1,11 @@
 import { v4 as uuidv4 } from 'uuid';
+const initialState = require("../defaults/reviews.json");
 
 
 
 
 
-const rReviews = (state = [], action) => {
+const rReviews = (state = initialState, action) => {
 
     const newReview = {
         id: uuidv4(),

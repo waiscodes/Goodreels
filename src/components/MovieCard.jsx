@@ -20,7 +20,7 @@ const MovieCard = (props) => {
 
   return (
     <>
-      <Link to="/Movies" onClick={passInId}>
+      <Link to="/Movie" onClick={passInId}>
         <div>
           <h2>{thisMovie.title}</h2>
           <p>{thisMovie.year}</p>

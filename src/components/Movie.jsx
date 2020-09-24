@@ -17,7 +17,7 @@ const Movie = (props) => {
     // Find the movie with matching ID to pull out info from store into my variable
     for (const movie of props.movies){
 
-        if (movie.id === props.movieId) {
+        if (movie.id === props.activeUser.clickedMovie) {
             thisMovie = {...movie};
         }
 
@@ -40,10 +40,10 @@ const Movie = (props) => {
                 
             }
 
-            <ul>
-                <ListReviews movieId={thisMovie.id} />
-            </ul>
+            <AddReview />
+            <ListReviews movieId={thisMovie.id} />
+            
         </>
     );
 }
-export default connect( state => ({movies: state.movies, reviews: state.reviews}) )(Movie);
+export default connect( state => ({movies: state.movies, reviews: state.reviews, activeUser: state.activeUser}) )(Movie);

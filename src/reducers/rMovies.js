@@ -1,9 +1,10 @@
 import { v4 as uuidv4 } from 'uuid';
+const initialState = require("../defaults/movies.json");
 
 
 
 
-const rMovies = (state = [], action) => {
+const rMovies = (state = initialState, action) => {
 
     
     switch (action.type){
