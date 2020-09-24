@@ -7,10 +7,18 @@ const Recommended = (props) => {
   console.log(props);
   return (
     <>
-      <ul></ul>
+      <ul>
+        {props.movies.map((movie) => {
+          return (
+            <li key={movie.id}>
+              <MovieCard movieId={movie.id} />
+            </li>
+          );
+        })}
+      </ul>
     </>
   );
 };
 export default connect((state) => ({
-  idsOfMovies: state.movies.id,
+  movies: state.movies,
 }))(Recommended);
