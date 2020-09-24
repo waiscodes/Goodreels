@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
+import { updateClickedMovie } from "../actions/aActiveUser";
 
 // Props Required: movieId
 
@@ -14,12 +15,12 @@ const MovieCard = (props) => {
   }
 
   const passInId = (e) => {
-    // props.state.dispatch();
+    props.dispatch(updateClickedMovie(thisMovie.id)); 
   };
 
   return (
     <>
-      <Link to="/Movies" onClick={passInId()}>
+      <Link to="/Movies" onClick={passInId}>
         <div>
           <h2>{thisMovie.title}</h2>
           <p>{thisMovie.year}</p>
@@ -31,5 +32,5 @@ const MovieCard = (props) => {
 };
 export default connect((state) => ({
   movies: state.movies,
-  state: state,
+  state: state
 }))(MovieCard);
