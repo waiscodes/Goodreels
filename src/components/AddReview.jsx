@@ -1,51 +1,45 @@
 import React from 'react';
 import { addReview } from '../actions/aReviews';
 import { useState } from 'react';
+import { connect } from 'react-redux';
 
 
-function AddReview  ( props ) 
+const AddReview =  (props) =>
 {
-
-    const [newTitle, setnewTitle] = useState( '' );
-    const [newReview, setnewReview] = useState( '' );
-    const [newRating, setnewRating] = useState( '' );
+    
+    const [review, setnewReview] = useState( '' );
+    const [rating, setnewRating] = useState( '' );
 
     const newAddition = event => {
         event.preventDefault();
-        props.dispatch( addReview ( newTitle, newReview, newRating) );
+        props.dispatch( addReview(props.activeUser.clickedMovie, props.activeUser.username, rating, review)  );
     }
 
     return (
 
         <>
         <form onSubmit={newAddition}>
-            <p><label htmlFor="mtitle">Movie Title:</label></p>
-                <input type="text" id="mtitle" placeholder="Enter Name of Movie" required
-                onChange={e => { setnewTitle( e.target.value ) } }
-                value={newTitle}/>
-            
-            <p><label htmlFor="mreview">Your Review:</label></p>
+            <label htmlFor="mreview">Your Review:</label>
                 <input type="textarea" id="mreview" placeholder="Start typing your review..." required
-                onChange={e => { setnewReview( e.target.value ) } }
-                value={newReview}/>
+                    onChange={e => { setnewReview( e.target.value ) } }
+                    value={review}/>
 
-            <p><label htmlFor="rating">Pick a rating number*:</label></p>
+            <label htmlFor="rating">Pick a rating number*:</label>
                 <select id="rating" required
-                onChange={e => { setnewRating( e.target.value ) } }
-                value={newRating}>
-                <option value="1"> </option>
-                <option value="2">+</option>
-                <option value="3">-</option>
-                <option value="4">*</option>
-                <option value="5">/</option>
-                <option value="6"> </option>
-                <option value="7">+</option>
-                <option value="8">-</option>
-                <option value="9">*</option>
-                <option value="10">/</option>
+                    onChange={e => { setnewRating( e.target.value ) } }
+                    value={rating}>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
                 </select>
-            
-            <p><button>Submit</button></p>
+                <button>Submit</button>
                        
             </form>
 
@@ -55,4 +49,4 @@ function AddReview  ( props )
     );
     
 }
-export default AddReview;
+export default connect (state => ({activeUser: state.activeUser}) )(AddReview);
