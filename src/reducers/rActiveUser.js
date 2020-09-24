@@ -7,16 +7,14 @@ const rActiveUser = (state = {}, action) => {
     
     switch (action.type){
         
-        case "LOG_IN_USER":{
-            
-            const loggedIn = {
-                
-                username: action.username
-        
-            };
+        case "LOG_IN_USER":
 
-            return loggedIn;
-        }
+            return {...state, username: action.username};
+        
+        case "UPDATE_CLICKED_MOVIE":
+        
+            return {...state, clickedMovie: action.movieId}
+
         default:
             return state;
 
