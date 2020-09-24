@@ -2,6 +2,7 @@ import React from 'react';
 import AddReview from './AddReview';
 import ListReviews from './ListReviews';
 import { connect } from 'react-redux';
+import {avgRating} from '../utilities/avgRating';
 import '../css/Movie.css';
 
 
@@ -11,8 +12,7 @@ const Movie = (props) => {
     // receives props.movieId as prop
 
     let thisMovie;
-    let thisMovieRating = 0;
-    let numberOfRatings = 0;
+    let reviewsCopy = [...props.reviews];
 
     // Find the movie with matching ID to pull out info from store into my variable
     for (const movie of props.movies){
@@ -25,22 +25,6 @@ const Movie = (props) => {
         if (!thisMovie) thisMovie = props.movies[props.movies.length-1];
 
     }
-    
-
-
-    // Find all matching reviews to get ratings, adds total movie rating and totals number of ratings
-    for (const review of props.reviews){
-
-        if (review.movieId === thisMovie.id) {
-            thisMovieRating += parseFloat(review.rating);
-            numberOfRatings++;
-        }
-
-    }
-
-    // Calculates rating average
-    thisMovieRating =  (thisMovieRating / numberOfRatings).toFixed(1);
-
 
     // Return HTML element with movie's info
     return (
@@ -48,7 +32,7 @@ const Movie = (props) => {
 
             <h2>{thisMovie.title}</h2>
             <em>{thisMovie.year}</em>
-            <div id="rating">{thisMovieRating}</div>
+            <div id="rating">{avgRating(thisMovie.id, reviewsCopy)}</div>
             <img src={require('../img/'+thisMovie.image)}alt="Movie Poster" />
             <p>{thisMovie.genre}</p>
             <p>{thisMovie.synopsis}</p>

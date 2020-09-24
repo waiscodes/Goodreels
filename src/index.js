@@ -28,14 +28,16 @@ import Browse from './components/Browse';
 import Movie from './components/Movie';
 
 // Default Store population until we incorporate Back End.
+
 const DefaultStore = () => {
+  let defaultMovieIds = [];
   store.dispatch(addMovie("Catch Me If You Can", "2002", "Crime", "catchmeifyoucan.jpg", "Guy prints fake money, on the run the whole time."));
   store.dispatch(addMovie("Shawshank Redemption", "1994", "Crime", "shawshankredemption.jpg", "Are you gonna stay in prison if you're innocent? Or are you?"));
   store.dispatch(addMovie("Iron Man", "2008", "Action", "ironman.jpg", "Rich guy builds himself an expensive toy."));
   store.dispatch(addMovie("Dead Poets Society", "1989", "Comedy", "deadpoetssociety.jpg", "Something about poetry."));
   store.dispatch(addMovie("Eboka's Movie", "Hopefully 2020", "Unknown", "shawshankredemption.jpg", "We don't know yet"));
   
-  let defaultMovieIds = [];
+  
   for (const movie of store.getState().movies) {
 
       defaultMovieIds.push(movie.id);
