@@ -43,16 +43,16 @@
     },
     {
         "id": "07",
-        "movieId": "ebokas",
+        "movieId": "coriolanus",
         "username": "Ummer",  
-        "rating": "8",
+        "rating": "1",
         "review": "How can this movie be good? No one has seen it yet"
     },
     {
         "id": "08",
-        "movieId": "ebokas",
+        "movieId": "coriolanus",
         "username": "Ummer",  
-        "rating": "4",
+        "rating": "9",
         "review": "Maybe I was wrong, maybe it will be great."
     }
     

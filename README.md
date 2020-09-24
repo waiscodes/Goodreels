@@ -39,6 +39,7 @@ https://stackoverflow.com/questions/40344850/made-a-json-file-with-multiple-obje
 
 https://www.w3schools.com/js/js_json_syntax.asp
 
+https://github.com/salsita/redux-form-actions/issues/2
 
 
 
