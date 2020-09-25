@@ -1,3 +1,4 @@
+
 import React from 'react';
 import ListReviews from './ListReviews';
 import ListMovies from './ListMovies';
@@ -19,12 +20,13 @@ const Browse = (props) => {
             // Search, filter
             <>
                 <form onSubmit={event => { event.preventDefault(); }}>
-                    <label htmlFor="movie">Enter Movie name</label>
+                    <label htmlFor="movie-search" className="screen-reader-text">Enter Movie Name</label>
                     <input
-                        id="movie"
+                        id="movie-search"
                         type="search"
                         onChange={e => updateSearch(e.target.value)}
                         value={searchTerm}
+                        placeholder="Search Movie"
                     />
                 </form>
                 
@@ -35,9 +37,6 @@ const Browse = (props) => {
             </>
         );
     }
-    else return (
-            <Redirect to="/" />
-    );
-
-}
-export default connect(state =>({activeUser: state.activeUser}))(Browse);
+  } else return <Redirect to="/" />;
+};
+export default connect((state) => ({ activeUser: state.activeUser }))(Browse);
