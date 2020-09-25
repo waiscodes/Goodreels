@@ -1,5 +1,7 @@
 .movie-card {
-  width: 48%;
+  width: 150px;
+  border: solid;
+  margin: 5%;
 }
 
 .movie-card img {
