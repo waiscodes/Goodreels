@@ -49,11 +49,32 @@ const UserProfile = (props) => {
 
             props.dispatch(updateProfile(props.activeUser.username, usrPUsername, usrPEmail, usrPPassword, usrPBio, fileUrl));
             props.dispatch(logInUser(usrPUsername));
+            alert("Changes to profile were saved.");
+            toggleEdit();
 
         }
         else alert("This username is already taken. Please use different username.");
         
         
+
+    }
+
+    const toggleEdit = () => {
+
+   
+        const emailInput = document.querySelector("#user-email");
+        const usernameInput = document.querySelector("#username-input");
+        const passwordInput = document.querySelector("#user-Password");
+        const bioInput = document.querySelector("#userBio");  
+        const fileInput = document.querySelector("#file");  
+        const updateButton = document.querySelector("#update-profile");
+
+        let elementsToChange = [emailInput, usernameInput, passwordInput, bioInput, fileInput, updateButton];
+
+        for (let element of elementsToChange){
+            element.disabled = !(element.disabled);
+        }
+
 
     }
         
@@ -78,60 +99,59 @@ const UserProfile = (props) => {
                 <h1 className="profile-head">User Profile</h1>
          
                 <form onSubmit={handleSubmit} >
-                    <div >   
-                        <img src={Logo} alt="Avatar" className="avatar" /> <br />
-                        <input type="file" accept="image/*" name="image" id="file" onChange={loadFile} className="upload-img" />
+                    <div >  
+                         
+                        <img src={Logo} alt="Avatar" className="avatar" alt="User Picture"/> <br />
+                        <input type="file" accept="image/*" name="image" id="file" onChange={loadFile} className="upload-img" disabled={true} />
                         <p><label htmlFor="file" className="img-label">Upload Image</label></p>
                         <p><img id="output" width="200" /></p>
                         
                     </div>
-                    <div className="container">
-                        <div className="">
-                            <label htmlFor="username-input" className="labels" type="text">Username</label> <br />
-                            <input 
-                                id="username-input"
-                                htmlFor="username-input"
-                                className="inputs"
-                                value={username}
-                                placeholder="Your Username"
-                                type="text" 
-                                onChange={event => { setUserName(event.target.value); }}
-                            />
-                        </div>
-                        <div >
-                            <label htmlFor="user-email" className="labels" type="text">Email</label><br />
-                            <input 
-                                id="user-email" 
-                                className="inputs"
-                                placeholder="Your email...." type="text"
-                                value={email}
-                                onChange={event => { setEmail(event.target.value); }}
-                            />
-                        </div>
-                        <div >
-                            <label htmlFor="user-password" className="labels" type="text">Change Password</label><br />
-                            <input 
-                                id="user-Password" 
-                                className="inputs"
-                                placeholder="" type="password"
-                                value={password}
-                                onChange={event => { setPassword(event.target.value); }}
-                            />
-                        </div> 
-                        <div className="">
-                            <label value="Name" type="text">Bio</label><br />
-                            <textarea 
-                                htmlFor="userBio"
-                                placeholder="Enter your bio here...."
-                                type="text" rows="10" cols="20"
-                                id="userBio" 
-                                value={bio}
-                                onChange={event => { setBio(event.target.value); }}
-                            />
-                        </div>
-                        <input className="submitBtn" value="submit" type="submit" />
-                        <input className="submitBtn" value="Edit" type="submit" />
-                    </div>
+                        <label htmlFor="username-input" className="labels" type="text">Username</label> <br />
+                        <input 
+                            id="username-input"
+                            htmlFor="username-input"
+                            className="inputs"
+                            value={username}
+                            placeholder="Your Username"
+                            type="text" 
+                            onChange={event => { setUserName(event.target.value); }}
+                            disabled={true}
+                        />
+                        
+                        <label htmlFor="user-email" className="labels" type="text">Email</label><br />
+                        <input 
+                            id="user-email" 
+                            className="inputs"
+                            placeholder="Your email...." type="text"
+                            value={email}
+                            onChange={event => { setEmail(event.target.value); }}
+                            disabled={true}
+                        />
+                        
+                        <label htmlFor="user-password" className="labels" type="text">Change Password</label><br />
+                        <input 
+                            id="user-Password" 
+                            className="inputs"
+                            placeholder="" type="password"
+                            value={password}
+                            onChange={event => { setPassword(event.target.value); }}
+                            disabled={true}
+                        />
+        
+                        <label value="Name" type="text">Bio</label><br />
+                        <textarea 
+                            htmlFor="userBio"
+                            placeholder="Enter your bio here...."
+                            type="text" rows="10" cols="20"
+                            id="userBio" 
+                            value={bio}
+                            onChange={event => { setBio(event.target.value); }}
+                            disabled={true}
+                        />
+        
+                        <input id="update-profile"className="submitBtn" value="submit" type="submit" disabled={true}/>
+                        <input type="checkbox" className="submitBtn" value="Edit" disabled={false} onClick={toggleEdit}/>
                 </form>
 
                 
