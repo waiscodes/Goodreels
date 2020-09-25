@@ -2,7 +2,11 @@ import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { updateClickedMovie } from "../actions/aActiveUser";
+<<<<<<< HEAD
 import { avgRating } from '../utilities/avgRating';
+=======
+import "../css/MovieCard.css";
+>>>>>>> 53ec10eade8cda3264fd3334c6400edf35f6a3d3
 
 // Props Required: movieId
 
@@ -19,7 +23,7 @@ const MovieCard = (props) => {
   averageRating = avgRating(thisMovie.movieId, props.reviews);
 
   const passInId = (e) => {
-    props.dispatch(updateClickedMovie(thisMovie.id)); 
+    props.dispatch(updateClickedMovie(thisMovie.id));
   };
 
   const
@@ -30,7 +34,7 @@ const MovieCard = (props) => {
   return (
     <>
       <Link to="/Movie" onClick={passInId}>
-        <div>
+        <div className="movie-card">
           <h2>{thisMovie.title}</h2>
           <p>{thisMovie.year}</p>
           <img src={require(`../img/${thisMovie.image}`)} alt="" />
@@ -41,6 +45,10 @@ const MovieCard = (props) => {
 };
 export default connect((state) => ({
   movies: state.movies,
+<<<<<<< HEAD
   reviews: state.reviews,
   state: state
+=======
+  state: state,
+>>>>>>> 53ec10eade8cda3264fd3334c6400edf35f6a3d3
 }))(MovieCard);

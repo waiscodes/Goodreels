@@ -7,9 +7,6 @@ import { Redirect } from "react-router-dom";
 import { render } from "@testing-library/react";
 
 const SignIn = (props) => {
-
-  
-
   const SumbitEvent = (e) => {
     e.preventDefault();
 
@@ -19,16 +16,12 @@ const SignIn = (props) => {
 
     props.dispatch(createProfile(usrUsername, usrEmail, usrPassword));
     props.dispatch(logInUser(usrUsername));
-    
-    
   };
-  if (props.activeUser.username === undefined)
-  {
+  if (props.activeUser.username === undefined) {
     return (
       <>
-      
         <form onSubmit={SumbitEvent}>
-          <h2>Signup</h2>
+          <h2>Sign Up</h2>
           <label htmlFor="email" className="screen-reader-text">
             Email
           </label>
@@ -64,18 +57,11 @@ const SignIn = (props) => {
 
           <input type="submit" value="Sumbit" />
         </form>
-
-
-        
-        
-        
       </>
     );
-  }
-  else return (
-    <Redirect to="/Browse" />
-  );
-  
-
+  } else return <Redirect to="/Browse" />;
 };
-export default connect((state) => ({ state: state, activeUser: state.activeUser }))(SignIn);
+export default connect((state) => ({
+  state: state,
+  activeUser: state.activeUser,
+}))(SignIn);
