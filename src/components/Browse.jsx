@@ -37,6 +37,7 @@ const Browse = (props) => {
             </>
         );
     }
-  } else return <Redirect to="/" />;
+    else return <Redirect to="/" />
 };
+
 export default connect((state) => ({ activeUser: state.activeUser }))(Browse);
