@@ -28,11 +28,9 @@ const MovieCard = (props) => {
       <Link to="/Movie" onClick={passInId}>
         <div className="movie-card">
           <div className="card-title">
-            <h2>{thisMovie.title}</h2>
-          </div>
-
-          <div className="card-year">
-            <p>{thisMovie.year}</p>
+            <p>
+              <strong>{thisMovie.title}</strong> ({thisMovie.year})
+            </p>
           </div>
 
           <div className="card-poster">
