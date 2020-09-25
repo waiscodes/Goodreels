@@ -2,11 +2,8 @@ import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { updateClickedMovie } from "../actions/aActiveUser";
-<<<<<<< HEAD
 import { avgRating } from '../utilities/avgRating';
-=======
 import "../css/MovieCard.css";
->>>>>>> 53ec10eade8cda3264fd3334c6400edf35f6a3d3
 
 // Props Required: movieId
 
@@ -45,10 +42,6 @@ const MovieCard = (props) => {
 };
 export default connect((state) => ({
   movies: state.movies,
-<<<<<<< HEAD
   reviews: state.reviews,
   state: state
-=======
-  state: state,
->>>>>>> 53ec10eade8cda3264fd3334c6400edf35f6a3d3
 }))(MovieCard);
