@@ -20,6 +20,14 @@ body {
   word-wrap: normal !important;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
 /*====================
 Header
 =====================*/
