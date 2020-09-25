@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { updateClickedMovie } from "../actions/aActiveUser";
 import { avgRating } from '../utilities/avgRating';
+import { getRatingClass } from '../utilities/getRatingClass'
 import "../css/MovieCard.css";
 
 // Props Required: movieId
@@ -10,6 +11,7 @@ import "../css/MovieCard.css";
 const MovieCard = (props) => {
   let thisMovie = {};
   let averageRating;
+  let colorClass;
 
   for (let movie of props.movies) {
     if (movie.id === props.movieId) {
@@ -17,11 +19,17 @@ const MovieCard = (props) => {
     }
   }
 
-  averageRating = avgRating(thisMovie.movieId, props.reviews);
+
 
   const passInId = (e) => {
     props.dispatch(updateClickedMovie(thisMovie.id));
   };
+
+  averageRating = avgRating(thisMovie.id, props.reviews);
+  colorClass = getRatingClass(averageRating);
+
+
+
 
   
 
@@ -30,7 +38,7 @@ const MovieCard = (props) => {
 
   return (
     <>
-      <Link to="/Movie" onClick={passInId}>
+      <Link to="/Movie" onClick={passInId} className={colorClass}>
         <div className="movie-card">
           <h2>{thisMovie.title}</h2>
           <p>{thisMovie.year}</p>
