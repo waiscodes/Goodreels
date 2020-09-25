@@ -1,0 +1,8 @@
+.movie-card {
+  border: solid;
+  width: 48%;
+}
+
+.movie-card img {
+  width: 100%;
+}
