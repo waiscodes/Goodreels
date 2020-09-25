@@ -1,0 +1,59 @@
+[
+    {
+        "id": "01",
+        "movieId": "catch",
+        "username": "Adolf", 
+        "rating": "8",
+        "review": "It was very good, I swear."
+    },
+    {
+        "id": "02",
+        "movieId": "catch",
+        "username": "Eboka", 
+        "rating": "7",
+        "review": "I agree with Adolf, it was pretty awesome"
+    },
+    {
+        "id": "03",
+        "movieId": "shawshank",
+        "username": "Eboka", 
+        "rating": "7",
+        "review": "Overrated, depressing"
+    },
+    {
+        "id": "04",
+        "movieId": "ironman",
+        "username": "Hitesh",  
+        "rating": "10",
+        "review": "My favorite Movie"
+    },
+    {
+        "id": "05",
+        "movieId": "catch",
+        "username": "Ummer",  
+        "rating": "10",
+        "review": "Guys, this is absolutely a 10, my favorite movie."
+    },
+    {
+        "id": "06",
+        "movieId": "ironman",
+        "username": "Ummer",  
+        "rating": "1",
+        "review": "Nice."
+    },
+    {
+        "id": "07",
+        "movieId": "coriolanus",
+        "username": "Ummer",  
+        "rating": "1",
+        "review": "How can this movie be good? No one has seen it yet"
+    },
+    {
+        "id": "08",
+        "movieId": "coriolanus",
+        "username": "Ummer",  
+        "rating": "9",
+        "review": "Maybe I was wrong, maybe it will be great."
+    }
+    
+]

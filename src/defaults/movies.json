@@ -1,0 +1,43 @@
+[
+    
+        {
+            "id": "catch",
+            "title": "Catch Me If You Can",
+            "year": "2002",
+            "genre": "Crime",
+            "image":"catchmeifyoucan.jpg",
+            "synopsis": "Guy prints fake money, on the run the whole time."
+        },
+        {
+            "id": "shawshank",
+            "title": "Shawshank Redemption",
+            "year": "1994",
+            "genre": "Crime",
+            "image": "shawshankredemption.jpg",
+            "synopsis": "Are you gonna stay in prison if you're innocent? Or are you?"
+        },
+        {
+            "id": "ironman",
+            "title": "Iron Man",
+            "year": "2008",
+            "genre": "Action",
+            "image": "ironman.jpg",
+            "synopsis": "Rich guy builds himself an expensive toy."
+        },
+        {
+            "id": "deadpoets",
+            "title": "Dead Poets Society",
+            "year": "1989",
+            "genre": "Comedy",
+            "image": "deadpoetssociety.jpg",
+            "synopsis": "Something about poetry."
+        },
+        {
+            "id": "coriolanus",
+            "title": "Coriolanus",
+            "year": "2011",
+            "genre": "Thriller",
+            "image": "coriolanus.jpg",
+            "synopsis": "People are hungry, protagonist says no more, gets pretty bloody."
+        }
+    ]       

@@ -23,7 +23,6 @@ import UserProfile from "./components/UserProfile";
 import Recommended from "./components/Recommended";
 import Browse from "./components/Browse";
 import Movie from "./components/Movie";
-import DefaultStore from './components/DefaultStore';
 
 
 
@@ -55,12 +54,11 @@ ReactDOM.render(
               <Router>
                   <Header />
                   <main>
-                    <DefaultStore />
                     <Route path="/" exact> <SignIn /> </Route>
                     <Route path="/Browse"> <Browse /> </Route>
                     <Route path="/Recommended"> <Recommended /> </Route>
                     <Route path="/UserProfile"> <UserProfile /> </Route>
-                    <Route path="/Movie"> <Movie movieId="placeholder" /> </Route>
+                    <Route path="/Movie"> <Movie /> </Route>
                   </main>
 
               </Router>
@@ -68,7 +66,8 @@ ReactDOM.render(
 
           <Footer />
 
-        </Provider>        
+      </Provider> 
+      
     </>
   </React.StrictMode>,
   document.getElementById("root")

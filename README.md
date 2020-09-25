@@ -35,6 +35,15 @@ Demonstrates the use of Redux to manage global states
 # Resources
 https://stackoverflow.com/questions/39999367/how-do-i-reference-a-local-image-in-react
 
+https://stackoverflow.com/questions/40344850/made-a-json-file-with-multiple-objects-with-a-simple-template
+
+https://www.w3schools.com/js/js_json_syntax.asp
+
+https://github.com/salsita/redux-form-actions/issues/2
+
+https://www.webtrickshome.com/faq/how-to-display-uploaded-image-in-html-using-javascript
+
+
 
 
 
