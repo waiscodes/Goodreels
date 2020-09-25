@@ -2,9 +2,21 @@
   width: 150px;
   border: solid;
   margin: 5%;
+  display: grid;
 }
 
-.movie-card img {
+.card-title {
+  width: 100%;
+}
+
+.card-year {
+  width: 100%;
+}
+
+.card-poster {
+  width: 100%;
+}
+.card-poster img {
   width: 100%;
 }
 
