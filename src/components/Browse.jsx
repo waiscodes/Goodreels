@@ -1,39 +1,43 @@
+
 import React from 'react';
 import ListReviews from './ListReviews';
 import ListMovies from './ListMovies';
 import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import '../css/Browse.css';
-import { setState } from 'react';
+import { useState } from 'react';
 
 
 const Browse = (props) => {
 
-
+    let [searchTerm, updateSearch] = useState('');
 
     if (props.activeUser.username !== undefined){
+
+        
 
         return (
             // Search, filter
             <>
                 <form onSubmit={event => { event.preventDefault(); }}>
-                    <label htmlFor="movie">Enter Movie name</label>
+                    <label htmlFor="movie-search" className="screen-reader-text">Enter Movie Name</label>
                     <input
-                        id="movie"
+                        id="movie-search"
                         type="search"
+                        onChange={e => updateSearch(e.target.value)}
+                        value={searchTerm}
+                        placeholder="Search Movie"
                     />
                 </form>
                 
-                <ListMovies />
+                <ListMovies searchTerm={searchTerm}/>
                 
 
 
             </>
         );
     }
-    else return (
-            <Redirect to="/" />
-    );
+    else return <Redirect to="/" />
+};
 
-}
-export default connect(state =>({activeUser: state.activeUser}))(Browse);
+export default connect((state) => ({ activeUser: state.activeUser }))(Browse);

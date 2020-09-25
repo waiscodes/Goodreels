@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import MovieCard from './MovieCard';
 
 
 const ListReviews = (props) => {
@@ -62,8 +63,11 @@ const ListReviews = (props) => {
                         // If the Movie ID passed from props matches in review, it will Pull the info
                         if (review.username === props.username){
                             return(
-                                <li key={review.id}> <strong>Your Rating: {review.rating}/10 : </strong>
-                                    {review.review}
+                                <li key={review.id}> 
+                                
+                                    <MovieCard movieId={review.movieId}/>
+                                    <strong>{review.rating}</strong>
+                                    
                                 </li>
                             );
                         }
