@@ -15,19 +15,19 @@ import { logInUser } from '../actions/aActiveUser';
 
 function UserProfile(props) {
     let thisUser;
-    for (const element of props.users) {
-        if (element.username === props.activeUser.username)  
-              thisUser = { ...element }; 
-            }  
+    for (let element of props.users) {
+        if (element.username === props.activeUser.username)
+            thisUser = { ...element };
+    }   
         
-    const [username, setUserName] = useState(thisUser.username);
-    const [email, setEmail] = useState(thisUser.email);
-    const [password, setPassword] = useState(thisUser.password);
-    //const [bio, setBio] = useState('');
-        const activeUser = props.activeUser.username;
-    //this below state needs to be fixed
+       let [username, setUserName] = useState(thisUser.username);
+        let [email, setEmail] = useState(thisUser.email);
+        let [password, setPassword] = useState(thisUser.password);
+        //const [bio, setBio] = useState('');
+        let activeUser = props.activeUser.username;
+        //this below state needs to be fixed
+    //username={props.activeUser.username}
     
-
     const handleSubmit = event => {
         event.preventDefault();
         
@@ -37,25 +37,11 @@ function UserProfile(props) {
         const usrPBio = document.querySelector("#userBio").value;
         //alert(`${ usrPBio }  ${ usrPUsername }  ${ usrPEmail }`);
 
-        
-        // type: "UPDATE_PROFILE",
-       // oldUsername,
-       // username,
-       // email,
-       // password,
-       // bio,
-        //image
-        
-
         props.dispatch(updateProfile(activeUser, usrPUsername, usrPEmail, usrPPassword, usrPBio));
-       // props.dispatch(logInUser(usrPUsername, usrPUsername, usrPEmail, usrPPassword, usrPBio));
-        
-
-    }
-        
-    
+        props.dispatch(logInUser(usrPUsername));
+        }
         const loadFile = function (event) {
-            const image = document.getElementById('output');
+        const image = document.getElementById('output');
             image.src = URL.createObjectURL(event.target.files[0]);
     
         }
@@ -67,10 +53,10 @@ function UserProfile(props) {
          
                 <form onSubmit={handleSubmit} >
                     <div >   
-                        <img src={Logo} alt="Avatar" className="avatar" /> <br />
+                        <img src={Logo} alt="Avatar" className="avatar" id ="output"/> <br />
                         <input type="file" accept="image/*" name="image" id="file" onChange={loadFile} className="upload-img" />
                         <p><label htmlFor="file" className="img-label">Upload Image</label></p>
-                        <p><img id="output" width="200" /></p>
+                        //<p><img id="output" width="200" /></p>
                         
                     </div>
                     <div className="container">
@@ -119,7 +105,7 @@ function UserProfile(props) {
                     </div>
                 </form>
                 <ul>
-                { <ListReviewgit s username={props.activeUser.username} />}
+                    <ListReviews/>
                 </ul>
             </div>
              
