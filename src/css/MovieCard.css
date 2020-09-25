@@ -1,8 +1,14 @@
 .movie-card {
-  border: solid;
   width: 48%;
 }
 
 .movie-card img {
   width: 100%;
 }
+
+/* 
+What's left to do
+    Change the size of the title
+    Change the colour of the title and header
+    Remove underline
+*/
