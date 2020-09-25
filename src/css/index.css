@@ -24,18 +24,29 @@ body {
 Header
 =====================*/
 header {
-  border: solid red;
+  border: solid red 1px;
+  max-width: 100%;
 }
 
+/* Logo Begins */
+
+header img {
+  max-width: 70%;
+}
+
+/* Nav Begins */
+
 nav {
-  border: darkblue solid;
+  border: darkblue solid 1px;
 }
 nav ul {
   display: flex;
   justify-content: space-evenly;
+  padding-right: 5%;
 }
 nav ul li {
   display: block;
+  list-style-type: none;
 }
 
 /*====================
