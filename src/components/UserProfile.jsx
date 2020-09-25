@@ -1,6 +1,6 @@
 
 import React,{useState} from 'react';
-import Logo from '../images/avatar2.png';
+import Logo from '../img/avatar2.png';
 import { updateProfile } from '../actions/aProfile';
 import ListReviews  from './ListReviews';
 import { connect } from 'react-redux';
