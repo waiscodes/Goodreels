@@ -1,5 +1,4 @@
 import React from "react";
-import ListReviews from "./ListReviews";
 import ListMovies from "./ListMovies";
 import { Redirect } from "react-router-dom";
 import { connect } from "react-redux";
