@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { updateClickedMovie } from "../actions/aActiveUser";
 import { avgRating } from '../utilities/avgRating';
+import { getRatingClass } from '../utilities/getRatingClass'
 import "../css/MovieCard.css";
 
 // Props Required: movieId
@@ -25,11 +26,8 @@ const MovieCard = (props) => {
   };
 
   averageRating = avgRating(thisMovie.id, props.reviews);
+  colorClass = getRatingClass(averageRating);
 
-  if (averageRating > 7)      colorClass = "high-rating";
-  else if (averageRating > 4) colorClass = "mid-rating";
-  else if (averageRating > 0) colorClass = "low-rating";
-  else colorClass = "no-rating";
 
 
 
