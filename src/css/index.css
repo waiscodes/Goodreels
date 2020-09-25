@@ -32,7 +32,7 @@ ul li {
 Header
 =====================*/
 header {
-  border: solid red 1px;
+ 
   max-width: 100%;
 }
 
@@ -45,16 +45,34 @@ header img {
 /* Nav Begins */
 
 nav {
-  border: darkblue solid 1px;
+  
+  background: rgb(44, 46, 51);
+  height: 5em;
+  
 }
 nav ul {
   display: flex;
   justify-content: space-evenly;
   padding-right: 5%;
+  background-color: rgb(44, 46, 51);
+  padding: 20px
 }
 nav ul li {
   display: block;
   list-style-type: none;
+  background-color: rgb(44, 46, 51);
+  
+}
+nav ul li a {
+  text-decoration: none;
+  background-color: rgb(44, 46, 51);
+  padding: 7px 15px 7px 15px;
+  border-radius: 10px;
+  color: white;
+
+}
+nav ul li a:hover{
+  background-color: rgb(117, 118, 122);
 }
 
 /*====================
