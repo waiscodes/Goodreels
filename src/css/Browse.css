@@ -11,3 +11,7 @@
 .main-section ul li {
   margin: 1%;
 }
+
+#movie-search {
+  width: 99%;
+}
