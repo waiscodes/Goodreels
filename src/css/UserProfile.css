@@ -9,7 +9,10 @@
   width: 150px;
 }
 label{
-  
+  margin: 20px auto -22px auto;
+  background-color: #180e0e;
+  width: 17.2em;
+  color: white
 }
 .profile-head{
     background-color: rgb(13, 15, 13);
@@ -27,10 +30,11 @@ label{
   box-sizing: border-box;
 }
 .inputs{
-    border-radius: 5px;
+    border-radius: ;
     width: 20em;
     height: 2em;
-    box-shadow: red 3px;
+    margin: 0 auto 0 auto;
+    
 }
 textarea{
     border-radius: 5px;
@@ -51,6 +55,6 @@ textarea{
 .submitBtn{
     background-color: rgb(11, 17, 17);
     color: white;
-    width: 10em;
+    width: 20em;
     height: 3em;
 }
