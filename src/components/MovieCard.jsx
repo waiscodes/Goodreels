@@ -23,7 +23,7 @@ const MovieCard = (props) => {
     props.dispatch(updateClickedMovie(thisMovie.id));
   };
 
-  const
+  
 
 
 
