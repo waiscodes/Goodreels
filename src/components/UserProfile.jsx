@@ -77,7 +77,8 @@ const UserProfile = (props) => {
 
     }
         
-    
+    //  Used this resource to come up with the idea, modified code to work in our app
+    //  https://www.webtrickshome.com/faq/how-to-display-uploaded-image-in-html-using-javascript
     const loadFile = function (event) {
         const image = document.getElementById('output');
         if (event.target.files[0] !== undefined)
