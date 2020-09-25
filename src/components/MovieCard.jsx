@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { updateClickedMovie } from "../actions/aActiveUser";
+import "../css/MovieCard.css";
 
 // Props Required: movieId
 
@@ -15,13 +16,13 @@ const MovieCard = (props) => {
   }
 
   const passInId = (e) => {
-    props.dispatch(updateClickedMovie(thisMovie.id)); 
+    props.dispatch(updateClickedMovie(thisMovie.id));
   };
 
   return (
     <>
       <Link to="/Movie" onClick={passInId}>
-        <div>
+        <div className="movie-card">
           <h2>{thisMovie.title}</h2>
           <p>{thisMovie.year}</p>
           <img src={require(`../img/${thisMovie.image}`)} alt="" />
@@ -32,5 +33,5 @@ const MovieCard = (props) => {
 };
 export default connect((state) => ({
   movies: state.movies,
-  state: state
+  state: state,
 }))(MovieCard);
