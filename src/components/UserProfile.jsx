@@ -98,14 +98,14 @@ const UserProfile = (props) => {
                 <h1 className="profile-head">User Profile</h1>
          
                 <form onSubmit={handleSubmit} >
-                    <div >  
+                      <header>
                          
                         <img src={Logo} alt="Avatar" className="avatar" alt="User Picture" /> <br />
                         <input type="file" accept="image/*" name="image" id="file" onChange={loadFile} className="upload-img" disabled={true} />
                         <p><label htmlFor="file" className="img-label">Upload Image</label></p>
                         <p><img id="output" width="200" /></p>
-                        
-                    </div>
+                        </header>    
+                   
                         <label htmlFor="username-input" className="labels" type="text">Username</label> <br />
                         <input 
                             id="username-input"

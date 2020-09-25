@@ -1,5 +1,6 @@
 *{
     text-align: center;
+    background: #f3eded;
     
     
 }
@@ -7,15 +8,18 @@
 .avatar{
   border-radius: 80px;
   width: 150px;
+  margin: 20px auto -25px auto;
 }
 label{
   margin: 20px auto -22px auto;
-  background-color: #180e0e;
+  background-color: #504a4a;
   width: 17.2em;
-  color: white
+  color: white;
+  border-radius: 5px 5px 0 0;
+  height: 1.7em;
 }
 .profile-head{
-    background-color: rgb(13, 15, 13);
+    background-color:#504a4a;
     margin: 0;
     padding:0;
     height: 5rem;
@@ -24,37 +28,62 @@ label{
 }
 .container{
     
-    width: 100%;
+  width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
+  
 }
 .inputs{
-    border-radius: ;
+   border-radius: 0 0 5px 5px;
     width: 20em;
     height: 2em;
     margin: 0 auto 0 auto;
     
 }
 textarea{
-    border-radius: 5px;
+    border-radius: 0 0 5px 5px;
     width: 20em; 
+    
 }
 .upload-img{
     display: none;
 }
 .img-label{
     cursor: pointer;
-    background: #180e0e;
+    background:#504a4a;
     border-style: solid;
     color: white;
     padding: 3px 10px;
     
     
+    
    }
 .submitBtn{
-    background-color: rgb(11, 17, 17);
+    background-color: #504a4a;
     color: white;
-    width: 20em;
+    width: 20.5em;
     height: 3em;
+    border-radius: 5px;
+}
+header{
+    margin:10px auto 1px auto;
+    
+}
+@media screen and (min-width: 800px){
+    label{
+        width: 25em;
+    }
+    .inputs{
+        width:29.5em
+    }
+    textarea{
+        width: 29.5em
+    }
+    .submitBtn{
+        display: inline-flex;
+        width: 15em;
+       padding-left: 80px; 
+       
+    }
 }
