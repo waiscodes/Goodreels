@@ -1,18 +1,33 @@
-.imginfo {
+.row1 {
   border: solid green;
   width: 100%;
   display: flex;
   flex-direction: row-reverse;
 }
 
-.imginfo .info {
+.row1 .info {
   border: solid;
   display: flex;
   flex-direction: column;
   justify-content: left;
 }
 
-.imginfo img {
+.row1 img {
   width: 50%;
   border: solid pink;
+}
+
+/* Row Two */
+.row2 {
+  border: solid gold;
+}
+
+/* Row Three */
+.add-review {
+  border: solid pink;
+}
+
+/* Row Four */
+.reviews-list {
+  border: steelblue solid;
 }

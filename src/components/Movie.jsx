@@ -33,7 +33,7 @@ const Movie = (props) => {
   if (props.activeUser.username !== undefined) {
     return (
       <>
-        <div className="imginfo">
+        <div className="row1">
           <div className="info">
             <h2>{thisMovie.title}</h2>
             <em>{thisMovie.year}</em>
@@ -48,10 +48,15 @@ const Movie = (props) => {
           />
         </div>
 
-        <p>{thisMovie.synopsis}</p>
+        <p className="row2">{thisMovie.synopsis}</p>
 
-        <AddReview />
-        <ListReviews movieId={thisMovie.id} />
+        <section className="add-review">
+          <AddReview />
+        </section>
+
+        <section className="reviews-list">
+          <ListReviews movieId={thisMovie.id} />
+        </section>
       </>
     );
   } else return <Redirect to="/" />;
