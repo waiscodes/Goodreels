@@ -7,7 +7,8 @@ import { Redirect } from "react-router-dom";
 import { render } from "@testing-library/react";
 
 const SignIn = (props) => {
-  const SumbitEvent = (e) => {
+
+  const sumbitEvent = (e) => {
     e.preventDefault();
 
     const usrEmail = document.querySelector("#email").value;
@@ -17,14 +18,15 @@ const SignIn = (props) => {
     props.dispatch(createProfile(usrUsername, usrEmail, usrPassword));
     props.dispatch(logInUser(usrUsername));
   };
+
   if (props.activeUser.username === undefined) {
     return (
       <>
-        <form onSubmit={SumbitEvent}>
+        <form onSubmit={sumbitEvent}>
           
           <label htmlFor="email" className="screen-reader-text">
             Email
-          </label><br></br>
+          </label>
           <input
             type="email"
             name="email"
@@ -32,7 +34,7 @@ const SignIn = (props) => {
             id="email"
             placeholder="Email"
             required
-          /> <br></br>
+          />
 
           <label htmlFor="username" className="screen-reader-text">
             Username
@@ -44,7 +46,7 @@ const SignIn = (props) => {
             id="username"
             placeholder="Username"
             required
-          /> <br></br>
+          />
 
           <label htmlFor="password" className="screen-reader-text">
             Password
@@ -56,7 +58,7 @@ const SignIn = (props) => {
             id="password"
             placeholder="Password"
             required
-          /> <br></br>
+          />
 
           <input type="submit" className="submitBtn" value="Submit" />
         </form>
