@@ -66,8 +66,13 @@ header {
   }
 }
 
+#review-list {
+  padding: 0px;
+}
+
 .p-reviews-section #review-list li {
   display: flex;
+  border: solid;
 }
 .p-reviews-section #review-list li strong {
   margin: 0 auto -20px auto;
@@ -82,3 +87,10 @@ header {
   margin-bottom: 20px;
 } 
 
+.p-review-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+}
