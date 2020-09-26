@@ -1,13 +1,12 @@
 import React from "react";
 import { connect } from "react-redux";
-import '../css/SignIn.css';
+import "../css/SignIn.css";
 import { createProfile } from "../actions/aProfile";
 import { logInUser } from "../actions/aActiveUser";
 import { Redirect } from "react-router-dom";
 import { render } from "@testing-library/react";
 
 const SignIn = (props) => {
-
   const sumbitEvent = (e) => {
     e.preventDefault();
 
@@ -23,19 +22,6 @@ const SignIn = (props) => {
     return (
       <>
         <form onSubmit={sumbitEvent}>
-          
-          <label htmlFor="email" className="screen-reader-text">
-            Email
-          </label>
-          <input
-            type="email"
-            name="email"
-            className="inputs"
-            id="email"
-            placeholder="Email"
-            required
-          />
-
           <label htmlFor="username" className="screen-reader-text">
             Username
           </label>
@@ -45,6 +31,18 @@ const SignIn = (props) => {
             className="inputs"
             id="username"
             placeholder="Username"
+            required
+          />
+
+          <label htmlFor="email" className="screen-reader-text">
+            Email
+          </label>
+          <input
+            type="email"
+            name="email"
+            className="inputs"
+            id="email"
+            placeholder="Email"
             required
           />
 
