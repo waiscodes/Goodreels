@@ -54,5 +54,7 @@ Footer
 =====================*/
 footer {
   vertical-align: bottom;
-  border: solid cyan;
+  bottom: 0;
+  position: relative;
+  text-align: center;
 }

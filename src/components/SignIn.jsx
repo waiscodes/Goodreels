@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import "../css/SignIn.css";
+import '../css/SignIn.css';
 import { createProfile } from "../actions/aProfile";
 import { logInUser } from "../actions/aActiveUser";
 import { Redirect } from "react-router-dom";
@@ -21,17 +21,18 @@ const SignIn = (props) => {
     return (
       <>
         <form onSubmit={SumbitEvent}>
-          <h2>Sign Up</h2>
+          
           <label htmlFor="email" className="screen-reader-text">
             Email
-          </label>
+          </label><br></br>
           <input
             type="email"
             name="email"
+            className="inputs"
             id="email"
             placeholder="Email"
             required
-          />
+          /> <br></br>
 
           <label htmlFor="username" className="screen-reader-text">
             Username
@@ -39,10 +40,11 @@ const SignIn = (props) => {
           <input
             type="text"
             name="username"
+            className="inputs"
             id="username"
             placeholder="Username"
             required
-          />
+          /> <br></br>
 
           <label htmlFor="password" className="screen-reader-text">
             Password
@@ -50,12 +52,13 @@ const SignIn = (props) => {
           <input
             type="password"
             name="password"
+            className="inputs"
             id="password"
             placeholder="Password"
             required
-          />
+          /> <br></br>
 
-          <input type="submit" value="Submit" />
+          <input type="submit" className="submitBtn" value="Submit" />
         </form>
       </>
     );
