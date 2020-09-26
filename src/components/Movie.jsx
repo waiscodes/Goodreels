@@ -54,7 +54,7 @@ const Movie = (props) => {
           <AddReview />
         </section>
 
-        <section className="reviews-list">
+        <section className="reviews-section">
           <ListReviews movieId={thisMovie.id} />
         </section>
       </>
