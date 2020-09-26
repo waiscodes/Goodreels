@@ -72,20 +72,8 @@ header {
 
 .p-reviews-section #review-list li {
   display: flex;
-  border: solid;
+  padding: 1%;
 }
-.p-reviews-section #review-list li strong {
-  margin: 0 auto -20px auto;
-  padding-bottom: 20px;
-  display: block;
-}
-.p-reviews-section #review-list li p {
-  display: grid;
-  grid-template-columns: minmax();
-}
-.p-reviews-section #review-list li img {
-  margin-bottom: 20px;
-} 
 
 .p-review-info {
   display: flex;
