@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import MovieCard from './MovieCard';
+import { removeReview } from '../actions/aReviews';
 
 
 const ListReviews = (props) => {
@@ -67,6 +68,8 @@ const ListReviews = (props) => {
                                 
                                     <MovieCard movieId={review.movieId}/>
                                     <strong>{review.rating}</strong>
+                                    <p>{review.review}</p>
+                                    <button onClick={e => props.dispatch(removeReview(review.id))}>Delete</button>
                                     
                                 </li>
                             );
