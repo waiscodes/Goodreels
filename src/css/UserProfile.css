@@ -66,18 +66,19 @@ header {
   }
 }
 
-#review-list li {
+.p-reviews-section #review-list li {
   display: flex;
 }
-#review-list li strong {
+.p-reviews-section #review-list li strong {
   margin: 0 auto -20px auto;
   padding-bottom: 20px;
   display: block;
 }
-#review-list li p {
+.p-reviews-section #review-list li p {
   display: grid;
   grid-template-columns: minmax();
 }
-#review-list li img {
+.p-reviews-section #review-list li img {
   margin-bottom: 20px;
-}
+} 
+
