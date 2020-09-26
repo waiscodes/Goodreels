@@ -154,9 +154,9 @@ const UserProfile = (props) => {
                         <input type="button" className="submitBtn" value="Edit" disabled={false} onClick={toggleEdit}/>
                 </form>
 
-                
-                 <ListReviews username={props.activeUser.username} />
-                
+                <section>
+                 <ListReviews  username={props.activeUser.username} />
+                 </section>
             </>
              
         );

@@ -26,14 +26,7 @@ label{
     color: white;
     
 }
-.container{
-    
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  
-}
+
 .inputs{
    border-radius: 0 0 5px 5px;
     width: 20em;
@@ -87,3 +80,18 @@ header{
        
     }
 }
+
+
+ 
+ #review-list li {
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     
+ }
+ #review-list li {
+     color: darkorange;
+ }
+ .rating{
+     display:block;
+ }

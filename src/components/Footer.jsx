@@ -9,7 +9,7 @@ const Footer = () => {
 
         <>
             <footer>
-                &copy; 2020; TECHCareers Project   
+                &copy; 2020 TECHCareers Project   
             </footer>
         </>
 

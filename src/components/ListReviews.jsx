@@ -66,8 +66,9 @@ const ListReviews = (props) => {
                                 <li key={review.id}> 
                                 
                                     <MovieCard movieId={review.movieId}/>
-                                    <strong>{review.rating}</strong>
-                                    
+                                    <strong>Rated: {review.rating}</strong>
+                                    <p>Review: {review.review}</p>
+
                                 </li>
                             );
                         }
