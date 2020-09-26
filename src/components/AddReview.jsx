@@ -8,14 +8,16 @@ const AddReview =  (props) =>
 {
     let alreadyReviewed = false;
     
-    const [review, setnewReview] = useState( '' );
-    const [rating, setnewRating] = useState( '' );
+    const [review, setNewReview] = useState( '' );
+    const [rating, setNewRating] = useState( '' );
 
+    // OnSubmit dispatch to store
     const newAddition = event => {
         event.preventDefault();
         props.dispatch( addReview(props.activeUser.clickedMovie, props.activeUser.username, rating, review)  );
     }
 
+    // Checks if user already reviewed movie
     for (const review of props.reviews)
     {
         if (review.username === props.activeUser.username && review.movieId === props.activeUser.clickedMovie)
@@ -25,15 +27,15 @@ const AddReview =  (props) =>
     else return (
 
         <>
-        <form onSubmit={newAddition}>
-            <label htmlFor="mreview">Your Review:</label>
+            <form onSubmit={newAddition}>
+                <label htmlFor="mreview">Your Review:</label>
                 <textarea id="mreview" placeholder="Start typing your review..." required
-                    onChange={e => { setnewReview( e.target.value ) } }
-                    value={review}/>
+                        onChange={e => { setNewReview( e.target.value ) } }
+                        value={review}/>
 
-            <label htmlFor="rating">Your rating:</label>
+                <label htmlFor="rating">Your rating:</label>
                 <select id="rating" required
-                    onChange={e => { setnewRating( e.target.value ) } }
+                    onChange={e => { setNewRating( e.target.value ) } }
                     value={rating}>
                     <option value="1">1</option>
                     <option value="2">2</option>

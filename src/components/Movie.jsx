@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import {avgRating} from '../utilities/avgRating';
 import {getRatingClass} from '../utilities/getRatingClass';
 import { Redirect } from 'react-router-dom';
+
 import '../css/Movie.css';
 
 
@@ -25,11 +26,11 @@ const Movie = (props) => {
             thisMovie = {...movie};
         }
 
-        // testing only
         if (!thisMovie) thisMovie = props.movies[props.movies.length-1];
 
     }
 
+    // Calculates average movie rating and assigns class based on it
     averageRating = avgRating(thisMovie.id, reviewsCopy);
     colorClass = getRatingClass(averageRating);
 
@@ -45,9 +46,6 @@ const Movie = (props) => {
                 <img src={require('../img/'+thisMovie.image)}alt="Movie Poster" className={colorClass} />
                 <p>{thisMovie.genre}</p>
                 <p>{thisMovie.synopsis}</p>
-                {
-                    
-                }
 
                 <AddReview />
                 <ListReviews movieId={thisMovie.id} />
@@ -55,8 +53,6 @@ const Movie = (props) => {
             </>
         );
     }
-    else return (
-        <Redirect to="/" />
-    );
+    else return <Redirect to="/" />
 }
 export default connect( state => ({movies: state.movies, reviews: state.reviews, activeUser: state.activeUser}) )(Movie);

@@ -6,9 +6,10 @@ const Header = () => {
   return (
     <>
       <header>
-        <img className="logo-image" src={logo} alt="Logo Image" />
-        <h1 className="screen-reader-text">Hi5 Interactive</h1>
+
+        <h1>Hi5 Interactive</h1>
         <Nav />
+
       </header>
     </>
   );
