@@ -48,7 +48,10 @@ const Movie = (props) => {
           />
         </div>
 
-        <p className="row2">{thisMovie.synopsis}</p>
+        <section className="synopsis">
+          <h2>Synopsis</h2>
+          <p>{thisMovie.synopsis}</p>
+        </section>
 
         <section className="add-review">
           <AddReview />
