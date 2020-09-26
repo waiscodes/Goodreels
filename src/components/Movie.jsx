@@ -38,6 +38,7 @@ const Movie = (props) => {
             <h2>{thisMovie.title}</h2>
             <em>{thisMovie.year}</em>
             <p id="rating">{averageRating}</p>
+            <p>{thisMovie.genre}</p>
           </div>
 
           <img
@@ -46,7 +47,7 @@ const Movie = (props) => {
             className={colorClass}
           />
         </div>
-        <p>{thisMovie.genre}</p>
+
         <p>{thisMovie.synopsis}</p>
 
         <AddReview />
