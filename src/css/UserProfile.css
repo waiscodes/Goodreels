@@ -86,12 +86,25 @@ header{
  #review-list li {
      display: flex;
      align-items: center;
-     justify-content: space-around;
+     
+    
+     
      
  }
- #review-list li {
-     color: darkorange;
- }
- .rating{
+ #review-list li strong {
+     margin:0 auto -20px auto;
+     padding-bottom: 20px;
      display:block;
  }
+ #review-list li p{
+     display: grid;
+     grid-template-columns: minmax();
+     
+     
+ }
+ #review-list li img{
+     margin-bottom: 20px;
+ }
+
+ 
+

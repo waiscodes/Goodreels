@@ -80,8 +80,9 @@ nav ul li a:hover{
 Footer
 =====================*/
 footer {
-  
+  background-color: rgb(42, 46, 42);
   bottom: 0;
   position: relative;
   text-align: center;
+  color: #ffffff
 }
