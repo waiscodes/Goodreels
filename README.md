@@ -43,6 +43,8 @@ https://github.com/salsita/redux-form-actions/issues/2
 
 https://www.webtrickshome.com/faq/how-to-display-uploaded-image-in-html-using-javascript
 
+https://www.w3schools.com/jsref/prop_node_nextsibling.asp
+
 
 
 
