@@ -68,7 +68,7 @@ const ListReviews = (props) => {
                                     <MovieCard movieId={review.movieId} />
 
                                     <div className="p-review-info">
-                                        <strong>{review.rating}</strong>
+                                        <strong>Rating: {review.rating}/10</strong>
                                         <p>{review.review}</p>
                                         <input type="checkbox" onClick={
 
