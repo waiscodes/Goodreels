@@ -81,11 +81,7 @@ Footer
 =====================*/
 footer {
   
- background: rgb(44, 46, 51);
- color: #ffffff;
- height: 2em;
- padding: 5px 0 0 0 ;
- position: absolute;
- width: 100vw;
- bottom: 0px ;
- }
+  bottom: 0;
+  position: relative;
+  text-align: center;
+}
