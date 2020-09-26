@@ -1,0 +1,18 @@
+.imginfo {
+  border: solid green;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.imginfo .info {
+  border: solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.imginfo img {
+  width: 50%;
+  border: solid pink;
+}
