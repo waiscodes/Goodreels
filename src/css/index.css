@@ -35,21 +35,12 @@ header {
  
   max-width: 100%;
 }
-
-/* Logo Begins */
-
-header img {
-  max-width: 70%;
-}
-
 /* Nav Begins */
 
 nav {
-  
   background: rgb(44, 46, 51);
-  height: 5em;
-  
 }
+
 nav ul {
   display: flex;
   justify-content: space-evenly;
@@ -57,20 +48,21 @@ nav ul {
   background-color: rgb(44, 46, 51);
   padding: 20px
 }
+
 nav ul li {
   display: block;
   list-style-type: none;
-  background-color: rgb(44, 46, 51);
-  
+  background-color: rgb(44, 46, 51);  
 }
+
 nav ul li a {
   text-decoration: none;
   background-color: rgb(44, 46, 51);
   padding: 7px 15px 7px 15px;
   border-radius: 10px;
   color: white;
-
 }
+
 nav ul li a:hover{
   background-color: rgb(117, 118, 122);
   box-shadow: inset 0 0 10px rgb(121, 206, 231);
