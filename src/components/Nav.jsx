@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
+import { logInUser } from '../actions/aActiveUser';
 
 const Nav = (props) => {
   if (props.activeUser.username !== undefined) {
@@ -16,6 +17,9 @@ const Nav = (props) => {
             </li>
             <li>
               <Link to="/UserProfile">Profile</Link>
+            </li>
+            <li>
+              <Link to="/" onClick={() => props.dispatch(logInUser(undefined))}>Logout</Link>
             </li>
           </ul>
         </nav>
