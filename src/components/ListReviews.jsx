@@ -36,8 +36,9 @@ const ListReviews = (props) => {
                         return (
                             <li key={review.id}>
                                 <strong>
-                                    {review.username} ({review.rating}/10):
+                                    {review.username}: {review.rating}/10
                                     </strong>
+                                <br />
                                 {review.review}
                             </li>
                         );
