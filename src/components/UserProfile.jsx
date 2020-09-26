@@ -150,7 +150,7 @@ const UserProfile = (props) => {
                             disabled={true}
                         />
         
-                        <input id="update-profile"className="submitBtn" value="submit" type="submit" disabled={true}/>
+                        <input id="update-profile"className="submitBtn" value="Submit" type="submit" disabled={true}/>
                         <input type="button" className="submitBtn" value="Edit" disabled={false} onClick={toggleEdit}/>
                 </form>
 
