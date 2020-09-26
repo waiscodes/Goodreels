@@ -1,19 +1,10 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-footer {
-  vertical-align: bottom;
 }
 
 .screen-reader-text {
@@ -27,4 +18,69 @@ footer {
   position: absolute;
   width: 1px;
   word-wrap: normal !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+/*====================
+Header
+=====================*/
+header {
+ 
+  max-width: 100%;
+}
+
+/* Logo Begins */
+
+header img {
+  max-width: 70%;
+}
+
+/* Nav Begins */
+
+nav {
+  
+  background: rgb(44, 46, 51);
+  height: 5em;
+  
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding-right: 5%;
+  background-color: rgb(44, 46, 51);
+  padding: 20px
+}
+nav ul li {
+  display: block;
+  list-style-type: none;
+  background-color: rgb(44, 46, 51);
+  
+}
+nav ul li a {
+  text-decoration: none;
+  background-color: rgb(44, 46, 51);
+  padding: 7px 15px 7px 15px;
+  border-radius: 10px;
+  color: white;
+
+}
+nav ul li a:hover{
+  background-color: rgb(117, 118, 122);
+}
+
+/*====================
+Footer
+=====================*/
+footer {
+  vertical-align: bottom;
+  bottom: 0;
+  position: relative;
+  text-align: center;
 }

@@ -30,7 +30,6 @@ const UserProfile = (props) => {
     let fileUrl = "";
     
     
-
     const handleSubmit = event => {
         event.preventDefault();
 
@@ -78,7 +77,8 @@ const UserProfile = (props) => {
 
     }
         
-    
+    //  Used this resource to come up with the idea, modified code to work in our app
+    //  https://www.webtrickshome.com/faq/how-to-display-uploaded-image-in-html-using-javascript
     const loadFile = function (event) {
         const image = document.getElementById('output');
         if (event.target.files[0] !== undefined)
@@ -99,14 +99,14 @@ const UserProfile = (props) => {
                 <h1 className="profile-head">User Profile</h1>
          
                 <form onSubmit={handleSubmit} >
-                    <div >  
-                         
-                        <img src={Logo} alt="Avatar" className="avatar" alt="User Picture"/> <br />
-                        <input type="file" accept="image/*" name="image" id="file" onChange={loadFile} className="upload-img" disabled={true} />
-                        <p><label htmlFor="file" className="img-label">Upload Image</label></p>
-                        <p><img id="output" width="200" /></p>
-                        
-                    </div>
+                      
+                        <div>
+                            <img src={Logo} alt="Avatar" className="avatar" alt="User Picture" /> <br />
+                            <input type="file" accept="image/*" name="image" id="file" onChange={loadFile} className="upload-img" disabled={true} />
+                            <p><label htmlFor="file" className="img-label">Upload Image</label></p>
+                            <p><img id="output" width="200" /></p>
+                        </div>    
+                   
                         <label htmlFor="username-input" className="labels" type="text">Username</label> <br />
                         <input 
                             id="username-input"
@@ -151,7 +151,7 @@ const UserProfile = (props) => {
                         />
         
                         <input id="update-profile"className="submitBtn" value="submit" type="submit" disabled={true}/>
-                        <input type="checkbox" className="submitBtn" value="Edit" disabled={false} onClick={toggleEdit}/>
+                        <input type="button" className="submitBtn" value="Edit" disabled={false} onClick={toggleEdit}/>
                 </form>
 
                 

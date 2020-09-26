@@ -41,6 +41,8 @@ https://www.w3schools.com/js/js_json_syntax.asp
 
 https://github.com/salsita/redux-form-actions/issues/2
 
+https://www.webtrickshome.com/faq/how-to-display-uploaded-image-in-html-using-javascript
+
 
 
 

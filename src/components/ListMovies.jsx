@@ -6,15 +6,36 @@ import { connect } from 'react-redux';
 const ListMovies = ( props ) => {
 
 
-    return (
+    if (props.searchTerm !== "" || props.searchTerm !== undefined){
 
-        <>
-        <ul>
-           {props.listMovies.map(  ( movie ) => <li key={movie.id}><MovieCard movieId={movie.id} /></li> ) }
-        </ul>
-        </>
+        return (
 
-    );
+            <>
+            <ul>
+                {props.listMovies.map(  ( movie ) => {
+                    
+                    if (movie.title.toLowerCase().includes(props.searchTerm.toLowerCase())){
+                        return <li key={movie.id}><MovieCard movieId={movie.id} /></li> 
+                    }
+                    
+                } ) }
+            </ul>
+            </>
+
+        );     
+
+    }
+    else 
+        return (
+
+            <>
+            <ul>
+            {props.listMovies.map(  ( movie ) => <li key={movie.id}><MovieCard movieId={movie.id} /></li> ) }
+            </ul>
+            </>
+
+        );
+
     
 }
 export default connect( state => ( { listMovies: state.movies } ) ) ( ListMovies );

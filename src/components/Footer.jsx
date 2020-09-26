@@ -9,11 +9,11 @@ const Footer = () => {
 
         <>
             <footer>
-                &copy; 2020; TECHCareers Project   
+                    &copy; Hi5 Interactive, 2020
             </footer>
         </>
 
     );
-    
+
 }
 export default Footer;

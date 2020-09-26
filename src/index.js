@@ -52,7 +52,7 @@ ReactDOM.render(
               
 
               <Router>
-                  <Header />
+                  <Header/>
                   <main>
                     <Route path="/" exact> <SignIn /> </Route>
                     <Route path="/Browse"> <Browse /> </Route>

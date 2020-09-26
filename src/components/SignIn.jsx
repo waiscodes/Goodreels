@@ -1,15 +1,12 @@
 import React from "react";
 import { connect } from "react-redux";
-import "../css/SignIn.css";
+import '../css/SignIn.css';
 import { createProfile } from "../actions/aProfile";
 import { logInUser } from "../actions/aActiveUser";
 import { Redirect } from "react-router-dom";
 import { render } from "@testing-library/react";
 
 const SignIn = (props) => {
-
-  
-
   const SumbitEvent = (e) => {
     e.preventDefault();
 
@@ -19,26 +16,23 @@ const SignIn = (props) => {
 
     props.dispatch(createProfile(usrUsername, usrEmail, usrPassword));
     props.dispatch(logInUser(usrUsername));
-    
-    
   };
-  if (props.activeUser.username === undefined)
-  {
+  if (props.activeUser.username === undefined) {
     return (
       <>
-      
         <form onSubmit={SumbitEvent}>
-          <h2>Signup</h2>
+          
           <label htmlFor="email" className="screen-reader-text">
             Email
-          </label>
+          </label><br></br>
           <input
             type="email"
             name="email"
+            className="inputs"
             id="email"
             placeholder="Email"
             required
-          />
+          /> <br></br>
 
           <label htmlFor="username" className="screen-reader-text">
             Username
@@ -46,10 +40,11 @@ const SignIn = (props) => {
           <input
             type="text"
             name="username"
+            className="inputs"
             id="username"
             placeholder="Username"
             required
-          />
+          /> <br></br>
 
           <label htmlFor="password" className="screen-reader-text">
             Password
@@ -57,25 +52,19 @@ const SignIn = (props) => {
           <input
             type="password"
             name="password"
+            className="inputs"
             id="password"
             placeholder="Password"
             required
-          />
+          /> <br></br>
 
-          <input type="submit" value="Sumbit" />
+          <input type="submit" className="submitBtn" value="Submit" />
         </form>
-
-
-        
-        
-        
       </>
     );
-  }
-  else return (
-    <Redirect to="/Browse" />
-  );
-  
-
+  } else return <Redirect to="/Browse" />;
 };
-export default connect((state) => ({ state: state, activeUser: state.activeUser }))(SignIn);
+export default connect((state) => ({
+  state: state,
+  activeUser: state.activeUser,
+}))(SignIn);
