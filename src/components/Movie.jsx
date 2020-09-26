@@ -5,6 +5,17 @@ import { connect } from 'react-redux';
 import {avgRating} from '../utilities/avgRating';
 import { Redirect } from 'react-router-dom';
 import '../css/Movie.css';
+import styled from 'styled-components';
+export const Grid = styled.div`
+
+`;
+export const Row = styled.div`
+    display: flex;
+`;
+
+export const Col = styled.div`
+    flex: ${(props) => props.size};
+`;
 
 
 
@@ -30,22 +41,30 @@ const Movie = (props) => {
     // Return HTML element with movie's info
     if (props.activeUser.username !== undefined){
         return (
-            <>
-
-                <h2>{thisMovie.title}</h2>
-                <em>{thisMovie.year}</em>
-                <div id="rating">{avgRating(thisMovie.id, reviewsCopy)}</div>
-                <img src={require('../img/'+thisMovie.image)}alt="Movie Poster" />
-                <p>{thisMovie.genre}</p>
-                <p>{thisMovie.synopsis}</p>
-                {
+        <>
+            <Grid>
+                <Row>
                     
-                }
-
-                <AddReview />
-                <ListReviews movieId={thisMovie.id} />
-                
-            </>
+                    <Col size={1} className="col1"><img src={require('../img/'+thisMovie.image)}alt="Movie Poster" className="poster" /></Col>
+                    <Col size={1} className="second" ><h2>{thisMovie.title}</h2>
+                                  <em>Release year: {thisMovie.year}</em>
+                                  <div id="rating">Average Rating: {avgRating(thisMovie.id, reviewsCopy)}</div>
+                                  <div className="genre">Movie Genre: {thisMovie.genre}</div></Col>
+                    
+                </Row>
+                <Row>                    
+                    <Col size={1}><p className="msynopsis">Synopsis: {thisMovie.synopsis}</p></Col>
+                </Row>
+                <Row>
+                    <Col size={1}><AddReview /></Col>
+                </Row>
+                <Row> 
+                    <Col size={1}><ListReviews className="listreviews" movieId={thisMovie.id} /></Col>
+                </Row>
+     
+            </Grid>
+        </ >
+        
         );
     }
     else return (
