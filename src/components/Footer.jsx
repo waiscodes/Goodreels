@@ -9,9 +9,7 @@ const Footer = () => {
 
         <>
             <footer>
-                <div class="footer">
-                    &copy; 2020 TECHCareers Project
-                </div>
+                    &copy; Hi5 Interactive, 2020
             </footer>
         </>
 
