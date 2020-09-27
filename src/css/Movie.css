@@ -1,5 +1,3 @@
-
-
 .row1 {
   width: 100%;
   display: flex;
@@ -7,8 +5,13 @@
   justify-content: flex-end;
 }
 
-.row1 .info {
-  border: pink;
+.row1 .info > *{
+  border: pink solid;
+  margin: 10px 0px;
+}
+.row1 .info h2 {
+  font-size: 1.3em;
+  font-weight: 500;
 }
 
 .row1 img {
@@ -21,17 +24,14 @@
 
 /* Row Two */
 .synopsis {
-padding: 1%;
+margin: 2%;
+}
+.synopsis h2 {
+  text-align: center;
 }
 
 
 /* Row Three */
-.add-review {
-  border: solid black;
-  height: fit-content;
-}
-
-/* Row Four */
 .reviews-section h2 {
   text-align: center;
 }
@@ -43,3 +43,17 @@ padding: 1%;
 .reviews-section {
   padding: 1%;
 }
+
+/* Row Four */
+.add-review {
+  border: solid;
+  margin: 2%;
+}
+
+.add-review form > * {
+  border: solid;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+

@@ -34,7 +34,11 @@ const ListReviews = (props) => {
                         // If the Movie ID passed from props matches in review, it will Pull the info
 
                         return (
-                            <li key={review.id}> <strong>{review.username} ({review.rating}/10) : </strong>
+                            <li key={review.id}>
+
+                                <strong>{review.username}: {review.rating}/10
+                                </strong>
+                                <br />
                                 {review.review}
                             </li>
                         );
