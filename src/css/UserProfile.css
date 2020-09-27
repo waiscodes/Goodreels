@@ -1,16 +1,15 @@
-*{
-    text-align: center;
-    background: #f3eded;
-    
-    
+.profile-form > * {
+  display: block;
+  text-align: center;
+  margin: auto;
 }
 
-.avatar{
+.avatar {
   border-radius: 80px;
   width: 150px;
   margin: 20px auto -25px auto;
 }
-label{
+label {
   margin: 20px auto -22px auto;
   background-color: #504a4a;
   width: 17.2em;
@@ -18,93 +17,79 @@ label{
   border-radius: 5px 5px 0 0;
   height: 1.7em;
 }
-.profile-head{
-    background-color:#504a4a;
-    margin: 0;
-    padding:0;
-    height: 5rem;
-    color: white;
-    
+.profile-head {
+  background-color: #504a4a;
+  margin: 0;
+  padding: 0;
+  height: 5rem;
+  color: white;
+  text-align: center;
 }
 
-.inputs{
-   border-radius: 0 0 5px 5px;
-    width: 20em;
-    height: 2em;
-    margin: 0 auto 0 auto;
-    
+.inputs {
+  border-radius: 0 0 5px 5px;
+  width: 20em;
+  height: 2em;
+  margin: 0 auto 0 auto;
 }
-textarea{
-    border-radius: 0 0 5px 5px;
-    width: 20em; 
-    
+#userBio {
+  border-radius: 0 0 5px 5px;
+  width: 20em;
 }
-.upload-img{
-    display: none;
+.upload-img {
+  display: none;
 }
-.img-label{
-    cursor: pointer;
-    background:#504a4a;
-    border-style: solid;
-    color: white;
-    padding: 3px 10px;
-    
-    
-    
-   }
-.submitBtn{
-    background-color: #504a4a;
-    color: white;
-    width: 20.5em;
-    height: 3em;
-    border-radius: 5px;
+.img-label {
+  cursor: pointer;
+  background: #504a4a;
+  border-style: solid;
+  color: white;
+  padding: 3px 10px;
 }
-header{
-    margin:10px auto 1px auto;
-    
+.submitBtn {
+  background-color: #504a4a;
+  color: white;
+  width: 20.5em;
+  height: 3em;
+  border-radius: 5px;
 }
-@media screen and (min-width: 800px){
-    label{
-        width: 25em;
-    }
-    .inputs{
-        width:29.5em
-    }
-    textarea{
-        width: 29.5em
-    }
-    .submitBtn{
-        display: inline-flex;
-        width: 15em;
-       padding-left: 80px; 
-       
-    }
+header {
+  margin: 10px auto 1px auto;
+}
+@media screen and (min-width: 800px) {
+  label {
+    width: 25em;
+  }
+  .inputs {
+    width: 29.5em;
+  }
+  textarea {
+    width: 29.5em;
+  }
+  .submitBtn {
+    display: inline-flex;
+    width: 15em;
+    padding-left: 80px;
+  }
 }
 
+#review-list {
+  padding: 0px;
+}
+.p-reviews-section h2 {
+  text-align: center;
+}
 
- 
- #review-list li {
-     display: flex;
-     align-items: center;
-     
-    
-     
-     
- }
- #review-list li strong {
-     margin:0 auto -20px auto;
-     padding-bottom: 20px;
-     display:block;
- }
- #review-list li p{
-     display: grid;
-     grid-template-columns: minmax();
-     
-     
- }
- #review-list li img{
-     margin-bottom: 20px;
- }
+.p-reviews-section #review-list li {
+  display: flex;
+  padding: 1%;
+}
 
- 
+.p-review-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1%;
+}
 

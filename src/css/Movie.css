@@ -1,0 +1,43 @@
+.row1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.row1 .info {
+  border: pink;
+}
+
+.row1 img {
+  width: 40%;
+}
+
+.row1 > * {
+  padding: 1%;
+}
+
+/* Row Two */
+.synopsis {
+padding: 1%;
+}
+
+
+/* Row Three */
+.add-review {
+  border: solid black;
+  height: fit-content;
+}
+
+/* Row Four */
+.reviews-section h2 {
+  text-align: center;
+}
+
+.reviews-section li {
+  padding: 5px;
+}
+
+.reviews-section {
+  padding: 1%;
+}
