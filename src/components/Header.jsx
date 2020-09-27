@@ -7,7 +7,7 @@ const Header = () => {
     <>
       <header>
 
-        <h1>Hi5 Interactive</h1>
+        <h1 className="logo">good<strong className="logo-reels">reels</strong></h1>
         <Nav />
 
       </header>

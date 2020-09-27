@@ -1,3 +1,7 @@
+* {
+  margin: 0px;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -5,6 +9,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #f3eded;
+
 }
 
 .screen-reader-text {
@@ -18,10 +24,6 @@ body {
   position: absolute;
   width: 1px;
   word-wrap: normal !important;
-}
-
-* {
-  background: #f3eded;
 }
 
 a {
@@ -38,6 +40,25 @@ Header
 header {
   max-width: 100%;
   text-align: center;
+  background-color: rgb(44, 46, 51);
+  border: solid green;
+  margin-top: 20px;
+}
+
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 0 1px #CED4E2;
+  color: #FFFFFF;
+  font-weight: 100;
+  letter-spacing: -3px;
+  background: transparent;
+  border: solid pink;
+}
+.logo-reels{
+  color: #E4C150;
+  font-weight: 400;
+  background-color: rgb(44, 46, 51);
+
 }
 /* Nav Begins */
 
@@ -50,7 +71,8 @@ nav ul {
   justify-content: space-evenly;
   padding-right: 5%;
   background-color: rgb(44, 46, 51);
-  padding: 20px;
+  padding: 10px;
+  border: solid;
 }
 
 nav ul li {
@@ -72,6 +94,19 @@ nav ul li a:hover {
   background-color: rgb(117, 118, 122);
   box-shadow: inset 0 0 10px rgb(121, 206, 231);
 }
+
+@media screen and (min-width: 800px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo {
+    padding: 0px 5% 0px 5%;
+  }
+  nav {
+    width: 50%;
+  }
+} 
 
 /*====================
 Footer
