@@ -143,5 +143,61 @@
      "genre": "Action/Comedy",
      "image": "truelies.jpg",
      "synopsis": "True Lies is a 1994 American action comedy film written and directed by James Cameron. It was executive produced by Lawrence Kasanoff and stars Arnold Schwarzenegger, Jamie Lee Curtis, Tom Arnold, Art Malik, Tia Carrere, Bill Paxton, Eliza Dushku, Grant Heslov and Charlton Heston. It is based on the 1991 French comedy film La Totale![4] The film follows U.S. government agent Harry Tasker (Schwarzenegger), who struggles to balance his life as a spy with his familial duties"  
- }
+ },
+ {
+  "id": "13hours",
+  "title": "13 Hours",
+  "year": "2016",
+  "genre": "Action",
+  "image": "13hrs.jpg",
+  "synopsis": "13 Hours: The Secret Soldiers of Benghazi (also known simply as 13 Hours) is a 2016 American action thriller film[3][4][5] directed and produced by Michael Bay and written by Chuck Hogan, based on Mitchell Zuckoff's 2014 book of the same name. The film follows six members of Annex Security Team who fought to defend the American diplomatic compound in Benghazi, Libya after waves of attacks by militants on September 11, 2012. The film stars James Badge Dale, John Krasinski, and Max Martini, with supporting roles by Toby Stephens, Dominic Fumusa, Pablo Schreiber, Alexia Barlier, David Denman, and David Costabile."  
+},
+{
+ "id": "sourcecode",
+ "title": "Source Code",
+ "year": "2011",
+ "genre": "Sci-Fi/Thriller",
+ "image": "sc.jpg",
+ "synopsis": "Source Code is a 2011 American science fiction action thriller film[4][5] directed by Duncan Jones and written by Ben Ripley. It stars Jake Gyllenhaal as a U.S. Army captain who is sent into a computed reality to find a bomber. Michelle Monaghan, Vera Farmiga, and Jeffrey Wright play supporting roles. The film had its world premiere on March 11, 2011 at South by Southwest[6] and was released by Summit Entertainment on April 1, 2011 in North America and Europe."  
+},
+{
+ "id": "paycheck",
+ "title": "Paycheck",
+ "year": "2003",
+ "genre": "Sci-Fi/Thriller",
+ "image": "pay.jpg",
+ "synopsis": "Paycheck is a 2003 American science fiction action film based on the 1953 short story of the same name by science fiction writer Philip K. Dick.In the near future, Michael Jennings is a reverse engineer; he analyzes his clients' competitors' technology and recreates it with improvements. To protect his clients' intellectual property and himself, Jennings undergoes memory wipe to remove knowledge of his engineering with aid of his friend Shorty."  
+},
+{
+ "id": "mrsmith",
+ "title": "Mr. & Mrs. Smith",
+ "year": "2005",
+ "genre": "Action/Comedy",
+ "image": "mrsmith.jpg",
+ "synopsis": "Mr. & Mrs. Smith is a 2005 American action comedy film[1] directed by Doug Liman and written by Simon Kinberg. The film stars Brad Pitt and Angelina Jolie as a bored upper middle class married couple surprised to learn that they are assassins belonging to competing agencies, and that they have been assigned to kill each other."  
+},
+{
+ "id": "savingprivateryan",
+ "title": "Saving Private Ryan",
+ "year": "1998",
+ "genre": "Action/War",
+ "image": "spr.jpg",
+ "synopsis": "Captain John Miller (Tom Hanks) takes his men behind enemy lines to find Private James Ryan, whose three brothers have been killed in combat. Surrounded by the brutal realties of war, while searching for Ryan, each man embarks upon a personal journey and discovers their own strength to triumph over an uncertain future with honor, decency and courage."  
+},
+{
+ "id": "click",
+ "title": "Click",
+ "year": "2006",
+ "genre": "Comedy/Drama",
+ "image": "click.jpg",
+ "synopsis": "Click is a 2006 American fantasy comedy-drama film[3] directed by Frank Coraci, written by Steve Koren and Mark O'Keefe, and produced by Adam Sandler, who also stars in the lead role. The film co-stars Kate Beckinsale as his wife Donna and Christopher Walken as Morty, an eccentric stranger. Sandler plays Michael Newman, an overworked architect who neglects his family. When he acquires a magical universal remote from Morty that enables him to fast forward through unpleasant or outright dull parts of his life, he soon learns that those seemingly bad moments that he skips over contained valuable time with his family and important life lessons. Throughout the story, Morty explains how the remote works and issues warnings."  
+},
+{
+ "id": "zohan",
+ "title": "You Don't Mess with the Zohan",
+ "year": "2008",
+ "genre": "Comedy/Action",
+ "image": "zohan.jpg",
+ "synopsis": "Click is a 2006 American fantasy comedy-drama film[3] directed by Frank Coraci, written by Steve Koren and Mark O'Keefe, and produced by Adam Sandler, who also stars in the lead role. The film co-stars Kate Beckinsale as his wife Donna and Christopher Walken as Morty, an eccentric stranger. Sandler plays Michael Newman, an overworked architect who neglects his family. When he acquires a magical universal remote from Morty that enables him to fast forward through unpleasant or outright dull parts of his life, he soon learns that those seemingly bad moments that he skips over contained valuable time with his family and important life lessons. Throughout the story, Morty explains how the remote works and issues warnings."  
+}
 ]
