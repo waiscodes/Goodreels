@@ -108,4 +108,16 @@
 
 .delete-buttons .checkbox {
   height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.delete-buttons button {
+  border: solid;
+  background-color: #504a4a;
+  color: white;
+  padding: 7px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: block;
 }
