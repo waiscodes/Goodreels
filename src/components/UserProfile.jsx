@@ -154,7 +154,6 @@ const UserProfile = (props) => {
                 </form>
 
                 <section className="p-reviews-section">
-                    <h2>Your reviews</h2>
                     <ListReviews username={props.activeUser.username} />
                 </section>
             </>
