@@ -6,19 +6,20 @@ import { removeReview } from '../actions/aReviews';
 
 const ListReviews = (props) => {
 
-
+    
 
 
     // If Movie id is passed, list reviews for given movie
-    if (props.movieId !== undefined) {
-
+    if (props.movieId !== undefined){
+        
         let sortedReviews = [];
 
-        for (const review of props.reviews) {
-            if (review.movieId === props.movieId) {
-
-                if (review.username === props.activeUser.username) {
-                    sortedReviews.splice(0, 0, review)
+        for (const review of props.reviews){
+            if (review.movieId === props.movieId)
+            {
+                
+                if (review.username === props.activeUser.username){
+                    sortedReviews.splice(0,0,review)
                 }
                 else sortedReviews.push(review);
             }
@@ -27,65 +28,78 @@ const ListReviews = (props) => {
         return (
 
             <>
+                <h2>Reviews</h2>
                 <ul id="review-list">
-                    {sortedReviews.map(review => {
+                    {sortedReviews.map( review => {
 
                         // If the Movie ID passed from props matches in review, it will Pull the info
-
-                        return (
-                            <li key={review.id}>
-                                <strong>
-                                    {review.username}: {review.rating}/10
-                                    </strong>
-                                <br />
-                                {review.review}
-                            </li>
-                        );
+                        
+                            return(
+                                <li key={review.id}> <strong>{review.username} ({review.rating}/10) : </strong>
+                                    {review.review}
+                                </li>
+                            );
 
                     })}
                 </ul>
             </>
-
+    
         );
     }
 
     // If username is passed, list reviews for given user
-    else if (props.username !== undefined) {
+    else if (props.username !== undefined){
 
 
-
+ 
         return (
 
             <>
+                <h2>Your Reviews</h2>
                 <ul id="review-list">
-                    {props.reviews.map(review => {
+                    {props.reviews.map( review => {
 
                         // If the Movie ID passed from props matches in review, it will Pull the info
-                        if (review.username === props.username) {
-                            return (
-                                <li key={review.id}>
+                        if (review.username === props.username){
+                            return(
+                                <li key={review.id}> 
+                                
+                                    <MovieCard movieId={review.movieId}/>
+                                    <strong>{review.rating}</strong>
+                                    <p>{review.review}</p>
+                                    <input type="checkbox" onClick={
 
-                                    <MovieCard movieId={review.movieId} />
+                                            e => { 
+                                                
+                                                    // Had to addEventListener when checkbox is checked, because buttons disabled by default are not allowed to have active event listeners
+                                                    // For example enabled button  onClick would work, disabled button onClick wouldn't work even after enabling the button.
+                                                    
+                                                    const deleteReview = () =>{
+                                                        props.dispatch(removeReview(review.id))
+                                                    }
 
-                                    <div className="p-review-info">
-                                        <strong>Rating: {review.rating}/10</strong>
-                                        <p>{review.review}</p>
-                                        <button type="button" className="delete-review-button" onClick={props.dispatch(removeReview(review.id))}>Delete</button>
-                                    </div>
+                                                    console.log(e.target);
+                                                    e.target.nextSibling.disabled = !e.target.nextSibling.disabled;
+                                                    e.target.nextSibling.addEventListener("click", deleteReview);
+                                                }
 
+                                    } />
 
+                                    
+                                    <button type="button" className="delete-review-button" disabled={true}>Delete</button>
+                                    
                                 </li>
                             );
                         }
                         else
-                            return "";
+                        return "";
 
                     })}
                 </ul>
             </>
-
+    
         );
     }
 
 }
-export default connect(state => ({ reviews: state.reviews, activeUser: state.activeUser }))(ListReviews);
+export default connect (state => ({reviews: state.reviews, activeUser: state.activeUser}) )(ListReviews);
