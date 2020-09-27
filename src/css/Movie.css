@@ -10,17 +10,23 @@
 }
 
 .row1 img {
-  width: 50%;
+  width: 40%;
+}
+
+.row1 > * {
+  padding: 1%;
 }
 
 /* Row Two */
-.synposis {
-  border: solid gold;
+.synopsis {
+padding: 1%;
 }
+
 
 /* Row Three */
 .add-review {
-  border: solid pink;
+  border: solid black;
+  height: fit-content;
 }
 
 /* Row Four */
@@ -28,6 +34,10 @@
   text-align: center;
 }
 
-.reviews-list li {
-  border: solid;
+.reviews-section li {
+  padding: 5px;
+}
+
+.reviews-section {
+  padding: 1%;
 }
