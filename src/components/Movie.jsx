@@ -36,9 +36,9 @@ const Movie = (props) => {
         <div className="row1">
           <div className="info">
             <h2>{thisMovie.title}</h2>
-            <em>Year: {thisMovie.year}</em>
-            <p id="rating">Average Rating: {averageRating}</p>
-            <p>Genre: {thisMovie.genre}</p>
+            <p><strong>Year: </strong><em>{thisMovie.year}</em></p>
+            <p id="rating"><strong>Average Rating: </strong>{averageRating}</p>
+            <p><strong>Genre: </strong>{thisMovie.genre}</p>
           </div>
 
           <img
