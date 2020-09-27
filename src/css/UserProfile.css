@@ -1,3 +1,9 @@
+.profile-form > * {
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
 .avatar {
   border-radius: 80px;
   width: 150px;
@@ -26,7 +32,7 @@ label {
   height: 2em;
   margin: 0 auto 0 auto;
 }
-textarea {
+#userBio {
   border-radius: 0 0 5px 5px;
   width: 20em;
 }

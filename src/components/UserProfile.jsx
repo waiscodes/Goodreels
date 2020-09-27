@@ -97,7 +97,7 @@ const UserProfile = (props) => {
             <>
                 <h1 className="screen-reader-text">User Profile</h1>
 
-                <form onSubmit={handleSubmit} >
+                <form className="profile-form" onSubmit={handleSubmit} >
 
                     <div>
                         <img src={Logo} alt="Avatar" className="avatar" alt="User Picture" /> <br />
