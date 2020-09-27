@@ -1,29 +1,20 @@
-*{
-  text-align: center;
-  background: #f3eded;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-form > * {
+.signup-form > * {
   display: block;
   text-align: center;
   margin: auto;
 }
 
-.inputs{
+.inputs {
   border-radius: 0 0 5px 5px;
-   width: 10em;
-   height: 1em;
-   margin: 0 auto 0 auto;
-   padding: 5px;
+  width: 10em;
+  height: 1em;
+  margin: 0 auto 0 auto;
+  padding: 5px;
 }
-.submitBtn{
+.submitBtn {
   background-color: gray;
   color: white;
   width: 20.5em;
   height: 3em;
   border-radius: 5px;
 }
-
-
-
