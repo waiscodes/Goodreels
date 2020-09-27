@@ -70,6 +70,9 @@ header {
 #review-list {
   padding: 0px;
 }
+.p-reviews-section h2 {
+  text-align: center;
+}
 
 .p-reviews-section #review-list li {
   display: flex;

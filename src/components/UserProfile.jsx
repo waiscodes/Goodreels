@@ -95,70 +95,68 @@ const UserProfile = (props) => {
         return (
 
             <>
+                <h1 className="screen-reader-text">User Profile</h1>
 
-                <div className="profile-container">
-                    <h2 className="screen-reader-text">User Profile</h2>
+                <form onSubmit={handleSubmit} >
 
-                    <form onSubmit={handleSubmit} >
+                    <div>
+                        <img src={Logo} alt="Avatar" className="avatar" alt="User Picture" /> <br />
+                        <input type="file" accept="image/*" name="image" id="file" onChange={loadFile} className="upload-img" disabled={true} />
+                        <p><label htmlFor="file" className="img-label">Upload Image</label></p>
+                        <p><img id="output" width="200" /></p>
+                    </div>
 
-                        <div>
-                            <img src={Logo} alt="Avatar" className="avatar" alt="User Picture" /> <br />
-                            <input type="file" accept="image/*" name="image" id="file" onChange={loadFile} className="upload-img" disabled={true} />
-                            <p><label htmlFor="file" className="img-label">Upload Image</label></p>
-                            <p><img id="output" width="200" /></p>
-                        </div>
+                    <label htmlFor="username-input" className="labels" type="text">Username</label> <br />
+                    <input
+                        id="username-input"
+                        htmlFor="username-input"
+                        className="inputs"
+                        value={username}
+                        placeholder="Your Username"
+                        type="text"
+                        onChange={event => { setUserName(event.target.value); }}
+                        disabled={true}
+                    />
 
-                        <label htmlFor="username-input" className="labels" type="text">Username</label> <br />
-                        <input
-                            id="username-input"
-                            htmlFor="username-input"
-                            className="inputs"
-                            value={username}
-                            placeholder="Your Username"
-                            type="text"
-                            onChange={event => { setUserName(event.target.value); }}
-                            disabled={true}
-                        />
+                    <label htmlFor="user-email" className="labels" type="text">Email</label><br />
+                    <input
+                        id="user-email"
+                        className="inputs"
+                        placeholder="Your email...." type="text"
+                        value={email}
+                        onChange={event => { setEmail(event.target.value); }}
+                        disabled={true}
+                    />
 
-                        <label htmlFor="user-email" className="labels" type="text">Email</label><br />
-                        <input
-                            id="user-email"
-                            className="inputs"
-                            placeholder="Your email...." type="text"
-                            value={email}
-                            onChange={event => { setEmail(event.target.value); }}
-                            disabled={true}
-                        />
+                    <label htmlFor="user-password" className="labels" type="text">Change Password</label><br />
+                    <input
+                        id="user-Password"
+                        className="inputs"
+                        placeholder="" type="password"
+                        value={password}
+                        onChange={event => { setPassword(event.target.value); }}
+                        disabled={true}
+                    />
 
-                        <label htmlFor="user-password" className="labels" type="text">Change Password</label><br />
-                        <input
-                            id="user-Password"
-                            className="inputs"
-                            placeholder="" type="password"
-                            value={password}
-                            onChange={event => { setPassword(event.target.value); }}
-                            disabled={true}
-                        />
+                    <label value="Name" type="text">Bio</label><br />
+                    <textarea
+                        htmlFor="userBio"
+                        placeholder="Enter your bio here...."
+                        type="text" rows="10" cols="20"
+                        id="userBio"
+                        value={bio}
+                        onChange={event => { setBio(event.target.value); }}
+                        disabled={true}
+                    />
 
-                        <label value="Name" type="text">Bio</label><br />
-                        <textarea
-                            htmlFor="userBio"
-                            placeholder="Enter your bio here...."
-                            type="text" rows="10" cols="20"
-                            id="userBio"
-                            value={bio}
-                            onChange={event => { setBio(event.target.value); }}
-                            disabled={true}
-                        />
+                    <input id="update-profile" className="submitBtn" value="Submit" type="submit" disabled={true} />
+                    <input type="button" className="submitBtn" value="Edit" disabled={false} onClick={toggleEdit} />
+                </form>
 
-                        <input id="update-profile" className="submitBtn" value="Submit" type="submit" disabled={true} />
-                        <input type="button" className="submitBtn" value="Edit" disabled={false} onClick={toggleEdit} />
-                    </form>
-
-                    <section className="p-reviews-section">
-                        <ListReviews username={props.activeUser.username} />
-                    </section>
-                </div>
+                <section className="p-reviews-section">
+                    <h2>Your Reviews</h2>
+                    <ListReviews username={props.activeUser.username} />
+                </section>
             </>
 
         );

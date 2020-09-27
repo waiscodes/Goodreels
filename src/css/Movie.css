@@ -24,8 +24,8 @@
 }
 
 /* Row Four */
-.reviews-section {
-  border: steelblue solid;
+.reviews-section h2 {
+  text-align: center;
 }
 
 .reviews-list li {
