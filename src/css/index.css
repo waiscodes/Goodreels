@@ -83,23 +83,4 @@ footer {
   color: #ffffff;
   text-align: center;
 }
-/*=====================
-Logo Bar
-======================*/
-.logo-good{
-  font-family: 'Poiret One', cursive;
- 
-  padding-left: 10px;
-  text-shadow: 0 1px #ced4e2;
-  padding: 20px;
-  color: #ffffff;
-  margin-top: -10px;
-}
-.logo-reels{
-  color: #e4c150;
-  font-weight: normal;
-  background-color: #2C2E33;
-  margin-left: -2px;
-  
-  
-}
+
