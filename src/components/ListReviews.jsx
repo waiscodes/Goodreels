@@ -70,26 +70,7 @@ const ListReviews = (props) => {
                                     <div className="p-review-info">
                                         <strong>Rating: {review.rating}/10</strong>
                                         <p>{review.review}</p>
-                                        <input type="checkbox" onClick={
-
-                                            e => {
-
-                                                // Had to addEventListener when checkbox is checked, because buttons disabled by default are not allowed to have active event listeners
-                                                // For example enabled button  onClick would work, disabled button onClick wouldn't work even after enabling the button.
-
-                                                const deleteReview = () => {
-                                                    props.dispatch(removeReview(review.id))
-                                                }
-
-                                                console.log(e.target);
-                                                e.target.nextSibling.disabled = !e.target.nextSibling.disabled;
-                                                e.target.nextSibling.addEventListener("click", deleteReview);
-                                            }
-
-                                        } />
-
-                                        <div className="del-button"><button type="button" className="delete-review-button" disabled={true}>Delete</button>
-                                        </div>
+                                        <button type="button" className="delete-review-button" onClick={props.dispatch(removeReview(review.id))}>Delete</button>
                                     </div>
 
 
