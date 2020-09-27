@@ -58,7 +58,7 @@ const SignIn = (props) => {
             required
           />
 
-          <input type="submit" className="submitBtn" value="Submit" />
+          <input type="submit" className="submit-btn" value="Submit" />
         </form>
       </>
     );

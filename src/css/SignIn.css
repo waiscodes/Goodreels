@@ -4,17 +4,3 @@
   margin: auto;
 }
 
-.inputs {
-  border-radius: 0 0 5px 5px;
-  width: 10em;
-  height: 1em;
-  margin: 0 auto 0 auto;
-  padding: 5px;
-}
-.submitBtn {
-  background-color: gray;
-  color: white;
-  width: 20.5em;
-  height: 3em;
-  border-radius: 5px;
-}

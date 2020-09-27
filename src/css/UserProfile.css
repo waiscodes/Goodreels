@@ -9,32 +9,34 @@
   width: 150px;
   margin: 20px auto -25px auto;
 }
-label {
-  margin: 20px auto -22px auto;
-  background-color: #504a4a;
-  width: 17.2em;
-  color: white;
-  border-radius: 5px 5px 0 0;
-  height: 1.7em;
+
+.input-divs {
+  width: 20em;
 }
-.profile-head {
+
+.labels {
+  display: block;
+  margin: 15px auto 0px;
   background-color: #504a4a;
-  margin: 0;
-  padding: 0;
-  height: 5rem;
+  width: 100%;
   color: white;
-  text-align: center;
+  padding: 3px;
+  box-sizing: border-box;
 }
 
 .inputs {
-  border-radius: 0 0 5px 5px;
-  width: 20em;
-  height: 2em;
-  margin: 0 auto 0 auto;
+  display: block;
+  width: 100%;
+  padding: 5px;
+  margin: auto;
+  box-sizing: border-box;
+  text-align: center;
 }
 #userBio {
   border-radius: 0 0 5px 5px;
-  width: 20em;
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
 }
 .upload-img {
   display: none;
@@ -50,7 +52,7 @@ label {
   background-color: #504a4a;
   color: white;
   width: 20.5em;
-  height: 3em;
+  padding: 10px;
   border-radius: 5px;
 }
 header {
@@ -67,9 +69,10 @@ header {
     width: 29.5em;
   }
   .submitBtn {
-    display: inline-flex;
     width: 15em;
+    
     padding-left: 80px;
+    border: solid;
   }
 }
 

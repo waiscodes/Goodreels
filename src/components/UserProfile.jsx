@@ -106,51 +106,61 @@ const UserProfile = (props) => {
                         <p><img id="output" width="200" /></p>
                     </div>
 
-                    <label htmlFor="username-input" className="labels" type="text">Username</label> <br />
-                    <input
-                        id="username-input"
-                        htmlFor="username-input"
-                        className="inputs"
-                        value={username}
-                        placeholder="Your Username"
-                        type="text"
-                        onChange={event => { setUserName(event.target.value); }}
-                        disabled={true}
-                    />
+                    <div className="input-divs">
+                        <label htmlFor="username-input" className="labels" type="text">Username</label>
+                        <input
+                            id="username-input"
+                            htmlFor="username-input"
+                            className="inputs"
+                            value={username}
+                            placeholder="Your Username"
+                            type="text"
+                            onChange={event => { setUserName(event.target.value); }}
+                            disabled={true}
+                        />
+                    </div>
 
-                    <label htmlFor="user-email" className="labels" type="text">Email</label><br />
-                    <input
-                        id="user-email"
-                        className="inputs"
-                        placeholder="Your email...." type="text"
-                        value={email}
-                        onChange={event => { setEmail(event.target.value); }}
-                        disabled={true}
-                    />
+                    <div className="input-divs">
+                        <label htmlFor="user-email" className="labels" type="text">Email</label>
+                        <input
+                            id="user-email"
+                            className="inputs"
+                            placeholder="Your email...." type="text"
+                            value={email}
+                            onChange={event => { setEmail(event.target.value); }}
+                            disabled={true}
+                        />
+                    </div>
 
-                    <label htmlFor="user-password" className="labels" type="text">Change Password</label><br />
-                    <input
-                        id="user-Password"
-                        className="inputs"
-                        placeholder="" type="password"
-                        value={password}
-                        onChange={event => { setPassword(event.target.value); }}
-                        disabled={true}
-                    />
+                    <div className="input-divs">
+                        <label htmlFor="user-password" className="labels" type="text">Change Password</label>
+                        <input
+                            id="user-Password"
+                            className="inputs"
+                            placeholder="" type="password"
+                            value={password}
+                            onChange={event => { setPassword(event.target.value); }}
+                            disabled={true}
+                        />
+                    </div>
 
-                    <label value="Name" type="text">Bio</label><br />
-                    <textarea
-                        htmlFor="userBio"
-                        placeholder="Enter your bio here...."
-                        type="text" rows="10" cols="20"
-                        id="userBio"
-                        value={bio}
-                        onChange={event => { setBio(event.target.value); }}
-                        disabled={true}
-                    />
+                    <div className="input-divs">
+                        <label value="Name" className="labels">Bio</label>
+                        <textarea
+                            htmlFor="userBio"
+                            placeholder="Enter your bio here...."
+                            type="text" rows="10" cols="20"
+                            id="userBio"
+                            value={bio}
+                            onChange={event => { setBio(event.target.value); }}
+                            disabled={true}
+                        />
+                    </div>
 
-                    <input id="update-profile" className="submitBtn" value="Submit" type="submit" disabled={true} />
-                    <input type="button" className="submitBtn" value="Edit" disabled={false} onClick={toggleEdit} />
+                    <div className="p-buttons">
+                        <input id="update-profile" className="submitBtn" value="Submit" type="submit" disabled={true} />
+                        <input type="button" className="submitBtn" value="Edit" disabled={false} onClick={toggleEdit} />
+                    </div>
                 </form>
 
                 <section className="p-reviews-section">
