@@ -38,7 +38,7 @@
             "year": "2011",
             "genre": "Thriller",
             "image": "coriolanus.jpg",
-            "synopsis": "People are hungry, protagonist says no more, gets pretty bloody."
+            "synopsis": "Based on the play by prolific playwright William Shakespeare, Coriolanus is one of many adaptations that tell the story of Roman General Coriolanus who fails to win the support of his people and loses the position of Consul. He then allies with his enemy Tullus Aufidius and swears to take revenge on his city."
         },
         {
             "id": "hackshaw",
@@ -71,5 +71,37 @@
             "genre": "Sci-Fi",
             "image": "matrix.jpg",
             "synopsis": "The Matrix is a 1999 American science fiction action film[3][4] written and directed by the Wachowskis.[a] It stars Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving, and Joe Pantoliano and is the first installment in the Matrix franchise. It depicts a dystopian future in which humanity is unknowingly trapped inside a simulated reality, the Matrix, created by intelligent machines to distract humans while using their bodies as an energy source.[5] When computer programmer Thomas Anderson, under the hacker alias (Neo), uncovers the truth, he is drawn into a rebellion against the machines along with other people who have been freed from the Matrix."  
+        },
+        {
+            "id": "gonegirl",
+            "title": "Gone Girl",
+            "year": "2014",
+            "genre": "Thriller",
+            "image": "Gone Girl.jpg",
+            "synopsis": "Adapted from the bestseller by Gillian Flynn, Gone Girl tells the story of a man who sees the spotlight turned on him when his wife’s disappearance becomes the focus of an intense media circus."  
+        },
+        {
+            "id": "parasite",
+            "title": "Parasite",
+            "year": "2019",
+            "genre": "Drama",
+            "image": "Parasite.jpg",
+            "synopsis": "This movie shot to the spotlight when it won the Academy award for Best picture in 2020. Parasite tells the story of two families, the Kim family and the Park family, in a tale of greed and class discrimination that threaten the newly formed symbiotic relationship between both families."  
+        },
+        {
+            "id": "joker",
+            "title": "Joker",
+            "year": "2019",
+            "genre": "Crime",
+            "image": "Joker.jpg",
+            "synopsis": "In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime. This path brings him face-to-face with his alter-ego: the Joker."  
+        },
+        {
+            "id": "devilallthetime",
+            "title": "The Devil All The Time",
+            "year": "2020",
+            "genre": "Thriller",
+            "image": "Devil all the time.jpg",
+            "synopsis": "Set in rural southern Ohio and West Virginia, The Devil All the Time follows a cast of compelling and bizarre characters from the end of World War II to the 1960s. There's Willard Russell, tormented veteran of the carnage in the South Pacific, who can't save his beautiful wife, Charlotte, from an agonizing death by cancer no matter how much sacrificial blood he pours on his prayerlog. There's Carl and Sandy Henderson, a husband-and-wife team of serial killers, who troll America's highways searching for suitable models to photograph and exterminate. There's the spider-handling preacher Roy and his crippled virtuoso-guitar-playing sidekick, Theodore, running from the law. And caught in the middle of all this is Arvin Eugene Russell, Willard and Charlotte's orphaned son, who grows up to be a good but also violent man in his own right."  
         }
     ]   
