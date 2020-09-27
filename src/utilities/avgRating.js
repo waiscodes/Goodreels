@@ -18,6 +18,9 @@ const avgRating = (movieId = "", reviews = []) => {
     // Calculates rating average
     thisMovieRating =  (thisMovieRating / numberOfRatings).toFixed(1);
     
+    if (thisMovieRating === NaN)
+        thisMovieRating = "No ratings"
+    
     return thisMovieRating;
 }
 export {avgRating};
