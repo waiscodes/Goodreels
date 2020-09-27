@@ -55,17 +55,14 @@ header {
   max-width: 100%;
   text-align: center;
   background-color: rgb(44, 46, 51);
-  border: solid green;
 }
 
 .logo {
   font-family: 'Montserrat', sans-serif;
-  text-shadow: 0 1px #CED4E2;
   color: #FFFFFF;
   font-weight: 100;
   letter-spacing: -3px;
-  background: transparent;
-  border: solid pink;
+  padding: 3px;
 }
 .logo-reels{
   color: #E4C150;
@@ -75,17 +72,12 @@ header {
 }
 /* Nav Begins */
 
-nav {
-  background: rgb(44, 46, 51);
-}
-
 nav ul {
   display: flex;
   justify-content: space-evenly;
   padding-right: 5%;
   background-color: rgb(44, 46, 51);
-  padding: 10px;
-  border: solid;
+  padding: 15px;
 }
 
 nav ul li {
@@ -99,7 +91,7 @@ nav ul li a {
   text-decoration: none;
   background-color: rgb(44, 46, 51);
   padding: 7px 10px 7px 10px;
-  border-radius: 10px;
+  border-radius: 5px;
   color: white;
 }
 

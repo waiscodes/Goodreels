@@ -68,7 +68,6 @@ const ListReviews = (props) => {
                                     <div className="p-review-info">
                                         <strong>Rating: {review.rating}/10</strong>
                                         <p>{review.review}</p>
-
                                         <div className="delete-buttons">
                                             <input type="checkbox" className="checkbox" onClick={
 

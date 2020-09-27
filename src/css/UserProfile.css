@@ -89,8 +89,11 @@
   justify-content: center;
   align-items: flex-start;
   padding: 1%;
-  line-height: 2.5em;
   width: 100%;
+}
+
+.p-review-info > * {
+  padding: 5px;
 }
 
 .delete-buttons {
