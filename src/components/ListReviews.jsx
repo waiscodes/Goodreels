@@ -84,7 +84,6 @@ const ListReviews = (props) => {
                                                         props.dispatch(removeReview(review.id))
                                                     }
 
-                                                    console.log(e.target);
                                                     e.target.nextSibling.disabled = !e.target.nextSibling.disabled;
                                                     e.target.nextSibling.addEventListener("click", deleteReview);
                                                 }

@@ -37,7 +37,7 @@ const Movie = (props) => {
           <div className="info">
             <h2>{thisMovie.title}</h2>
             <em>Year: {thisMovie.year}</em>
-            <p id="rating">Rating: {averageRating}</p>
+            <p id="rating">Average Rating: {averageRating}</p>
             <p>Genre: {thisMovie.genre}</p>
           </div>
 
