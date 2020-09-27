@@ -106,6 +106,7 @@ nav ul li a:hover {
   header {
     display: flex;
     justify-content: space-between;
+    padding: 5px;
   }
   .logo {
     padding: 0px 2% 0px 2%;
