@@ -1,5 +1,6 @@
 * {
   margin: 0px;
+  box-sizing: border-box;
 }
 
 body {
@@ -43,9 +44,12 @@ ul li {
 }
 
 main {
-  max-width: 800px;
   margin: auto;
   min-height: 100vh;
+}
+
+main a {
+  color: rgb(44, 46, 51);
 }
 
 /*====================
@@ -117,6 +121,9 @@ nav ul li a:hover {
   }
   nav ul {
     justify-content: flex-end;
+  }
+  main {
+    width: 800px;
   }
 } 
 

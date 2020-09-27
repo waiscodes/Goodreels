@@ -68,6 +68,8 @@
 
 .p-reviews-section {
   margin-top: 10px;
+  color: rgb(44, 46, 51);
+  width: 100%;
 }
 
 #review-list {
@@ -81,6 +83,8 @@
 .p-reviews-section #review-list li {
   display: flex;
   padding: 1%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .p-review-info {
@@ -103,6 +107,5 @@
 }
 
 .delete-buttons .checkbox {
-  border: solid;
   height: 100%;
 }
