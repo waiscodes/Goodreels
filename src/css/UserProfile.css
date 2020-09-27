@@ -66,11 +66,16 @@
 }
 }
 
+.p-reviews-section {
+  margin-top: 10px;
+}
+
 #review-list {
   padding: 0px;
 }
 .p-reviews-section h2 {
   text-align: center;
+  margin: 5px;
 }
 
 .p-reviews-section #review-list li {
@@ -84,5 +89,17 @@
   justify-content: center;
   align-items: flex-start;
   padding: 1%;
+  line-height: 2.5em;
+  width: 100%;
 }
 
+.delete-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.delete-buttons .checkbox {
+  border: solid;
+  height: 100%;
+}

@@ -45,7 +45,6 @@ ul li {
 main {
   max-width: 800px;
   margin: auto;
-  border: solid;
   min-height: 100vh;
 }
 
@@ -129,8 +128,7 @@ Footer
 =====================*/
 footer {
   background-color: rgb(42, 46, 42);
-  bottom: 0;
-  position: relative;
   color: #ffffff;
   text-align: center;
+  padding: 7px;
 }

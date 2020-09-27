@@ -1,6 +1,7 @@
 .signup-form {
   width: 20em;
   margin: auto;
+  border: solid;
 }
 
 .signup-form .labels {
