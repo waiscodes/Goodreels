@@ -18,16 +18,18 @@ const Browse = (props) => {
             event.preventDefault();
           }}
         >
-          <label htmlFor="movie-search" className="screen-reader-text">
-            Enter Movie Name
+          <div className="searchbox-div">
+            <label htmlFor="movie-search" className="screen-reader-text">
+              Enter Movie Name
           </label>
-          <input
-            id="movie-search"
-            type="search"
-            onChange={(e) => updateSearch(e.target.value)}
-            value={searchTerm}
-            placeholder="Search Movie"
-          />
+            <input
+              id="movie-search"
+              type="search"
+              onChange={(e) => updateSearch(e.target.value)}
+              value={searchTerm}
+              placeholder="Search Movie"
+            />
+          </div>
         </form>
 
         <section className="main-section">

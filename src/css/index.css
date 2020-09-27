@@ -108,10 +108,14 @@ nav ul li a:hover {
     justify-content: space-between;
   }
   .logo {
-    padding: 0px 5% 0px 5%;
+    padding: 0px 2% 0px 2%;
   }
   nav {
     width: 50%;
+    font-size: 16px;
+  }
+  nav ul {
+    justify-content: flex-end;
   }
 } 
 
