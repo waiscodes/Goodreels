@@ -103,5 +103,45 @@
             "genre": "Thriller",
             "image": "Devil all the time.jpg",
             "synopsis": "Set in rural southern Ohio and West Virginia, The Devil All the Time follows a cast of compelling and bizarre characters from the end of World War II to the 1960s. There's Willard Russell, tormented veteran of the carnage in the South Pacific, who can't save his beautiful wife, Charlotte, from an agonizing death by cancer no matter how much sacrificial blood he pours on his prayerlog. There's Carl and Sandy Henderson, a husband-and-wife team of serial killers, who troll America's highways searching for suitable models to photograph and exterminate. There's the spider-handling preacher Roy and his crippled virtuoso-guitar-playing sidekick, Theodore, running from the law. And caught in the middle of all this is Arvin Eugene Russell, Willard and Charlotte's orphaned son, who grows up to be a good but also violent man in his own right."  
-        }
-    ]   
+        },
+        {
+            "id": "tabureau",
+            "title": "The Adjustment Bureau",
+            "year": "2011",
+            "genre": "Sci-Fi",
+            "image": "t-a-b.jpg",
+            "synopsis": "American science fiction romantic thriller film written and directed by George Nolfi, based on the 1954 Philip K. Dick short story Adjustment Team.[3] Starring Matt Damon, Emily Blunt, Anthony Mackie, John Slattery, and Terence Stamp, the film tells the story of a United States congressman who discovers that what appear to be chance events in his life are controlled by a mysterious, powerful group. After an event not planned by these controllers occurs – a romantic encounter with a dancer – he struggles against their manipulation despite their promise of a great future for him."  
+        },
+        {
+            "id": "thebanker",
+            "title": "The Banker",
+            "year": "2020",
+            "genre": "Drama",
+            "image": "thebanker.jpg",
+            "synopsis": "The Banker is a 2020 American drama film directed, co-written and produced by George Nolfi. The film stars Anthony Mackie, Nicholas Hoult, Nia Long, Jessie T. Usher and Samuel L. Jackson. The story follows Joe Morris (Jackson) and Bernard S. Garrett Sr. (Mackie), two of the first African-American bankers in the United States."  
+        },
+        {
+            "id": "reddawn",
+            "title": "Red Dawn",
+            "year": "2012",
+            "genre": "Action",
+            "image": "reddawn.jpg",
+            "synopsis": "Red Dawn is a 2012 American action film directed by Dan Bradley. The screenplay by Carl Ellsworth and Jeremy Passmorea is a remake of the 1984 film of the same name. The film stars Chris Hemsworth, Josh Peck, Josh Hutcherson, Adrianne Palicki, Isabel Lucas, and Jeffrey Dean Morgan. The film centers on a group of young people who defend their hometown from a North Korean invasion."  
+        },
+       {
+        "id": "goodfellas",
+        "title": "Goodfellas",
+        "year": "1990",
+        "genre": "Crime",
+        "image": "goodfellas.jpg",
+        "synopsis": "Goodfellas (stylized GoodFellas) is a 1990 American crime film directed by Martin Scorsese, produced by Irwin Winkler and distributed by Warner Bros. It is an adaptation of the 1985 non-fiction book Wiseguy by Nicholas Pileggi, who co-wrote the screenplay with Scorsese. The film stars Robert De Niro, Ray Liotta, Joe Pesci, Lorraine Bracco and Paul Sorvino. It narrates the rise and fall of mob associate Henry Hill and his friends and family from 1955 to 1980."  
+    },
+    {
+     "id": "truelies",
+     "title": "True Lies",
+     "year": "1994",
+     "genre": "Action/Comedy",
+     "image": "truelies.jpg",
+     "synopsis": "True Lies is a 1994 American action comedy film written and directed by James Cameron. It was executive produced by Lawrence Kasanoff and stars Arnold Schwarzenegger, Jamie Lee Curtis, Tom Arnold, Art Malik, Tia Carrere, Bill Paxton, Eliza Dushku, Grant Heslov and Charlton Heston. It is based on the 1991 French comedy film La Totale![4] The film follows U.S. government agent Harry Tasker (Schwarzenegger), who struggles to balance his life as a spy with his familial duties"  
+ }
+]
