@@ -6,3 +6,7 @@
 .signup-form .labels {
   text-align: center;
 }
+
+.signup-form .submitBtn {
+  margin-top: 10px;
+}
