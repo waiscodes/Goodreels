@@ -27,7 +27,6 @@ const ListReviews = (props) => {
         return (
 
             <>
-                <h2>Reviews</h2>
                 <ul id="review-list">
                     {sortedReviews.map(review => {
 
