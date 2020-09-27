@@ -33,12 +33,17 @@ const ListReviews = (props) => {
                     {sortedReviews.map( review => {
 
                         // If the Movie ID passed from props matches in review, it will Pull the info
-                        
-                            return(
-                                <li key={review.id}> <strong>{review.username} ({review.rating}/10) : </strong>
-                                    {review.review}
-                                </li>
-                            );
+
+
+                        return (
+                            <li key={review.id}>
+
+                                <strong>{review.username}: {review.rating}/10
+                                </strong>
+                                <br />
+                                {review.review}
+                            </li>
+                        );
 
                     })}
                 </ul>
@@ -60,39 +65,47 @@ const ListReviews = (props) => {
                     {props.reviews.map( review => {
 
                         // If the Movie ID passed from props matches in review, it will Pull the info
-                        if (review.username === props.username){
-                            return(
-                                <li key={review.id}> 
-                                
-                                    <MovieCard movieId={review.movieId}/>
-                                    <strong>{review.rating}</strong>
-                                    <p>{review.review}</p>
-                                    <input type="checkbox" onClick={
 
-                                            e => { 
-                                                
+                        if (review.username === props.username) {
+                            return (
+                                <li key={review.id}>
+
+                                    <MovieCard movieId={review.movieId} />
+
+                                    <div className="p-review-info">
+                                        <strong>Rating: {review.rating}/10</strong>
+                                        <p>{review.review}</p>
+                                        <div className="delete-buttons">
+                                            <input type="checkbox" className="checkbox" onClick={
+
+                                                e => {
+
                                                     // Had to addEventListener when checkbox is checked, because buttons disabled by default are not allowed to have active event listeners
                                                     // For example enabled button  onClick would work, disabled button onClick wouldn't work even after enabling the button.
-                                                    
-                                                    const deleteReview = () =>{
+
+                                                    const deleteReview = () => {
                                                         props.dispatch(removeReview(review.id))
                                                     }
 
-                                                    console.log(e.target);
                                                     e.target.nextSibling.disabled = !e.target.nextSibling.disabled;
                                                     e.target.nextSibling.addEventListener("click", deleteReview);
                                                 }
 
-                                    } />
 
-                                    
-                                    <button type="button" className="delete-review-button" disabled={true}>Delete</button>
-                                    
+                                            } />
+
+
+                                            <button type="button" className="delete-review-button" disabled={true}>Delete</button>
+                                        </div>
+                                    </div>
+
                                 </li>
                             );
                         }
                         else
+
                         return "";
+
 
                     })}
                 </ul>

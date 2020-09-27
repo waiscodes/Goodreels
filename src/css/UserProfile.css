@@ -9,32 +9,36 @@
   width: 150px;
   margin: 20px auto -25px auto;
 }
-label {
-  margin: 20px auto -22px auto;
-  background-color: #504a4a;
-  width: 17.2em;
-  color: white;
-  border-radius: 5px 5px 0 0;
-  height: 1.7em;
+
+.input-divs,.p-buttons {
+  width: 20em;
 }
-.profile-head {
+
+.labels {
+  display: block;
+  margin: 15px auto 0px;
   background-color: #504a4a;
-  margin: 0;
-  padding: 0;
-  height: 5rem;
+  width: 100%;
   color: white;
-  text-align: center;
+  padding: 3px;
+  box-sizing: border-box;
+  border-radius: 4px 4px 0px 0px;
 }
 
 .inputs {
-  border-radius: 0 0 5px 5px;
-  width: 20em;
-  height: 2em;
-  margin: 0 auto 0 auto;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: auto;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 0px 0px 4px 4px;
 }
 #userBio {
   border-radius: 0 0 5px 5px;
-  width: 20em;
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
 }
 .upload-img {
   display: none;
@@ -49,28 +53,23 @@ label {
 .submitBtn {
   background-color: #504a4a;
   color: white;
-  width: 20.5em;
-  height: 3em;
-  border-radius: 5px;
+  padding: 10px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
 }
-header {
-  margin: 10px auto 1px auto;
-}
+
 @media screen and (min-width: 800px) {
-  label {
-    width: 25em;
-  }
-  .inputs {
-    width: 29.5em;
-  }
-  textarea {
-    width: 29.5em;
-  }
-  .submitBtn {
-    display: inline-flex;
-    width: 15em;
-    padding-left: 80px;
-  }
+.input-divs,.p-buttons {
+  width: 25em;
+}
+}
+
+.p-reviews-section {
+  margin-top: 10px;
+  color: rgb(44, 46, 51);
+  width: 100%;
 }
 
 #review-list {
@@ -78,11 +77,14 @@ header {
 }
 .p-reviews-section h2 {
   text-align: center;
+  margin: 5px;
 }
 
 .p-reviews-section #review-list li {
   display: flex;
   padding: 1%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .p-review-info {
@@ -91,5 +93,19 @@ header {
   justify-content: center;
   align-items: flex-start;
   padding: 1%;
+  width: 100%;
 }
 
+.p-review-info > * {
+  padding: 5px;
+}
+
+.delete-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.delete-buttons .checkbox {
+  height: 100%;
+}

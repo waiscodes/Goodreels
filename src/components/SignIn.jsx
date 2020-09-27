@@ -22,7 +22,7 @@ const SignIn = (props) => {
     return (
       <>
         <form className="signup-form" onSubmit={sumbitEvent}>
-          <label htmlFor="username" className="screen-reader-text">
+          <label htmlFor="username" className="labels">
             Username
           </label>
           <input
@@ -34,7 +34,7 @@ const SignIn = (props) => {
             required
           />
 
-          <label htmlFor="email" className="screen-reader-text">
+          <label htmlFor="email" className="labels">
             Email
           </label>
           <input
@@ -46,7 +46,7 @@ const SignIn = (props) => {
             required
           />
 
-          <label htmlFor="password" className="screen-reader-text">
+          <label htmlFor="password" className="labels">
             Password
           </label>
           <input

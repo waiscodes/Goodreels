@@ -36,9 +36,9 @@ const Movie = (props) => {
         <div className="row1">
           <div className="info">
             <h2>{thisMovie.title}</h2>
-            <em>{thisMovie.year}</em>
-            <p id="rating">{averageRating}</p>
-            <p>{thisMovie.genre}</p>
+            <p><strong>Year: </strong><em>{thisMovie.year}</em></p>
+            <p id="rating"><strong>Average Rating: </strong>{averageRating}</p>
+            <p><strong>Genre: </strong>{thisMovie.genre}</p>
           </div>
 
           <img
@@ -53,12 +53,12 @@ const Movie = (props) => {
           <p>{thisMovie.synopsis}</p>
         </section>
 
-        <section className="add-review">
-          <AddReview />
-        </section>
-
         <section className="reviews-section">
           <ListReviews movieId={thisMovie.id} />
+        </section>
+
+        <section className="add-review">
+          <AddReview />
         </section>
       </>
     );
