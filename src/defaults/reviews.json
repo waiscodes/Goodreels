@@ -54,6 +54,33 @@
         "username": "Ummer",  
         "rating": "9",
         "review": "Maybe I was wrong, maybe it will be great."
+    },
+    {
+        "id": "09",
+        "movieId": "thematrix",
+        "username": "Birm",  
+        "rating": "10",
+        "review": "Doesnt feel like released in 1999. I for some odd reason feel like it was realised yesterday. All time favorite ."
+    },
+    {
+        "id": "09",
+        "movieId": "thematrix",
+        "username": "Birm",  
+        "rating": "10",
+        "review": "Doesnt feel like released in 1999. I for some odd reason feel like it was realised yesterday. All time favorite ."
+    },
+    {
+        "id": "10",
+        "movieId": "reddawn",
+        "username": "Anonymous",  
+        "rating": "1",
+        "review": "Idk what to say I just remember I passed out mid movie and woke up besides a pile of garbage.Till this day I am trying to figure out what happened that moment, wish I could remember so rating it below 1 ."
+    },
+    {
+        "id": "11",
+        "movieId": "thebanker",
+        "username": "fatReigns",  
+        "rating": "8",
+        "review": " this movie changed me forever recommended it to my friend hopefully it doesnt change her too. Cant afford losing a friend, fingers crossed! ."
     }
-    
 ]
