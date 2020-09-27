@@ -10,7 +10,7 @@
   margin: 20px auto -25px auto;
 }
 
-.input-divs {
+.input-divs,.p-buttons {
   width: 20em;
 }
 
@@ -22,6 +22,7 @@
   color: white;
   padding: 3px;
   box-sizing: border-box;
+  border-radius: 4px 4px 0px 0px;
 }
 
 .inputs {
@@ -31,6 +32,7 @@
   margin: auto;
   box-sizing: border-box;
   text-align: center;
+  border-radius: 0px 0px 4px 4px;
 }
 #userBio {
   border-radius: 0 0 5px 5px;
@@ -51,13 +53,13 @@
 .submitBtn {
   background-color: #504a4a;
   color: white;
-  width: 20.5em;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
 }
-header {
-  margin: 10px auto 1px auto;
-}
+
 @media screen and (min-width: 800px) {
   label {
     width: 25em;
