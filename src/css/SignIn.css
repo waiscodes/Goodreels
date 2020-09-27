@@ -1,4 +1,4 @@
-form > * {
+.signup-form > * {
   display: block;
   text-align: center;
   margin: auto;

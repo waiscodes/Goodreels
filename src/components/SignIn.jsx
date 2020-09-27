@@ -21,7 +21,7 @@ const SignIn = (props) => {
   if (props.activeUser.username === undefined) {
     return (
       <>
-        <form onSubmit={sumbitEvent}>
+        <form className="signup-form" onSubmit={sumbitEvent}>
           <label htmlFor="username" className="screen-reader-text">
             Username
           </label>
