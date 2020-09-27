@@ -11,6 +11,9 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8em;
+  font-weight: 400;
 }
 
 .card-title p {
