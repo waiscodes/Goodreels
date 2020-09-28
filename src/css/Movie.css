@@ -19,7 +19,7 @@
   border-radius: 5px;
   margin: 1%;
   border: solid 1px;
-  border-color: rgba(0, 0, 0, 0.2);
+  border-color: #00000033;
 }
 
 
@@ -54,7 +54,7 @@
 .add-review-section form label {
   background-color: #504a4a;
   width: 100%;
-  color: white;
+  color: #ffffff;
   padding: 5px;
   box-sizing: border-box;
   text-align: center;
