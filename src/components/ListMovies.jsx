@@ -17,6 +17,7 @@ const ListMovies = ( props ) => {
                     if (movie.title.toLowerCase().includes(props.searchTerm.toLowerCase())){
                         return <li key={movie.id}><MovieCard movieId={movie.id} /></li> 
                     }
+                    else return "";
                     
                 } ) }
             </ul>
