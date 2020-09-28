@@ -6,14 +6,13 @@ import { removeReview } from '../actions/aReviews';
 
 const ListReviews = (props) => {
 
-    
-
 
     // If Movie id is passed, list reviews for given movie
     if (props.movieId !== undefined){
         
         let sortedReviews = [];
 
+        // Find all reviews for given movie and put them in new array, if the review is made by activeUser, put it in the index 0
         for (const review of props.reviews){
             if (review.movieId === props.movieId)
             {
@@ -26,15 +25,12 @@ const ListReviews = (props) => {
         }
 
         return (
-
             <>
                 <h2>Reviews</h2>
                 <ul id="review-list">
                     {sortedReviews.map( review => {
 
-                        // If the Movie ID passed from props matches in review, it will Pull the info
-
-
+                        // If the Movie ID passed from props matches in review, it will return all reviews for given movie
                         return (
                             <li key={review.id}>
 
@@ -42,21 +38,18 @@ const ListReviews = (props) => {
                                 </strong>
                                 <br />
                                 {review.review}
+
                             </li>
                         );
-
                     })}
                 </ul>
             </>
-    
         );
     }
 
-    // If username is passed, list reviews for given user
+    // If username is passed, list reviews for given user instead (for UserProfile)
     else if (props.username !== undefined){
 
-
- 
         return (
 
             <>
@@ -65,7 +58,6 @@ const ListReviews = (props) => {
                     {props.reviews.map( review => {
 
                         // If the Movie ID passed from props matches in review, it will Pull the info
-
                         if (review.username === props.username) {
                             return (
                                 <li key={review.id}>
@@ -79,7 +71,6 @@ const ListReviews = (props) => {
                                             <input type="checkbox" className="checkbox" onClick={
 
                                                 e => {
-
                                                     // Had to addEventListener when checkbox is checked, because buttons disabled by default are not allowed to have active event listeners
                                                     // For example enabled button  onClick would work, disabled button onClick wouldn't work even after enabling the button.
 
@@ -91,9 +82,7 @@ const ListReviews = (props) => {
                                                     e.target.nextSibling.addEventListener("click", deleteReview);
                                                 }
 
-
                                             } />
-
 
                                             <button type="button" className="delete-review-button" disabled={true}>Delete</button>
                                         </div>
@@ -103,9 +92,8 @@ const ListReviews = (props) => {
                             );
                         }
                         else
-
-                        return "";
-
+                            // If the user didn't give any reviews, show nothing
+                            return "";
 
                     })}
                 </ul>
