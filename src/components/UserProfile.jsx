@@ -1,10 +1,8 @@
-
 import React, { useState } from 'react';
-import defaultLogo from '../img/avatar2.png';
 import { updateProfile } from '../actions/aProfile';
 import ListReviews from './ListReviews';
 import { connect } from 'react-redux';
-import { logInUser } from '../actions/aActiveUser';
+import { logInUser, updateImage } from '../actions/aActiveUser';
 import { Redirect } from 'react-router-dom';
 
 import '../css/UserProfile.css';
@@ -12,7 +10,6 @@ import '../css/UserProfile.css';
 const UserProfile = (props) => {
 
     let thisUser = {};
-    let logo = defaultLogo;
 
     // Find current activeUser and copy his object into local variable
     for (const element of props.users) {
@@ -83,6 +80,7 @@ const UserProfile = (props) => {
         if (event.target.files[0] !== undefined) {
             fileUrl = URL.createObjectURL(event.target.files[0]);
             image.src = fileUrl;
+            props.dispatch(updateImage(fileUrl));
         }
 
     }
@@ -97,7 +95,7 @@ const UserProfile = (props) => {
                 <form className="profile-form" onSubmit={handleSubmit} >
 
                     <div className="avatar-div">
-                        <img src={logo} className="avatar" alt="User Picture" id="output"/> <br />
+                        <img src={props.activeUser.image} className="avatar" alt="User Picture" id="output"/> <br />
                         <input type="file" accept="image/*" name="image" id="file" onChange={loadFile} className="upload-img" disabled={true} />
                         <p><label htmlFor="file" className="img-label">Upload Image</label></p>
                     </div>

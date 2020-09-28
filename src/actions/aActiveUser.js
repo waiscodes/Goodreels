@@ -1,9 +1,4 @@
 
-
-
-
-
-
 const logInUser = (username) => {
 
 
@@ -26,4 +21,15 @@ const updateClickedMovie = (movieId) => {
     };
 }
 
-export { logInUser, updateClickedMovie };
+const updateImage = (image) => {
+
+
+    return {
+        
+        type: "UPDATE_IMAGE",
+        image
+
+    };
+}
+
+export { logInUser, updateClickedMovie, updateImage };

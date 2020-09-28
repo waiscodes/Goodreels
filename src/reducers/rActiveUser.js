@@ -1,8 +1,7 @@
+import defaultLogo from '../img/avatar2.png';
 
 
-
-
-const rActiveUser = (state = {}, action) => {
+const rActiveUser = (state = {image: defaultLogo}, action) => {
 
     
     switch (action.type){
@@ -14,6 +13,10 @@ const rActiveUser = (state = {}, action) => {
         case "UPDATE_CLICKED_MOVIE":
         
             return {...state, clickedMovie: action.movieId}
+        
+        case "UPDATE_IMAGE":
+    
+            return {...state, image: action.image}
 
         default:
             return state;
