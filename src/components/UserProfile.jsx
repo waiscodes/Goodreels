@@ -98,7 +98,7 @@ const UserProfile = (props) => {
                 <form className="profile-form" onSubmit={handleSubmit} >
 
                     <div className="avatar-div">
-                        <img src={props.activeUser.image} className="avatar" alt="User Picture" id="output"/> <br />
+                        <img src={props.activeUser.image} className="avatar" alt="User's Avatar" id="output"/> <br />
                         <input type="file" accept="image/*" name="image" id="file" onChange={loadFile} className="upload-img" disabled={true} />
                         <label htmlFor="file" className="img-label">Upload Image</label>
                     </div>

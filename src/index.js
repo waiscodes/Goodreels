@@ -17,8 +17,6 @@ import "./css/index.css";
 import SignIn from "./components/SignIn";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import AddReview from "./components/AddReview";
-import ListReviews from "./components/ListReviews";
 import UserProfile from "./components/UserProfile";
 import Recommended from "./components/Recommended";
 import Browse from "./components/Browse";

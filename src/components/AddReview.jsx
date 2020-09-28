@@ -42,7 +42,7 @@ const AddReview = (props) => {
                         <select id="rating" required
                             onChange={e => { setNewRating(e.target.value) }}
                             value={rating}>
-                            <option value="">Select Rating</option>
+                            <option value="0">Rate</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>

@@ -102,6 +102,6 @@ const ListReviews = (props) => {
     
         );
     }
-
+    else return "";
 }
 export default connect (state => ({reviews: state.reviews, activeUser: state.activeUser}) )(ListReviews);
