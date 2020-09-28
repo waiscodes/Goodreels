@@ -10,7 +10,8 @@
 }
 .row1 .info h2 {
   font-size: 1.3em;
-  font-weight: 500;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .row1 img {
@@ -18,24 +19,24 @@
   border-radius: 5px;
   margin: 1%;
   border: solid 1px;
-  border-color: rgba(0, 0, 0, 0.2);
+  border-color: #00000033;
 }
 
 
 /* Row Two */
 .synopsis {
-margin: 2%;
+  margin: 2%;
 }
-.synopsis h2 {
+
+.synopsis h2, .reviews-section h2 {
   text-align: center;
+  font-weight: 600;
+  font-size: 1.2em;
+  font-family: 'Montserrat', sans-serif;
 }
 
 
 /* Row Three */
-.reviews-section h2 {
-  text-align: center;
-}
-
 .reviews-section li {
   padding: 5px;
 }
@@ -44,16 +45,51 @@ margin: 2%;
   padding: 1%;
 }
 
-/* Row Four */
-.add-review {
-  border: solid;
-  margin: 2%;
-}
 
-.add-review form > * {
-  border: solid;
-  display: block;
-  margin: auto;
+/* Row Four */
+
+.add-review-section {
+  margin-top: 10px;
+}
+.add-review-section form label {
+  background-color: #504a4a;
+  width: 100%;
+  color: #ffffff;
+  padding: 5px;
+  box-sizing: border-box;
   text-align: center;
 }
 
+.inputs-section {
+  display: flex;
+  width: 100%;
+  border-radius: 5px 5px 0p 0px;
+}
+
+.add-review {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.add-review-section form textarea {
+  resize: vertical;
+}
+
+.add-rating {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+}
+
+.add-review-section form button {
+  background-color: #504a4a;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: block;
+  margin: 10px auto;
+  width: 50%;
+  max-width: 20em;
+}

@@ -36,6 +36,7 @@ const Browse = (props) => {
         </form>
 
         <section className="main-section">
+          <h2 className="screen-reader-text">Movies Section</h2>
           <ListMovies searchTerm={searchTerm} />
         </section>
       </>

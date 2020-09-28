@@ -40,7 +40,7 @@ const MovieCard = (props) => {
           </div>
 
           <div className="card-poster">
-            <img src={require(`../img/${thisMovie.image}`)} alt="" />
+            <img src={require(`../img/${thisMovie.image}`)} alt="Movie Poster" />
           </div>
         </div>
       </Link>

@@ -12,6 +12,7 @@ const Recommended = (props) => {
     return (
       <>
         <section className="main-section">
+          <h2 className="screen-reader-text">Recommended Page</h2>
           <ul>
             {props.movies.map((movie) => {
               // Find the first 5 movies (Always our recommended 5), return those

@@ -4,6 +4,10 @@
   margin: auto;
 }
 
+.avatar-div #output {
+  width: 200px; 
+}
+
 .avatar {
   border-radius: 80px;
   width: 150px;
@@ -19,7 +23,7 @@
   margin: 15px auto 0px;
   background-color: #504a4a;
   width: 100%;
-  color: white;
+  color: #ffffff;
   padding: 3px;
   box-sizing: border-box;
   border-radius: 4px 4px 0px 0px;
@@ -47,12 +51,12 @@
   cursor: pointer;
   background: #504a4a;
   border-style: solid;
-  color: white;
+  color: #ffffff;
   padding: 3px 10px;
 }
 .submitBtn {
   background-color: #504a4a;
-  color: white;
+  color: #ffffff;
   padding: 10px;
   border-radius: 4px;
   box-sizing: border-box;
@@ -68,7 +72,7 @@
 
 .p-reviews-section {
   margin-top: 10px;
-  color: rgb(44, 46, 51);
+  color: #2c2e33;
   width: 100%;
 }
 
@@ -106,6 +110,17 @@
   justify-content: flex-end;
 }
 
-.delete-buttons .checkbox {
-  height: 100%;
+.delete-buttons button {
+  border: solid;
+  background-color: #504a4a;
+  color: #ffffff;
+  padding: 7px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: block;
+}
+
+.delete-buttons button a:hover {
+  background-color: #E4C150;
+  color: #000000;
 }
