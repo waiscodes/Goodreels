@@ -52,6 +52,7 @@ main a {
   color: #2c2e33;
 }
 
+
 /*====================
 Header
 =====================*/
@@ -139,3 +140,52 @@ footer {
   color: #E4C150;
 }
 
+/*====================
+Rating classes
+=====================*/
+img.no-rating {
+  border-bottom: 12px solid #dddddd !important;
+}
+img.low-rating {
+  border-bottom: 12px solid #494d55 !important;
+}
+img.mid-rating {
+  border-bottom: 12px solid #d3c186 !important;
+}
+img.high-rating {
+  border-bottom: 12px solid #E4C150 !important;
+}
+
+h2.no-rating {
+  border-bottom: 2px solid #dddddd !important;
+}
+h2.low-rating {
+  border-bottom: 2px solid #494d55 !important;
+}
+h2.mid-rating {
+  border-bottom: 2px solid #d3c186 !important;
+}
+h2.high-rating {
+  border-bottom: 2px solid #E4C150 !important;
+}
+
+strong.no-rating {
+  background-color: #dddddd !important;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+strong.low-rating {
+  background-color: #494d55 !important;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+strong.mid-rating {
+  background-color: #d3c186 !important;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+strong.high-rating {
+  background-color: #E4C150 !important;
+  padding: 5px 10px;
+  border-radius: 5px;
+}

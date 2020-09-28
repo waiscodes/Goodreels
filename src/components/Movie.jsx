@@ -38,9 +38,10 @@ const Movie = (props) => {
       <>
         <div className="row1">
           <div className="info">
-            <h2>{thisMovie.title}</h2>
+            <h2 className={colorClass}>{thisMovie.title}</h2>
+            
             <p><strong>Year: </strong><em>{thisMovie.year}</em></p>
-            <p className="rating"><strong>Average Rating: </strong>{averageRating}</p>
+            <p className="rating"><strong>User Rating: </strong><strong className={colorClass}>{averageRating}</strong></p>
             <p><strong>Genre: </strong>{thisMovie.genre}</p>
           </div>
 

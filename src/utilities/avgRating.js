@@ -17,7 +17,7 @@ const avgRating = (movieId = "", reviews = []) => {
 
     // Calculates rating average
     if (!thisMovieRating)
-        thisMovieRating = "No ratings";
+        thisMovieRating = "TBD";
     else
         thisMovieRating =  (thisMovieRating / numberOfRatings).toFixed(1);
 
