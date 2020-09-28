@@ -3,8 +3,13 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { logInUser } from '../actions/aActiveUser';
 
+
+
 const Nav = (props) => {
+
+  // If user is logged in, show Nav, otherwise show link to Sign in only
   if (props.activeUser.username !== undefined) {
+
     return (
       <>
         <nav>
@@ -25,7 +30,8 @@ const Nav = (props) => {
         </nav>
       </>
     );
-  } else {
+  } 
+  else {
     return (
       <nav>
         <ul>

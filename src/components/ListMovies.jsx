@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 
 const ListMovies = ( props ) => {
 
-
+    // If result is being filtered by searched term then show filtered list of movies, otherwise list all movies
     if (props.searchTerm !== "" || props.searchTerm !== undefined){
 
         return (
@@ -35,7 +35,5 @@ const ListMovies = ( props ) => {
             </>
 
         );
-
-    
 }
 export default connect( state => ( { listMovies: state.movies } ) ) ( ListMovies );

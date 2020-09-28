@@ -21,6 +21,8 @@ const AddReview = (props) => {
         if (review.username === props.activeUser.username && review.movieId === props.activeUser.clickedMovie)
             alreadyReviewed = true;
     }
+
+    // If the movie has already been reviewed by the activeUser, it will not return anything, otherwise it returns form for adding a review.
     if (alreadyReviewed) return "";
     else return (
 

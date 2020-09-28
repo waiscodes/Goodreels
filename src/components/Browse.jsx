@@ -1,5 +1,4 @@
 import React from "react";
-import ListReviews from "./ListReviews";
 import ListMovies from "./ListMovies";
 import { Redirect } from "react-router-dom";
 import { connect } from "react-redux";
@@ -7,21 +6,24 @@ import "../css/Browse.css";
 import { useState } from "react";
 
 const Browse = (props) => {
+
   let [searchTerm, updateSearch] = useState("");
 
   if (props.activeUser.username !== undefined) {
+
+    // Search, filter, then lists all movies based on the searched Term
     return (
-      // Search, filter
       <>
         <form
-          onSubmit={(event) => {
+            onSubmit={(event) => {
             event.preventDefault();
-          }}
-        >
+        }}>
+
           <div className="searchbox-div">
+
             <label htmlFor="movie-search" className="screen-reader-text">
               Enter Movie Name
-          </label>
+            </label>
             <input
               id="movie-search"
               type="search"
@@ -30,6 +32,7 @@ const Browse = (props) => {
               placeholder="Search Movie"
             />
           </div>
+
         </form>
 
         <section className="main-section">

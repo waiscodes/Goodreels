@@ -5,7 +5,7 @@ Purpose: Demonstrate knowledge and use of React, Redux, Routers, JS, HTML, CSS. 
 
 Authors: Hitesh Patel, Birm Wais, Ummer Zaman, Eboka Peter, Adolf Stary
 
-Last modified: Sep 19, 2020
+Last modified: Sep 27, 2020
 
 
 
@@ -44,6 +44,8 @@ https://github.com/salsita/redux-form-actions/issues/2
 https://www.webtrickshome.com/faq/how-to-display-uploaded-image-in-html-using-javascript
 
 https://www.w3schools.com/jsref/prop_node_nextsibling.asp
+
+https://stackoverflow.com/questions/8722163/how-to-assign-multiple-classes-to-an-html-container
 
 
 
