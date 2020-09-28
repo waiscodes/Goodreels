@@ -45,6 +45,8 @@ https://www.webtrickshome.com/faq/how-to-display-uploaded-image-in-html-using-ja
 
 https://www.w3schools.com/jsref/prop_node_nextsibling.asp
 
+https://stackoverflow.com/questions/8722163/how-to-assign-multiple-classes-to-an-html-container
+
 
 
 
