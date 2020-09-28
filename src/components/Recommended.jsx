@@ -9,6 +9,7 @@ const Recommended = (props) => {
     return (
       <>
         <section className="main-section">
+          <h2 className="screen-reader-text">Recommended Page</h2>
           <ul>
             {props.movies.map((movie) => {
               if (props.movies.indexOf(movie) < 5) {

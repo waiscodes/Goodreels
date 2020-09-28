@@ -37,7 +37,7 @@ const Movie = (props) => {
           <div className="info">
             <h2>{thisMovie.title}</h2>
             <p><strong>Year: </strong><em>{thisMovie.year}</em></p>
-            <p id="rating"><strong>Average Rating: </strong>{averageRating}</p>
+            <p className="rating"><strong>Average Rating: </strong>{averageRating}</p>
             <p><strong>Genre: </strong>{thisMovie.genre}</p>
           </div>
 
@@ -58,6 +58,7 @@ const Movie = (props) => {
         </section>
 
         <section className="add-review-section">
+          <h2 className="screen-reader-text">Add Reviews</h2>
           <AddReview />
         </section>
       </>

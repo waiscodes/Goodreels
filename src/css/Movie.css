@@ -79,7 +79,7 @@
 .add-rating {
   display: flex;
   flex-direction: column;
-  width: max-content;
+  width: 100px;
 }
 
 .add-review-section form button {

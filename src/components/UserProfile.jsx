@@ -99,18 +99,17 @@ const UserProfile = (props) => {
 
                 <form className="profile-form" onSubmit={handleSubmit} >
 
-                    <div>
+                    <div className="avatar-div">
                         <img src={Logo} alt="Avatar" className="avatar" alt="User Picture" /> <br />
                         <input type="file" accept="image/*" name="image" id="file" onChange={loadFile} className="upload-img" disabled={true} />
                         <p><label htmlFor="file" className="img-label">Upload Image</label></p>
-                        <p><img id="output" width="200" /></p>
+                        <p><img id="output" alt="Your Profile Picture" src="" /></p>
                     </div>
 
                     <div className="input-divs">
-                        <label htmlFor="username-input" className="labels" type="text">Username</label>
+                        <label htmlFor="username-input" className="labels" >Username</label>
                         <input
                             id="username-input"
-                            htmlFor="username-input"
                             className="inputs"
                             value={username}
                             placeholder="Your Username"
@@ -121,7 +120,7 @@ const UserProfile = (props) => {
                     </div>
 
                     <div className="input-divs">
-                        <label htmlFor="user-email" className="labels" type="text">Email</label>
+                        <label htmlFor="user-email" className="labels" >Email</label>
                         <input
                             id="user-email"
                             className="inputs"
@@ -133,9 +132,9 @@ const UserProfile = (props) => {
                     </div>
 
                     <div className="input-divs">
-                        <label htmlFor="user-password" className="labels" type="text">Change Password</label>
+                        <label htmlFor="user-password" className="labels" >Change Password</label>
                         <input
-                            id="user-Password"
+                            id="user-password"
                             className="inputs"
                             placeholder="" type="password"
                             value={password}
@@ -145,11 +144,11 @@ const UserProfile = (props) => {
                     </div>
 
                     <div className="input-divs">
-                        <label value="Name" className="labels">Bio</label>
+                        <label htmlFor="userBio" className="labels">Bio</label>
                         <textarea
-                            htmlFor="userBio"
+                            id="userBio"
                             placeholder="Enter your bio here...."
-                            type="text" rows="10" cols="20"
+                            rows="10" cols="20"
                             id="userBio"
                             value={bio}
                             onChange={event => { setBio(event.target.value); }}
@@ -158,7 +157,7 @@ const UserProfile = (props) => {
                     </div>
 
                     <div className="p-buttons">
-                        <input id="update-profile" className="submitBtn" value="Submit" type="submit" disabled={true} />
+                        <input id="update-profile" className="submitBtn" value="Submit" disabled={true} />
                         <input type="button" className="submitBtn" value="Edit" disabled={false} onClick={toggleEdit} />
                     </div>
                 </form>
