@@ -43,13 +43,18 @@
 .upload-img {
   display: none;
 }
+
 .img-label {
   cursor: pointer;
-  background: #504a4a;
+  background-color: #504a4a;
   border-style: solid;
   color: #ffffff;
   padding: 3px 10px;
 }
+.upload-img:disabled+.img-label {
+  background-color:  #837a7a;
+}
+
 .submitBtn {
   text-align: center;
   background-color: #504a4a;
@@ -60,6 +65,12 @@
   display: block;
   width: 100%;
 }
+.submitBtn:disabled {
+  background-color: #837a7a;
+}
+
+
+
 
 @media screen and (min-width: 800px) {
 .input-divs,.p-buttons {
@@ -115,9 +126,22 @@
   border-radius: 5px;
   box-sizing: border-box;
   display: block;
+  height: 40px;
+  width: 60px;
+}
+.delete-buttons button:disabled{
+  background-color: #837a7a;
 }
 
 .delete-buttons button a:hover {
   background-color: #E4C150;
   color: #000000;
+}
+
+.delete-buttons .checkbox {
+  width: 36px;
+  height: 36px;
+  margin-top: 2px;
+  
+
 }

@@ -100,7 +100,7 @@ const UserProfile = (props) => {
                     <div className="avatar-div">
                         <img src={props.activeUser.image} className="avatar" alt="User Picture" id="output"/> <br />
                         <input type="file" accept="image/*" name="image" id="file" onChange={loadFile} className="upload-img" disabled={true} />
-                        <p><label htmlFor="file" className="img-label">Upload Image</label></p>
+                        <label htmlFor="file" className="img-label">Upload Image</label>
                     </div>
 
                     <div className="input-divs">
