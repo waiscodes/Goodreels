@@ -155,7 +155,18 @@ img.mid-rating {
 img.high-rating {
   border-bottom: 12px solid #E4C150 !important;
 }
-
+.card-poster img.no-rating:hover {
+  box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+}
+.card-poster img.low-rating:hover {
+  box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+}
+.card-poster img.mid-rating:hover {
+  box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;  
+}
+.card-poster img.high-rating:hover {
+  box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+}
 h2.no-rating {
   border-bottom: 2px solid #dddddd !important;
 }

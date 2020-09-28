@@ -49,6 +49,8 @@ https://stackoverflow.com/questions/8722163/how-to-assign-multiple-classes-to-an
 
 https://www.bing.com/search?q=border+radius+to+make+a+circle&cvid=45e0b18a4eb048978fad8a30e8ecab44&pglt=43&FORM=ANNTA1&PC=LCTS
 
+https://www.w3schools.com/csS/css3_shadows_box.asp
+
 
 
 
