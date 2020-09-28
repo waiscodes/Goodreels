@@ -4,13 +4,9 @@
   margin: auto;
 }
 
-.avatar-div #output {
-  width: 200px; 
-}
-
 .avatar {
-  border-radius: 80px;
-  width: 150px;
+  border-radius: 50%;
+  width: 200px;
   margin: 20px auto -25px auto;
 }
 
