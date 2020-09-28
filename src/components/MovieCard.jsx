@@ -13,19 +13,19 @@ const MovieCard = (props) => {
   let averageRating;
   let colorClass;
 
+  // Find the movie with given ID to show, find it in store and copy it into thisMovie object.
   for (let movie of props.movies) {
     if (movie.id === props.movieId) {
       thisMovie = { ...movie };
     }
   }
 
-
-
+  // Keeps track of which movie user clicked on
   const passInId = (e) => {
     props.dispatch(updateClickedMovie(thisMovie.id));
   };
 
-
+  // Calculates average ratings and assigns classes for colors based on rating
   averageRating = avgRating(thisMovie.id, props.reviews);
   colorClass = getRatingClass(averageRating);
 

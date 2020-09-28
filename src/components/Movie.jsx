@@ -18,11 +18,13 @@ const Movie = (props) => {
 
   // Find the movie with matching ID to pull out info from store into my variable
   for (const movie of props.movies) {
+
     if (movie.id === props.activeUser.clickedMovie) {
       thisMovie = { ...movie };
     }
 
     if (!thisMovie) thisMovie = props.movies[props.movies.length - 1];
+
   }
 
   // Calculates average movie rating and assigns class based on it
@@ -31,6 +33,7 @@ const Movie = (props) => {
 
   // Return HTML element with movie's info
   if (props.activeUser.username !== undefined) {
+    
     return (
       <>
         <div className="row1">

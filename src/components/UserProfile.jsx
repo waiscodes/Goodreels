@@ -9,15 +9,11 @@ import { Redirect } from 'react-router-dom';
 
 import '../css/UserProfile.css';
 
-
-
-
-
-
 const UserProfile = (props) => {
 
     let thisUser = {};
 
+    // Find current activeUser and copy his object into local variable
     for (const element of props.users) {
         if (element.username === props.activeUser.username)
             thisUser = { ...element };
@@ -29,7 +25,7 @@ const UserProfile = (props) => {
     let [bio, setBio] = useState(thisUser.bio);
     let fileUrl = "";
 
-
+    // Handle edit from submit. Get values from edit inputs checks for invalid username, saves changes and disables inputs, returns confirmation
     const handleSubmit = event => {
         event.preventDefault();
 
@@ -40,10 +36,12 @@ const UserProfile = (props) => {
         const usrPPassword = document.querySelector("#user-Password").value;
         const usrPBio = document.querySelector("#userBio").value;
 
+        // Checks whether entered username already exists
         for (const user of props.users) {
             if (user.username === usrPUsername) isValidUsername = false;
         }
 
+        // If the username is ok then proceed with saving
         if (isValidUsername) {
 
             props.dispatch(updateProfile(props.activeUser.username, usrPUsername, usrPEmail, usrPPassword, usrPBio, fileUrl));
@@ -54,12 +52,10 @@ const UserProfile = (props) => {
         }
         else alert("This username is already taken. Please use different username.");
 
-
-
     }
 
+    // Toggles disabled on and off as needed
     const toggleEdit = () => {
-
 
         const emailInput = document.querySelector("#user-email");
         const usernameInput = document.querySelector("#username-input");
@@ -68,34 +64,34 @@ const UserProfile = (props) => {
         const fileInput = document.querySelector("#file");
         const updateButton = document.querySelector("#update-profile");
 
+        // Gets object reference to all involved objects
         let elementsToChange = [emailInput, usernameInput, passwordInput, bioInput, fileInput, updateButton];
 
+        // Toggle disabled on all involved elements in array
         for (let element of elementsToChange) {
             element.disabled = !(element.disabled);
         }
-
 
     }
 
     //  Used this resource to come up with the idea, modified code to work in our app
     //  https://www.webtrickshome.com/faq/how-to-display-uploaded-image-in-html-using-javascript
     const loadFile = function (event) {
+
         const image = document.getElementById('output');
         if (event.target.files[0] !== undefined) {
             fileUrl = URL.createObjectURL(event.target.files[0]);
             image.src = fileUrl;
         }
 
-
     }
 
+    // If user is logged in show user profile, user's reviews, otherwise redirect to Sign In
     if (props.activeUser.username !== undefined) {
 
-
         return (
-
             <>
-                <h1 className="screen-reader-text">User Profile</h1>
+                <h2 className="screen-reader-text">User Profile</h2>
 
                 <form className="profile-form" onSubmit={handleSubmit} >
 
@@ -175,8 +171,4 @@ const UserProfile = (props) => {
     );
 
 }
-
-
-
-
 export default connect(state => ({ users: state.users, activeUser: state.activeUser, state: state }))(UserProfile);
