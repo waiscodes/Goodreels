@@ -9,7 +9,7 @@ const Footer = () => {
 
         <>
             <footer>
-                    &copy; Hi5 Interactive, 2020
+                &copy; Hi5 Interactive, 2020
             </footer>
         </>
 
