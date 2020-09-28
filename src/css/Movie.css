@@ -25,8 +25,9 @@
 
 /* Row Two */
 .synopsis {
-margin: 2%;
+  margin: 2%;
 }
+
 .synopsis h2, .reviews-section h2 {
   text-align: center;
   font-weight: 600;
@@ -46,15 +47,49 @@ margin: 2%;
 
 
 /* Row Four */
-.add-review {
-  border: solid;
-  margin: 2%;
-}
 
-.add-review form > * {
-  border: solid;
-  display: block;
-  margin: auto;
+.add-review-section {
+  margin-top: 10px;
+}
+.add-review-section form label {
+  background-color: #504a4a;
+  width: 100%;
+  color: white;
+  padding: 5px;
+  box-sizing: border-box;
   text-align: center;
 }
 
+.inputs-section {
+  display: flex;
+  width: 100%;
+  border-radius: 5px 5px 0p 0px;
+}
+
+.add-review {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.add-review-section form textarea {
+  resize: vertical;
+}
+
+.add-rating {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+}
+
+.add-review-section form button {
+  background-color: #504a4a;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: block;
+  margin: 10px auto;
+  width: 50%;
+  max-width: 20em;
+}

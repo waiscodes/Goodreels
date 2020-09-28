@@ -47,12 +47,12 @@
   cursor: pointer;
   background: #504a4a;
   border-style: solid;
-  color: white;
+  color: #ffffff;
   padding: 3px 10px;
 }
 .submitBtn {
   background-color: #504a4a;
-  color: white;
+  color: #ffffff;
   padding: 10px;
   border-radius: 4px;
   box-sizing: border-box;
