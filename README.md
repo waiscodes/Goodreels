@@ -47,6 +47,8 @@ https://www.w3schools.com/jsref/prop_node_nextsibling.asp
 
 https://stackoverflow.com/questions/8722163/how-to-assign-multiple-classes-to-an-html-container
 
+https://www.bing.com/search?q=border+radius+to+make+a+circle&cvid=45e0b18a4eb048978fad8a30e8ecab44&pglt=43&FORM=ANNTA1&PC=LCTS
+
 
 
 

@@ -31,13 +31,16 @@ const UserProfile = (props) => {
 
         const usrPEmail = document.querySelector("#user-email").value;
         const usrPUsername = document.querySelector("#username-input").value;
-        const usrPPassword = document.querySelector("#user-Password").value;
+        const usrPPassword = document.querySelector("#user-password").value;
         const usrPBio = document.querySelector("#userBio").value;
 
         // Checks whether entered username already exists
-        for (const user of props.users) {
-            if (user.username === usrPUsername) isValidUsername = false;
+        if (usrPUsername !== props.activeUser.username){
+            for (const user of props.users) {
+                if (user.username === usrPUsername) isValidUsername = false;
+            }
         }
+
 
         // If the username is ok then proceed with saving
         if (isValidUsername) {
@@ -150,7 +153,7 @@ const UserProfile = (props) => {
                     </div>
 
                     <div className="p-buttons">
-                        <input id="update-profile" className="submitBtn" value="Submit" disabled={true} />
+                        <input id="update-profile" type="submit" className="submitBtn" value="Submit" disabled={true} />
                         <input type="button" className="submitBtn" value="Edit" disabled={false} onClick={toggleEdit} />
                     </div>
                 </form>
