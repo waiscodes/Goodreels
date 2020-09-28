@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import Logo from '../img/avatar2.png';
+import defaultLogo from '../img/avatar2.png';
 import { updateProfile } from '../actions/aProfile';
 import ListReviews from './ListReviews';
 import { connect } from 'react-redux';
@@ -12,6 +12,7 @@ import '../css/UserProfile.css';
 const UserProfile = (props) => {
 
     let thisUser = {};
+    let logo = defaultLogo;
 
     // Find current activeUser and copy his object into local variable
     for (const element of props.users) {
@@ -59,7 +60,7 @@ const UserProfile = (props) => {
 
         const emailInput = document.querySelector("#user-email");
         const usernameInput = document.querySelector("#username-input");
-        const passwordInput = document.querySelector("#user-Password");
+        const passwordInput = document.querySelector("#user-password");
         const bioInput = document.querySelector("#userBio");
         const fileInput = document.querySelector("#file");
         const updateButton = document.querySelector("#update-profile");
@@ -96,10 +97,9 @@ const UserProfile = (props) => {
                 <form className="profile-form" onSubmit={handleSubmit} >
 
                     <div className="avatar-div">
-                        <img src={Logo} alt="Avatar" className="avatar" alt="User Picture" /> <br />
+                        <img src={logo} className="avatar" alt="User Picture" id="output"/> <br />
                         <input type="file" accept="image/*" name="image" id="file" onChange={loadFile} className="upload-img" disabled={true} />
                         <p><label htmlFor="file" className="img-label">Upload Image</label></p>
-                        <p><img id="output" alt="Your Profile Picture" src="" /></p>
                     </div>
 
                     <div className="input-divs">
@@ -145,7 +145,6 @@ const UserProfile = (props) => {
                             id="userBio"
                             placeholder="Enter your bio here...."
                             rows="10" cols="20"
-                            id="userBio"
                             value={bio}
                             onChange={event => { setBio(event.target.value); }}
                             disabled={true}
