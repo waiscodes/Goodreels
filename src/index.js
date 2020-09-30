@@ -47,24 +47,19 @@ ReactDOM.render(
           <Header />
           <main>
             <Route path="/" exact>
-              {" "}
-              <SignIn />{" "}
+              <SignIn />
             </Route>
             <Route path="/Browse">
-              {" "}
-              <Browse />{" "}
+              <Browse />
             </Route>
             <Route path="/Recommended">
-              {" "}
-              <Recommended />{" "}
+              <Recommended />
             </Route>
             <Route path="/UserProfile">
-              {" "}
-              <UserProfile />{" "}
+              <UserProfile />
             </Route>
             <Route path="/Movie">
-              {" "}
-              <Movie />{" "}
+              <Movie />
             </Route>
           </main>
         </Router>
