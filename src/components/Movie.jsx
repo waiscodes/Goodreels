@@ -18,13 +18,11 @@ const Movie = (props) => {
 
   // Find the movie with matching ID to pull out info from store into my variable
   for (const movie of props.movies) {
-
     if (movie.id === props.activeUser.clickedMovie) {
       thisMovie = { ...movie };
     }
 
     if (!thisMovie) thisMovie = props.movies[props.movies.length - 1];
-
   }
 
   // Calculates average movie rating and assigns class based on it
@@ -33,16 +31,24 @@ const Movie = (props) => {
 
   // Return HTML element with movie's info
   if (props.activeUser.username !== undefined) {
-    
     return (
       <>
         <div className="row1">
           <div className="info">
             <h2 className={colorClass}>{thisMovie.title}</h2>
-            
-            <p><strong>Year: </strong><em>{thisMovie.year}</em></p>
-            <p className="rating"><strong>User Rating: </strong><strong className={colorClass}>{averageRating}</strong></p>
-            <p><strong>Genre: </strong>{thisMovie.genre}</p>
+
+            <p>
+              <strong>Year: </strong>
+              <em>{thisMovie.year}</em>
+            </p>
+            <p className="rating">
+              <strong>User Rating: </strong>
+              <strong className={colorClass}>{averageRating}</strong>
+            </p>
+            <p>
+              <strong>Genre: </strong>
+              {thisMovie.genre}
+            </p>
           </div>
 
           <img

@@ -6,21 +6,18 @@ import "../css/Browse.css";
 import { useState } from "react";
 
 const Browse = (props) => {
-
   let [searchTerm, updateSearch] = useState("");
 
   if (props.activeUser.username !== undefined) {
-
     // Search, filter, then lists all movies based on the searched Term
     return (
       <>
         <form
-            onSubmit={(event) => {
+          onSubmit={(event) => {
             event.preventDefault();
-        }}>
-
+          }}
+        >
           <div className="searchbox-div">
-
             <label htmlFor="movie-search" className="screen-reader-text">
               Enter Movie Name
             </label>
@@ -32,7 +29,6 @@ const Browse = (props) => {
               placeholder="Search Movie"
             />
           </div>
-
         </form>
 
         <section className="main-section">

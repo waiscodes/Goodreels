@@ -22,9 +22,6 @@ import Recommended from "./components/Recommended";
 import Browse from "./components/Browse";
 import Movie from "./components/Movie";
 
-
-
-
 // Redux Store
 const rootReducer = combineReducers({
   users: rProfile,
@@ -44,28 +41,36 @@ const store = createStore(
 
 ReactDOM.render(
   <React.StrictMode>
-    <> 
-        <Provider store={store}>
+    <>
+      <Provider store={store}>
+        <Router>
+          <Header />
+          <main>
+            <Route path="/" exact>
+              {" "}
+              <SignIn />{" "}
+            </Route>
+            <Route path="/Browse">
+              {" "}
+              <Browse />{" "}
+            </Route>
+            <Route path="/Recommended">
+              {" "}
+              <Recommended />{" "}
+            </Route>
+            <Route path="/UserProfile">
+              {" "}
+              <UserProfile />{" "}
+            </Route>
+            <Route path="/Movie">
+              {" "}
+              <Movie />{" "}
+            </Route>
+          </main>
+        </Router>
 
-              
-
-              <Router>
-                  <Header/>
-                  <main>
-                    <Route path="/" exact> <SignIn /> </Route>
-                    <Route path="/Browse"> <Browse /> </Route>
-                    <Route path="/Recommended"> <Recommended /> </Route>
-                    <Route path="/UserProfile"> <UserProfile /> </Route>
-                    <Route path="/Movie"> <Movie /> </Route>
-                  </main>
-
-              </Router>
-  
-
-          <Footer />
-
-      </Provider> 
-      
+        <Footer />
+      </Provider>
     </>
   </React.StrictMode>,
   document.getElementById("root")

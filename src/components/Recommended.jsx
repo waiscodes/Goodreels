@@ -5,10 +5,8 @@ import { connect } from "react-redux";
 import { Redirect } from "react-router-dom";
 
 const Recommended = (props) => {
-
   // If user is logged in, show recommended movies, otherwise redirect to Sign In
   if (props.activeUser.username !== undefined) {
-
     return (
       <>
         <section className="main-section">
@@ -28,8 +26,7 @@ const Recommended = (props) => {
         </section>
       </>
     );
-  } 
-  else return <Redirect to="/Browse" />;
+  } else return <Redirect to="/Browse" />;
 };
 export default connect((state) => ({
   movies: state.movies,

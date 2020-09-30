@@ -2,8 +2,8 @@ import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { updateClickedMovie } from "../actions/aActiveUser";
-import { avgRating } from '../utilities/avgRating';
-import { getRatingClass } from '../utilities/getRatingClass'
+import { avgRating } from "../utilities/avgRating";
+import { getRatingClass } from "../utilities/getRatingClass";
 import "../css/MovieCard.css";
 
 // Props Required: movieId
@@ -31,7 +31,7 @@ const MovieCard = (props) => {
 
   return (
     <>
-      <Link to="/Movie" onClick={passInId} >
+      <Link to="/Movie" onClick={passInId}>
         <div className="movie-card">
           <div className="card-title">
             <p>
@@ -40,7 +40,11 @@ const MovieCard = (props) => {
           </div>
 
           <div className="card-poster ">
-            <img src={require(`../img/${thisMovie.image}`)} alt="Movie Poster" className={colorClass}/>
+            <img
+              src={require(`../img/${thisMovie.image}`)}
+              alt="Movie Poster"
+              className={colorClass}
+            />
           </div>
         </div>
       </Link>

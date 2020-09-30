@@ -5,13 +5,13 @@
   justify-content: flex-end;
 }
 
-.row1 .info > *{
+.row1 .info > * {
   margin: 10px 1%;
 }
 .row1 .info h2 {
   font-size: 1.3em;
   font-weight: 700;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   width: auto;
 }
 
@@ -27,20 +27,18 @@ div.info {
   width: 100%;
 }
 
-
-
 /* Row Two */
 .synopsis {
   margin: 2%;
 }
 
-.synopsis h2, .reviews-section h2 {
+.synopsis h2,
+.reviews-section h2 {
   text-align: center;
   font-weight: 600;
   font-size: 1.2em;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-
 
 /* Row Three */
 .reviews-section li {
@@ -50,7 +48,6 @@ div.info {
 .reviews-section {
   padding: 1%;
 }
-
 
 /* Row Four */
 
@@ -99,8 +96,7 @@ div.info {
   text-indent: 25%;
 }
 
-
-div.add-rating label{
+div.add-rating label {
   border-top-left-radius: 0px;
   border-top-right-radius: 5px;
 }
