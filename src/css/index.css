@@ -144,16 +144,16 @@ footer {
 Rating classes
 =====================*/
 img.no-rating {
-  border-bottom: 5px solid grey !important;
+  border-bottom: 5px solid #808080 !important;
 }
 img.low-rating {
-  border-bottom: 5px solid red !important;
+  border-bottom: 5px solid #ff0000 !important;
 }
 img.mid-rating {
-  border-bottom: 5px solid blue !important;
+  border-bottom: 5px solid #0000ff !important;
 }
 img.high-rating {
-  border-bottom: 5px solid gold !important;
+  border-bottom: 5px solid #ffd700 !important;
 }
 .card-poster img.no-rating:hover {
   box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
