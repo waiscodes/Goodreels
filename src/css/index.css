@@ -144,16 +144,16 @@ footer {
 Rating classes
 =====================*/
 img.no-rating {
-  border-bottom: 5px solid #dddddd !important;
+  border-bottom: 5px solid grey !important;
 }
 img.low-rating {
-  border-bottom: 5px solid #585d66 !important;
+  border-bottom: 5px solid red !important;
 }
 img.mid-rating {
-  border-bottom: 5px solid #d3c186 !important;
+  border-bottom: 5px solid blue !important;
 }
 img.high-rating {
-  border-bottom: 5px solid #E4C150 !important;
+  border-bottom: 5px solid gold !important;
 }
 .card-poster img.no-rating:hover {
   box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
@@ -168,13 +168,13 @@ img.high-rating {
   box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
 }
 h2.no-rating {
-  border-bottom: 2px solid #dddddd !important;
+  border-bottom: 2px solid grey !important;
 }
 h2.low-rating {
-  border-bottom: 2px solid  #585d66 !important;
+  border-bottom: 2px solid  red !important;
 }
 h2.mid-rating {
-  border-bottom: 2px solid #d3c186 !important;
+  border-bottom: 2px solid blue !important;
 }
 h2.high-rating {
   border-bottom: 2px solid #E4C150 !important;
