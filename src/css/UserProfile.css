@@ -10,7 +10,8 @@
   margin: 20px auto -25px auto;
 }
 
-.input-divs,.p-buttons {
+.input-divs,
+.p-buttons {
   width: 20em;
 }
 
@@ -23,6 +24,7 @@
   padding: 3px;
   box-sizing: border-box;
   border-radius: 4px 4px 0px 0px;
+  font-family: Helvetica, sans-serif;
 }
 
 .inputs {
@@ -51,8 +53,8 @@
   color: #ffffff;
   padding: 3px 10px;
 }
-.upload-img:disabled+.img-label {
-  background-color:  #837a7a;
+.upload-img:disabled + .img-label {
+  background-color: #837a7a;
 }
 
 .submitBtn {
@@ -69,13 +71,11 @@
   background-color: #837a7a;
 }
 
-
-
-
 @media screen and (min-width: 800px) {
-.input-divs,.p-buttons {
-  width: 25em;
-}
+  .input-divs,
+  .p-buttons {
+    width: 25em;
+  }
 }
 
 .p-reviews-section {
@@ -129,12 +129,12 @@
   height: 40px;
   width: 60px;
 }
-.delete-buttons button:disabled{
+.delete-buttons button:disabled {
   background-color: #837a7a;
 }
 
 .delete-buttons button a:hover {
-  background-color: #E4C150;
+  background-color: #e4c150;
   color: #000000;
 }
 
@@ -142,6 +142,4 @@
   width: 36px;
   height: 36px;
   margin-top: 2px;
-  
-
 }
