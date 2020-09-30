@@ -1,12 +1,7 @@
-.main-section {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-}
 .main-section ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: justify;
   padding: 0px;
 }
 .main-section ul li {
