@@ -143,3 +143,9 @@
   height: 36px;
   margin-top: 2px;
 }
+
+.profile-form input:disabled,
+textarea {
+  border: none;
+  color: green;
+}
