@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import "../css/SignIn.css";
+import "../css/pSignIn.css";
 import { createProfile } from "../actions/aProfile";
 import { logInUser } from "../actions/aActiveUser";
 import { Redirect } from "react-router-dom";
