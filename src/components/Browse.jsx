@@ -2,7 +2,7 @@ import React from "react";
 import ListMovies from "./ListMovies";
 import { Redirect } from "react-router-dom";
 import { connect } from "react-redux";
-import "../css/Browse.css";
+import "../css/pHome.css";
 import { useState } from "react";
 
 const Browse = (props) => {
