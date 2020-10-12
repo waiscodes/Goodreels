@@ -1,6 +1,6 @@
 import React from "react";
 import MovieCard from "./MovieCard";
-import "../css/Recommended.css";
+import "../css/pRecommended.css";
 import { connect } from "react-redux";
 import { Redirect } from "react-router-dom";
 
