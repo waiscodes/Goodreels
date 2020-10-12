@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 import { logInUser, updateImage } from "../actions/aActiveUser";
 import { Redirect } from "react-router-dom";
 
-import "../css/UserProfile.css";
+import "../css/pProfile.css";
 
 const UserProfile = (props) => {
   let thisUser = {};
