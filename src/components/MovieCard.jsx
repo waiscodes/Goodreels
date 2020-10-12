@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { updateClickedMovie } from "../actions/aActiveUser";
 import { avgRating } from "../utilities/avgRating";
 import { getRatingClass } from "../utilities/getRatingClass";
-import "../css/MovieCard.css";
+import "../css/cCard.css";
 
 // Props Required: movieId
 
