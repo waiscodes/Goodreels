@@ -6,7 +6,7 @@ import { avgRating } from "../utilities/avgRating";
 import { getRatingClass } from "../utilities/getRatingClass";
 import { Redirect } from "react-router-dom";
 
-import "../css/Movie.css";
+import "../css/pMovie.css";
 
 const Movie = (props) => {
   // receives props.movieId as prop
