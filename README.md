@@ -1,6 +1,8 @@
 # Docstring
 
-Title: Movie Review Page
+Title: Good Reels Movie Review Page
+
+Link: https://waiscodes.github.io/Goodreels/
 
 Purpose: Demonstrate knowledge and use of React, Redux, Routers, JS, HTML, CSS. Created as group project for TECHCareers Full Stack Developer Course.
 
