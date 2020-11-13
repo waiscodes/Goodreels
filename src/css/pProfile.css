@@ -147,5 +147,5 @@
 .profile-form input:disabled,
 textarea {
   border: none;
-  color: green;
+  color: black;
 }
