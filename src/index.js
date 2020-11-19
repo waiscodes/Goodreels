@@ -46,7 +46,7 @@ ReactDOM.render(
         <Router>
           <Header />
           <main>
-            <Route path="/" exact>
+            <Route path="/Goodreels/" exact>
               <SignIn />
             </Route>
             <Route path="/Browse">
