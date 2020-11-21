@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router, Route } from "react-router-dom";
 
 // Redux Import
 import { Provider } from "react-redux";
@@ -46,7 +46,7 @@ ReactDOM.render(
         <Router>
           <Header />
           <main>
-            <Route path="/Goodreels/" exact>
+            <Route path="/" exact>
               <SignIn />
             </Route>
             <Route path="/Browse">
