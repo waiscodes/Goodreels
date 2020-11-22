@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Goodreels/static/css/main.6ad4e86c.chunk.css",
-    "main.js": "/Goodreels/static/js/main.d246e50a.chunk.js",
-    "main.js.map": "/Goodreels/static/js/main.d246e50a.chunk.js.map",
+    "main.css": "/Goodreels/static/css/main.36d6f5ec.chunk.css",
+    "main.js": "/Goodreels/static/js/main.7a3b7a5d.chunk.js",
+    "main.js.map": "/Goodreels/static/js/main.7a3b7a5d.chunk.js.map",
     "runtime-main.js": "/Goodreels/static/js/runtime-main.ea77cf57.js",
     "runtime-main.js.map": "/Goodreels/static/js/runtime-main.ea77cf57.js.map",
-    "static/js/2.883cf381.chunk.js": "/Goodreels/static/js/2.883cf381.chunk.js",
-    "static/js/2.883cf381.chunk.js.map": "/Goodreels/static/js/2.883cf381.chunk.js.map",
+    "static/js/2.83b985ca.chunk.js": "/Goodreels/static/js/2.83b985ca.chunk.js",
+    "static/js/2.83b985ca.chunk.js.map": "/Goodreels/static/js/2.83b985ca.chunk.js.map",
     "index.html": "/Goodreels/index.html",
-    "precache-manifest.3f4415a78eb8250c63c2d9e4f2167805.js": "/Goodreels/precache-manifest.3f4415a78eb8250c63c2d9e4f2167805.js",
+    "precache-manifest.e0e8a9be2131a22f46cccaf54bd96caa.js": "/Goodreels/precache-manifest.e0e8a9be2131a22f46cccaf54bd96caa.js",
     "service-worker.js": "/Goodreels/service-worker.js",
-    "static/css/main.6ad4e86c.chunk.css.map": "/Goodreels/static/css/main.6ad4e86c.chunk.css.map",
-    "static/js/2.883cf381.chunk.js.LICENSE.txt": "/Goodreels/static/js/2.883cf381.chunk.js.LICENSE.txt",
+    "static/css/main.36d6f5ec.chunk.css.map": "/Goodreels/static/css/main.36d6f5ec.chunk.css.map",
+    "static/js/2.83b985ca.chunk.js.LICENSE.txt": "/Goodreels/static/js/2.83b985ca.chunk.js.LICENSE.txt",
     "static/media/13hrs.jpg": "/Goodreels/static/media/13hrs.4d2f63bb.jpg",
     "static/media/Joker.jpg": "/Goodreels/static/media/Joker.5b3a7a6f.jpg",
     "static/media/Parasite.jpg": "/Goodreels/static/media/Parasite.476155a4.jpg",
@@ -19,7 +19,6 @@
     "static/media/arrival.jpg": "/Goodreels/static/media/arrival.d446a7c6.jpg",
     "static/media/braveheart.jpg": "/Goodreels/static/media/braveheart.f28923e4.jpg",
     "static/media/catchmeifyoucan.jpg": "/Goodreels/static/media/catchmeifyoucan.9cb69eee.jpg",
-    "static/media/click.jpg": "/Goodreels/static/media/click.e8706b15.jpg",
     "static/media/coriolanus.jpg": "/Goodreels/static/media/coriolanus.1c691f31.jpg",
     "static/media/deadpoetssociety.jpg": "/Goodreels/static/media/deadpoetssociety.bc0aee7f.jpg",
     "static/media/devilallthetime.jpg": "/Goodreels/static/media/devilallthetime.36ebd0b3.jpg",
@@ -45,13 +44,12 @@
     "static/media/theateam.jpg": "/Goodreels/static/media/theateam.2a5d262b.jpg",
     "static/media/thebanker.jpg": "/Goodreels/static/media/thebanker.ee50c99b.jpg",
     "static/media/thepatriot.jpg": "/Goodreels/static/media/thepatriot.e8f50286.jpg",
-    "static/media/truelies.jpg": "/Goodreels/static/media/truelies.33ba1119.jpg",
-    "static/media/zohan.jpg": "/Goodreels/static/media/zohan.9d810bf1.jpg"
+    "static/media/truelies.jpg": "/Goodreels/static/media/truelies.33ba1119.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.ea77cf57.js",
-    "static/js/2.883cf381.chunk.js",
-    "static/css/main.6ad4e86c.chunk.css",
-    "static/js/main.d246e50a.chunk.js"
+    "static/js/2.83b985ca.chunk.js",
+    "static/css/main.36d6f5ec.chunk.css",
+    "static/js/main.7a3b7a5d.chunk.js"
   ]
 }
