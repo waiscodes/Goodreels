@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4d090386cd6e586ffb3c46bd33d555b8",
+    "revision": "cd97db3c0d0f09f451d47822786c5c29",
     "url": "/Goodreels/index.html"
   },
   {
-    "revision": "22fb3dc695de308de5bc",
+    "revision": "a039e403713686342d5e",
     "url": "/Goodreels/static/css/main.6ad4e86c.chunk.css"
   },
   {
-    "revision": "07824bca3f7460855724",
-    "url": "/Goodreels/static/js/2.419e83e3.chunk.js"
+    "revision": "7827d0a8d79f9503c53c",
+    "url": "/Goodreels/static/js/2.883cf381.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/Goodreels/static/js/2.419e83e3.chunk.js.LICENSE.txt"
+    "url": "/Goodreels/static/js/2.883cf381.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "22fb3dc695de308de5bc",
-    "url": "/Goodreels/static/js/main.0fbf744b.chunk.js"
+    "revision": "a039e403713686342d5e",
+    "url": "/Goodreels/static/js/main.d246e50a.chunk.js"
   },
   {
     "revision": "61caf102caf0d22f4648",
