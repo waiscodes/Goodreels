@@ -41,11 +41,12 @@ ul li {
 #root {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 main {
   margin: auto;
-  min-height: 90vh;
+  min-height: 100;
 }
 
 main a {
