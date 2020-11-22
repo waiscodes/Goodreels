@@ -26,7 +26,7 @@ const Recommended = (props) => {
         </section>
       </>
     );
-  } else return <Redirect to="/Browse" />;
+  } else return <Redirect to="/Signin" />;
 };
 export default connect((state) => ({
   movies: state.movies,

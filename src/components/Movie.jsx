@@ -73,7 +73,7 @@ const Movie = (props) => {
         </section>
       </>
     );
-  } else return <Redirect to="/" />;
+  } else return <Redirect to="/signin" />;
 };
 export default connect((state) => ({
   movies: state.movies,

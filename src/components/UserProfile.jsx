@@ -215,7 +215,7 @@ const UserProfile = (props) => {
         </section>
       </>
     );
-  } else return <Redirect to="/" />;
+  } else return <Redirect to="/Signin" />;
 };
 export default connect((state) => ({
   users: state.users,
