@@ -46,10 +46,10 @@ ReactDOM.render(
         <Router>
           <Header />
           <main>
-            <Route path="/" exact>
+            <Route path="/SignIn" exact>
               <SignIn />
             </Route>
-            <Route path="/Browse">
+            <Route path="/" exact>
               <Browse />
             </Route>
             <Route path="/Recommended">

@@ -1,15 +1,11 @@
 import React from "react";
 import ListMovies from "./ListMovies";
-import { Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 import "../css/pHome.css";
 import { useState } from "react";
 
 const Browse = (props) => {
   let [searchTerm, updateSearch] = useState("");
-
-  if (props.activeUser.username !== undefined) {
-    // Search, filter, then lists all movies based on the searched Term
     return (
       <>
         <form
@@ -37,7 +33,6 @@ const Browse = (props) => {
         </section>
       </>
     );
-  } else return <Redirect to="/" />;
 };
 
 export default connect((state) => ({ activeUser: state.activeUser }))(Browse);

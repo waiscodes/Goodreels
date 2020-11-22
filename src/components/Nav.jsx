@@ -20,7 +20,7 @@ const Nav = (props) => {
               <Link to="/UserProfile">Profile</Link>
             </li>
             <li>
-              <Link to="/" onClick={() => props.dispatch(logInUser(undefined))}>
+              <Link to="/Signin" onClick={() => props.dispatch(logInUser(undefined))}>
                 Logout
               </Link>
             </li>
@@ -33,7 +33,7 @@ const Nav = (props) => {
       <nav>
         <ul>
           <li>
-            <Link to="/">Signin</Link>
+            <Link to="/Signin">Signin</Link>
           </li>
         </ul>
       </nav>

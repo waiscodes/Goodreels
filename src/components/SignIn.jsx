@@ -63,7 +63,7 @@ const SignIn = (props) => {
         </form>
       </>
     );
-  } else return <Redirect to="/Browse" />;
+  } else return <Redirect to="/" />;
 };
 export default connect((state) => ({
   state: state,
