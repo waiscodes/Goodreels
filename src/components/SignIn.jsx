@@ -10,11 +10,10 @@ const SignIn = (props) => {
   const sumbitEvent = (e) => {
     e.preventDefault();
 
-    const usrEmail = document.querySelector("#email").value;
     const usrUsername = document.querySelector("#username").value;
     const usrPassword = document.querySelector("#password").value;
 
-    props.dispatch(createProfile(usrUsername, usrEmail, usrPassword));
+    props.dispatch(createProfile(usrUsername, usrUsername, usrPassword));
     props.dispatch(logInUser(usrUsername));
   };
 
@@ -32,18 +31,6 @@ const SignIn = (props) => {
             className="inputs"
             id="username"
             placeholder="Username"
-            required
-          />
-
-          <label htmlFor="email" className="labels">
-            Email
-          </label>
-          <input
-            type="email"
-            name="email"
-            className="inputs"
-            id="email"
-            placeholder="Email"
             required
           />
 
