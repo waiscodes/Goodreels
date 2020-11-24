@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <>
       <header>
-        <Link to="/Browse">
+        <Link to="/">
           <h1 className="logo">
             good<strong className="logo-reels">reels</strong>
           </h1>
