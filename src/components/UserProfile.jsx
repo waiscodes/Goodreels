@@ -142,6 +142,23 @@ const UserProfile = (props) => {
           </div>
 
           <div className="input-divs">
+            <label htmlFor="user-email" className="labels">
+              Email
+            </label>
+            <input
+              id="user-email"
+              className="inputs"
+              placeholder="Your email...."
+              type="text"
+              value={email}
+              onChange={(event) => {
+                setEmail(event.target.value);
+              }}
+              disabled={true}
+            />
+          </div>
+
+          <div className="input-divs">
             <label htmlFor="user-password" className="labels">
               Change Password
             </label>

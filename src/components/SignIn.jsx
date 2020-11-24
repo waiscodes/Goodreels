@@ -10,10 +10,11 @@ const SignIn = (props) => {
   const sumbitEvent = (e) => {
     e.preventDefault();
 
+    const usrEmail = "Set your email by clicking Edit"
     const usrUsername = document.querySelector("#username").value;
     const usrPassword = document.querySelector("#password").value;
 
-    props.dispatch(createProfile(usrUsername, usrUsername, usrPassword));
+    props.dispatch(createProfile(usrUsername, usrEmail, usrPassword));
     props.dispatch(logInUser(usrUsername));
   };
 
