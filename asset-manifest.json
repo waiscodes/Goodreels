@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Goodreels/static/css/main.36d6f5ec.chunk.css",
-    "main.js": "/Goodreels/static/js/main.7a3b7a5d.chunk.js",
-    "main.js.map": "/Goodreels/static/js/main.7a3b7a5d.chunk.js.map",
+    "main.css": "/Goodreels/static/css/main.56532450.chunk.css",
+    "main.js": "/Goodreels/static/js/main.14965041.chunk.js",
+    "main.js.map": "/Goodreels/static/js/main.14965041.chunk.js.map",
     "runtime-main.js": "/Goodreels/static/js/runtime-main.ea77cf57.js",
     "runtime-main.js.map": "/Goodreels/static/js/runtime-main.ea77cf57.js.map",
     "static/js/2.83b985ca.chunk.js": "/Goodreels/static/js/2.83b985ca.chunk.js",
     "static/js/2.83b985ca.chunk.js.map": "/Goodreels/static/js/2.83b985ca.chunk.js.map",
     "index.html": "/Goodreels/index.html",
-    "precache-manifest.e0e8a9be2131a22f46cccaf54bd96caa.js": "/Goodreels/precache-manifest.e0e8a9be2131a22f46cccaf54bd96caa.js",
+    "precache-manifest.a104515744815537e50c28d469760fda.js": "/Goodreels/precache-manifest.a104515744815537e50c28d469760fda.js",
     "service-worker.js": "/Goodreels/service-worker.js",
-    "static/css/main.36d6f5ec.chunk.css.map": "/Goodreels/static/css/main.36d6f5ec.chunk.css.map",
+    "static/css/main.56532450.chunk.css.map": "/Goodreels/static/css/main.56532450.chunk.css.map",
     "static/js/2.83b985ca.chunk.js.LICENSE.txt": "/Goodreels/static/js/2.83b985ca.chunk.js.LICENSE.txt",
     "static/media/13hrs.jpg": "/Goodreels/static/media/13hrs.4d2f63bb.jpg",
     "static/media/Joker.jpg": "/Goodreels/static/media/Joker.5b3a7a6f.jpg",
@@ -49,7 +49,7 @@
   "entrypoints": [
     "static/js/runtime-main.ea77cf57.js",
     "static/js/2.83b985ca.chunk.js",
-    "static/css/main.36d6f5ec.chunk.css",
-    "static/js/main.7a3b7a5d.chunk.js"
+    "static/css/main.56532450.chunk.css",
+    "static/js/main.14965041.chunk.js"
   ]
 }
