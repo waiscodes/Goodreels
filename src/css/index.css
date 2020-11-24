@@ -13,10 +13,6 @@ body {
   background: #f3eded;
 }
 
-#root {
-  padding-top: 0px;
-}
-
 .screen-reader-text {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
@@ -39,6 +35,7 @@ ul li {
 }
 
 #root {
+  padding: 0px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
