@@ -8,7 +8,7 @@ Purpose: Demonstrate knowledge and use of React, Redux, Routers, JS, HTML, CSS. 
 
 Authors: Hitesh Patel, Birm Wais, Ummer Zaman, Eboka Peter, Adolf Stary
 
-Last modified: Nov 7, 2020
+Last modified: Nov 24, 2020
 
 # Basic Requirements
 
