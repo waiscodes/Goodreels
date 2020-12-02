@@ -99,41 +99,41 @@ const UserProfile = (props) => {
   if (props.activeUser.username !== undefined) {
     return (
       <>
-        <h2 className="screen-reader-text">User Profile</h2>
+        <h2 className='screen-reader-text'>User Profile</h2>
 
-        <form className="profile-form" onSubmit={handleSubmit}>
-          <div className="avatar-div">
+        <form className='profile-form' onSubmit={handleSubmit}>
+          <div className='avatar-div'>
             <img
               src={props.activeUser.image}
-              className="avatar"
+              className='avatar'
               alt="User's Avatar"
-              id="output"
+              id='output'
             />{" "}
             <br />
             <input
-              type="file"
-              accept="image/*"
-              name="image"
-              id="file"
+              type='file'
+              accept='image/*'
+              name='image'
+              id='file'
               onChange={loadFile}
-              className="upload-img"
+              className='upload-img'
               disabled={true}
             />
-            <label htmlFor="file" className="img-label">
+            <label htmlFor='file' className='img-label'>
               Upload Image
             </label>
           </div>
 
-          <div className="input-divs">
-            <label htmlFor="username-input" className="labels">
+          <div className='input-divs'>
+            <label htmlFor='username-input' className='labels'>
               Username
             </label>
             <input
-              id="username-input"
-              className="inputs"
+              id='username-input'
+              className='inputs'
               value={username}
-              placeholder="Your Username"
-              type="text"
+              placeholder='Your Username'
+              type='text'
               onChange={(event) => {
                 setUserName(event.target.value);
               }}
@@ -141,15 +141,15 @@ const UserProfile = (props) => {
             />
           </div>
 
-          <div className="input-divs">
-            <label htmlFor="user-email" className="labels">
+          <div className='input-divs'>
+            <label htmlFor='user-email' className='labels'>
               Email
             </label>
             <input
-              id="user-email"
-              className="inputs"
-              placeholder="Your email...."
-              type="text"
+              id='user-email'
+              className='inputs'
+              placeholder='Your email....'
+              type='text'
               value={email}
               onChange={(event) => {
                 setEmail(event.target.value);
@@ -158,15 +158,15 @@ const UserProfile = (props) => {
             />
           </div>
 
-          <div className="input-divs">
-            <label htmlFor="user-password" className="labels">
+          <div className='input-divs'>
+            <label htmlFor='user-password' className='labels'>
               Change Password
             </label>
             <input
-              id="user-password"
-              className="inputs"
-              placeholder=""
-              type="password"
+              id='user-password'
+              className='inputs'
+              placeholder=''
+              type='password'
               value={password}
               onChange={(event) => {
                 setPassword(event.target.value);
@@ -175,15 +175,15 @@ const UserProfile = (props) => {
             />
           </div>
 
-          <div className="input-divs">
-            <label htmlFor="userBio" className="labels">
+          <div className='input-divs'>
+            <label htmlFor='userBio' className='labels'>
               Bio
             </label>
             <textarea
-              id="userBio"
-              placeholder="Enter your bio here...."
-              rows="10"
-              cols="20"
+              id='userBio'
+              placeholder='Enter your bio here....'
+              rows='10'
+              cols='20'
               value={bio}
               onChange={(event) => {
                 setBio(event.target.value);
@@ -192,30 +192,30 @@ const UserProfile = (props) => {
             />
           </div>
 
-          <div className="p-buttons">
+          <div className='p-buttons'>
             <input
-              id="update-profile"
-              type="submit"
-              className="submitBtn"
-              value="Submit"
+              id='update-profile'
+              type='submit'
+              className='submitBtn'
+              value='Submit'
               disabled={true}
             />
             <input
-              type="button"
-              className="submitBtn"
-              value="Edit"
+              type='button'
+              className='submitBtn'
+              value='Edit'
               disabled={false}
               onClick={toggleEdit}
             />
           </div>
         </form>
 
-        <section className="p-reviews-section">
+        <section className='p-reviews-section'>
           <ListReviews username={props.activeUser.username} />
         </section>
       </>
     );
-  } else return <Redirect to="/Signin" />;
+  } else return <Redirect to='/Signin' />;
 };
 export default connect((state) => ({
   users: state.users,

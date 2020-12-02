@@ -9,8 +9,8 @@ const Recommended = (props) => {
   if (props.activeUser.username !== undefined) {
     return (
       <>
-        <section className="main-section">
-          <h2 className="screen-reader-text">Recommended Page</h2>
+        <section className='main-section'>
+          <h2 className='screen-reader-text'>Recommended Page</h2>
           <ul>
             {props.movies.map((movie) => {
               // Find the first 5 movies (Always our recommended 5), return those
@@ -26,7 +26,7 @@ const Recommended = (props) => {
         </section>
       </>
     );
-  } else return <Redirect to="/Signin" />;
+  } else return <Redirect to='/Signin' />;
 };
 export default connect((state) => ({
   movies: state.movies,

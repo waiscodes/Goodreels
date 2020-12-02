@@ -33,15 +33,15 @@ const Movie = (props) => {
   if (props.activeUser.username !== undefined) {
     return (
       <>
-        <div className="row1">
-          <div className="info">
+        <div className='row1'>
+          <div className='info'>
             <h2 className={colorClass}>{thisMovie.title}</h2>
 
             <p>
               <strong>Year: </strong>
               <em>{thisMovie.year}</em>
             </p>
-            <p className="rating">
+            <p className='rating'>
               <strong>User Rating: </strong>
               <strong className={colorClass}>{averageRating}</strong>
             </p>
@@ -53,27 +53,27 @@ const Movie = (props) => {
 
           <img
             src={require("../img/" + thisMovie.image)}
-            alt="Movie Poster"
+            alt='Movie Poster'
             className={colorClass}
           />
         </div>
 
-        <section className="synopsis">
+        <section className='synopsis'>
           <h2>Synopsis</h2>
           <p>{thisMovie.synopsis}</p>
         </section>
 
-        <section className="reviews-section">
+        <section className='reviews-section'>
           <ListReviews movieId={thisMovie.id} />
         </section>
 
-        <section className="add-review-section">
-          <h2 className="screen-reader-text">Add Reviews</h2>
+        <section className='add-review-section'>
+          <h2 className='screen-reader-text'>Add Reviews</h2>
           <AddReview />
         </section>
       </>
     );
-  } else return <Redirect to="/signin" />;
+  } else return <Redirect to='/signin' />;
 };
 export default connect((state) => ({
   movies: state.movies,

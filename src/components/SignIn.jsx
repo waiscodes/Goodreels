@@ -10,7 +10,7 @@ const SignIn = (props) => {
   const sumbitEvent = (e) => {
     e.preventDefault();
 
-    const usrEmail = "Set your email by clicking Edit"
+    const usrEmail = "Set your email by clicking Edit";
     const usrUsername = document.querySelector("#username").value;
     const usrPassword = document.querySelector("#password").value;
 
@@ -22,36 +22,36 @@ const SignIn = (props) => {
   if (props.activeUser.username === undefined) {
     return (
       <>
-        <form className="signup-form" onSubmit={sumbitEvent}>
-          <label htmlFor="username" className="labels">
+        <form className='signup-form' onSubmit={sumbitEvent}>
+          <label htmlFor='username' className='labels'>
             Username
           </label>
           <input
-            type="text"
-            name="username"
-            className="inputs"
-            id="username"
-            placeholder="Username"
+            type='text'
+            name='username'
+            className='inputs'
+            id='username'
+            placeholder='Username'
             required
           />
 
-          <label htmlFor="password" className="labels">
+          <label htmlFor='password' className='labels'>
             Password
           </label>
           <input
-            type="password"
-            name="password"
-            className="inputs"
-            id="password"
-            placeholder="Password"
+            type='password'
+            name='password'
+            className='inputs'
+            id='password'
+            placeholder='Password'
             required
           />
 
-          <input type="submit" className="submitBtn" value="Submit" />
+          <input type='submit' className='submitBtn' value='Submit' />
         </form>
       </>
     );
-  } else return <Redirect to="/" />;
+  } else return <Redirect to='/' />;
 };
 export default connect((state) => ({
   state: state,

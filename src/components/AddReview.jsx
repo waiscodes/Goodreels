@@ -37,12 +37,12 @@ const AddReview = (props) => {
     return (
       <>
         <form onSubmit={newAddition}>
-          <div className="inputs-section">
-            <div className="add-review">
-              <label htmlFor="mreview">Add Review</label>
+          <div className='inputs-section'>
+            <div className='add-review'>
+              <label htmlFor='mreview'>Add Review</label>
               <textarea
-                id="mreview"
-                placeholder="Start typing your review..."
+                id='mreview'
+                placeholder='Start typing your review...'
                 required
                 onChange={(e) => {
                   setNewReview(e.target.value);
@@ -51,31 +51,31 @@ const AddReview = (props) => {
               />
             </div>
 
-            <div className="add-rating">
-              <label htmlFor="rating">Rating</label>
+            <div className='add-rating'>
+              <label htmlFor='rating'>Rating</label>
               <select
-                id="rating"
+                id='rating'
                 required
                 onChange={(e) => {
                   setNewRating(e.target.value);
                 }}
                 value={rating}
               >
-                <option value="0">Rate</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
+                <option value='0'>Rate</option>
+                <option value='1'>1</option>
+                <option value='2'>2</option>
+                <option value='3'>3</option>
+                <option value='4'>4</option>
+                <option value='5'>5</option>
+                <option value='6'>6</option>
+                <option value='7'>7</option>
+                <option value='8'>8</option>
+                <option value='9'>9</option>
+                <option value='10'>10</option>
               </select>
             </div>
           </div>
-          <button className="submit-review">Submit</button>
+          <button className='submit-review'>Submit</button>
         </form>
       </>
     );

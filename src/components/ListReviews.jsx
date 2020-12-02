@@ -20,7 +20,7 @@ const ListReviews = (props) => {
     return (
       <>
         <h2>Reviews</h2>
-        <ul id="review-list">
+        <ul id='review-list'>
           {sortedReviews.map((review) => {
             // If the Movie ID passed from props matches in review, it will return all reviews for given movie
             return (
@@ -43,7 +43,7 @@ const ListReviews = (props) => {
     return (
       <>
         <h2>Your Reviews</h2>
-        <ul id="review-list">
+        <ul id='review-list'>
           {props.reviews.map((review) => {
             // If the Movie ID passed from props matches in review, it will Pull the info
             if (review.username === props.username) {
@@ -51,14 +51,14 @@ const ListReviews = (props) => {
                 <li key={review.id}>
                   <MovieCard movieId={review.movieId} />
 
-                  <div className="p-review-info">
+                  <div className='p-review-info'>
                     <strong>Rating: {review.rating}/10</strong>
                     <p>{review.review}</p>
 
-                    <div className="delete-buttons">
+                    <div className='delete-buttons'>
                       <input
-                        type="checkbox"
-                        className="checkbox"
+                        type='checkbox'
+                        className='checkbox'
                         onClick={(e) => {
                           // Had to addEventListener when checkbox is checked, because buttons disabled by default are not allowed to have active event listeners
                           // For example enabled button  onClick would work, disabled button onClick wouldn't work even after enabling the button.
@@ -77,8 +77,8 @@ const ListReviews = (props) => {
                       />
 
                       <button
-                        type="button"
-                        className="delete-review-button"
+                        type='button'
+                        className='delete-review-button'
                         disabled={true}
                       >
                         Delete

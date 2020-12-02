@@ -31,18 +31,18 @@ const MovieCard = (props) => {
 
   return (
     <>
-      <Link to="/Movie" onClick={passInId}>
-        <div className="movie-card">
-          <div className="card-title">
+      <Link to='/Movie' onClick={passInId}>
+        <div className='movie-card'>
+          <div className='card-title'>
             <p>
               <strong>{thisMovie.title}</strong> ({thisMovie.year})
             </p>
           </div>
 
-          <div className="card-poster ">
+          <div className='card-poster '>
             <img
               src={require(`../img/${thisMovie.image}`)}
-              alt="Movie Poster"
+              alt='Movie Poster'
               className={colorClass}
             />
           </div>
