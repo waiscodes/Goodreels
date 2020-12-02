@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1fd13df474bb9e34d80342dba4225ce7",
+    "revision": "bf62f2fc0de084a9a4f37e1eb7e71c71",
     "url": "/Goodreels/index.html"
   },
   {
-    "revision": "bab84274c444d579649f",
+    "revision": "e5001e670fadb05d287a",
     "url": "/Goodreels/static/css/main.56532450.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Goodreels/static/js/2.83b985ca.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bab84274c444d579649f",
-    "url": "/Goodreels/static/js/main.14965041.chunk.js"
+    "revision": "e5001e670fadb05d287a",
+    "url": "/Goodreels/static/js/main.c1670cb8.chunk.js"
   },
   {
     "revision": "61caf102caf0d22f4648",
